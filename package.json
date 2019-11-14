@@ -1,0 +1,87 @@
+{
+  "name": "plugin-scaffold",
+  "version": "1.0.0",
+  "description": "10up Plugin Scaffold",
+  "author": {
+    "name": "10up",
+    "email": "info@10up.com",
+    "url": "https://10up.com",
+    "role": "developer"
+  },
+  "scripts": {
+    "test": "phpunit",
+    "start": "composer install && npm install && npm run build",
+    "build": "NODE_ENV=production webpack --config config/webpack.prod.js",
+    "dev": "NODE_ENV=development webpack --config config/webpack.dev.js",
+    "watch": "NODE_ENV=development webpack --watch --config config/webpack.dev.js",
+    "build-release": "npm install && composer install --no-dev -o && npm run build",
+    "lint-release": "npm install && composer install && npm run lint",
+    "lint-css": "stylelint assets/css",
+    "lint-js": "eslint assets/js",
+    "lint-php": "composer run lint",
+    "format-js": "eslint --fix assets/js",
+    "lint": "npm run lint-css && npm run lint-js && npm run lint-php",
+    "format": "npm run format-js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint"
+    ],
+    "*.js": [
+      "eslint"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/10up/plugin-scaffold"
+  },
+  "devDependencies": {
+    "@10up/eslint-config": "^1.0.9",
+    "@10up/stylelint-config": "^1.0.7",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "browserslist": "^4.7.0",
+    "caniuse-db": "^1.0.30000999",
+    "clean-webpack-plugin": "^2.0.2",
+    "copy-webpack-plugin": "^5.0.4",
+    "core-js": "^3.1.4",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.4.0",
+    "eslint-loader": "^2.2.1",
+    "husky": "^3.0.5",
+    "lint-staged": "^8.2.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "postcss-import": "^12.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^5.3.0",
+    "stylelint": "^9.6.0",
+    "stylelint-config-wordpress": "^13.1.0",
+    "stylelint-declaration-use-variable": "^1.7.0",
+    "stylelint-order": "^1.0.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "terser": "^3.17.0",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-fix-style-only-entries": "^0.2.2",
+    "webpack-merge": "^4.2.2",
+    "webpackbar": "^3.2.0"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=8.11"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
