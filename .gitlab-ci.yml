@@ -18,4 +18,4 @@ deploy_10uplabs:
     - bash ./deploy-scripts/build.sh
     - bash ./deploy-scripts/deploy-10uplabs.sh
   only:
-    - feature/TENUPSYS-1252
+    - staging
