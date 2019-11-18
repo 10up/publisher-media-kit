@@ -1,0 +1,21 @@
+image: docker.10up.com/10up-build/deploy-container:latest
+
+stages:
+  - test
+  - deploy
+
+test:
+  stage: test
+  script:
+    - 10up-scripts
+
+deploy_10uplabs:
+  stage: deploy
+  environment:
+    name: 10uplabs
+    url: https://publishermediakit.10uplabs.com/
+  script:
+    - bash ./deploy-scripts/build.sh
+    - bash ./deploy-scripts/deploy-10uplabs.sh
+  only:
+    - staging
