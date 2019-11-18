@@ -53,6 +53,9 @@ yarn.lock
 /plugins/index.php
 /mu-plugins/pagely*
 /plugins/enable-media-replace
+/plugins/restricted-site-access
+
+
 
 # By default, we ignore these dropins. Delete these to manage via git
 object-cache.php
