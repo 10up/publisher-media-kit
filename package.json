@@ -50,7 +50,7 @@
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "browserslist": "^4.7.0",
+    "browserslist": "^4.16.5",
     "caniuse-db": "^1.0.30000999",
     "clean-webpack-plugin": "^2.0.2",
     "copy-webpack-plugin": "^5.0.4",
