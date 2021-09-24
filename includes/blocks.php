@@ -46,7 +46,7 @@ function register_blocks()
 	TabsItem\register();
 
 	// Remove the filter after we register the blocks
-	//remove_filter('plugins_url', __NAMESPACE__ . '\filter_plugins_url', 10, 2);
+	remove_filter('plugins_url', __NAMESPACE__ . '\filter_plugins_url', 10, 2);
 }
 
 /**
@@ -111,12 +111,12 @@ function block_patterns_and_categories()
 	);*/
 
 	// Unregister a block pattern
-	unregister_block_pattern( 'tenup/block-pattern' );
+	unregister_block_pattern('tenup/block-pattern');
 
 	// Register a block pattern category
 	register_block_pattern_category(
 		'client-name',
-			array( 'label' => __( 'Client Name', 'tenup' ) )
+		array('label' => __('Client Name', 'tenup'))
 	);
 
 	// Unregister a block pattern category
