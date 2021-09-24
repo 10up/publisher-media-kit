@@ -2,7 +2,7 @@
 /**
  * Markup for the Tabs Item block
  *
- * @package TenupBlockLibrary\Blocks
+ * @package PublisherMediaKit\Blocks
  */
 
 ?>

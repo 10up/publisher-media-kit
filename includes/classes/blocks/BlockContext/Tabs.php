@@ -2,7 +2,7 @@
 /**
  * Tabs Block Context
  *
- * @package TenupBlockLibrary\Blocks
+ * @package PublisherMediaKit\Blocks
  */
 
 namespace PublisherMediaKit\Blocks\BlockContext;

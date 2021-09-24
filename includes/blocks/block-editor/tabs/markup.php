@@ -2,7 +2,7 @@
 /**
  * Markup for the Tabs block wrapper
  *
- * @package TenupBlockLibrary\Blocks
+ * @package PublisherMediaKit\Blocks
  */
 
 $layout = ! empty( $attributes['tabVertical'] ) ? 'tabs-vertical' : '';

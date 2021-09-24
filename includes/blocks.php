@@ -18,8 +18,6 @@ function setup()
 		return __NAMESPACE__ . "\\$function";
 	};
 
-	add_filter('block_categories', $n('blocks_categories'), 10, 2);
-
 	add_action('init', $n('register_blocks'));
 
 	add_action('init', $n('block_patterns_and_categories'));
@@ -64,31 +62,6 @@ function filter_plugins_url($url, $path)
 }
 
 /**
- * Filters the registered block categories.
- *
- * @param array $categories Registered categories.
- * @param object $post The post object.
- *
- * @return array Filtered categories.
- */
-function blocks_categories($categories, $post)
-{
-	if (!in_array($post->post_type, array('post', 'page'), true)) {
-		return $categories;
-	}
-
-	return array_merge(
-		$categories,
-		array(
-			array(
-				'slug' => 'tenup-scaffold-blocks',
-				'title' => __('Custom Blocks', 'publisher-media-kit'),
-			),
-		)
-	);
-}
-
-/**
  * Manage block patterns and block pattern categories
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/
@@ -98,29 +71,16 @@ function blocks_categories($categories, $post)
 function block_patterns_and_categories()
 {
 	// phpcs:disable
-	## Examples
 
-	// Register block pattern
-	/*register_block_pattern(
-		'tenup/block-pattern',
+	// Register block pattern for cover image.
+	register_block_pattern(
+		'publisher-media-kit/cover-pattern',
 		array(
-			'title'       => __( 'Two buttons', 'tenup' ),
-			'description' => _x( 'Two horizontal buttons, the left button is filled in, and the right button is outlined.', 'Block pattern description', 'wpdocs-my-plugin' ),
-			'content'     => '<!-- wp:buttons {\"align\":\"center\"} -->\n<div class=\"wp-block-buttons aligncenter\"><!-- wp:button {\"backgroundColor\":\"very-dark-gray\",\"borderRadius\":0} -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link has-background has-very-dark-gray-background-color no-border-radius\">" . esc_html__( 'Button One', 'wpdocs-my-plugin' ) . "</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button {\"textColor\":\"very-dark-gray\",\"borderRadius\":0,\"className\":\"is-style-outline\"} -->\n<div class=\"wp-block-button is-style-outline\"><a class=\"wp-block-button__link has-text-color has-very-dark-gray-color no-border-radius\">" . esc_html__( 'Button Two', 'wpdocs-my-plugin' ) . "</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+			'title'       => __( 'Publisher Media Kit Cover', 'publisher-media-kit' ),
+			'description' => __( 'The main cover image for the Publisher Media Kit page', 'publisher-media-kit' ),
+			'content'     => '<!-- wp:cover {"url":"/wp-content/plugins/publisher-media-kit/assets/images/cover-image.png","id":17,"align":"full","className":"pmk-cover"} --><div class="wp-block-cover alignfull has-background-dim pmk-cover"><img class="wp-block-cover__image-background wp-image-17" alt="" src="/wp-content/plugins/publisher-media-kit/assets/images/cover-image.png" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center"} --><h2 class="has-text-align-center">Media Kit</h2><!-- /wp:heading --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui<br>tortor, porttitor ut enim non, iaculis sagittis dolor.</p><!-- /wp:paragraph --><!-- wp:buttons {"contentJustification":"center"} --><div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"className":"is-style-fill"} --><div class="wp-block-button is-style-fill"><a class="wp-block-button__link">CONTACT US</a></div><!-- /wp:button --></div><!-- /wp:buttons --></div></div><!-- /wp:cover -->',
 		)
-	);*/
-
-	// Unregister a block pattern
-	unregister_block_pattern('tenup/block-pattern');
-
-	// Register a block pattern category
-	register_block_pattern_category(
-		'client-name',
-		array('label' => __('Client Name', 'tenup'))
 	);
-
-	// Unregister a block pattern category
-	unregister_block_pattern('client-name');
 
 	// phpcs:enable
 }
