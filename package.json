@@ -24,7 +24,10 @@
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react-autocomplete": "^1.8.1",
-    "react-sortable-hoc": "^2.0.0"
+    "react-sortable-hoc": "^2.0.0",
+    "@10up/component-tabs": "^2.0.0",
+    "@wordpress/icons": "^2.9.0",
+    "path": "^0.12.7"
   },
   "10up-toolkit": {
     "devURL": "https://publisher-media.test/",
@@ -35,7 +38,8 @@
       "admin-style": "./assets/css/admin/admin-style.css",
       "shared-style": "./assets/css/shared/shared-style.css",
       "style": "./assets/css/frontend/style.css",
-      "single-content-block": "./blocks/single-content-block/index.js"
+      "tabs-block": "./includes/blocks/block-editor/tabs/register.js",
+      "tabs-item-block": "./includes/blocks/block-editor/tabs-item/register.js"
     }
   }
 }

@@ -1,0 +1,209 @@
+@import "@10up/component-tabs";
+
+:root {
+	--c-appender-button-bg: #000;
+	--c-white: #fff;
+	--c-gray: #777;
+	--c-light-grey: #d3d3d3;
+	--c-placeholder-text: #707070;
+	--tab-item-width: 120px;
+	--tab-item-height: 60px;
+}
+
+.wp-block[data-type="tenup/tabs"] {
+
+    & .tab-group {
+
+        & > .block-editor-inner-blocks .wp-block[data-type="tenup/tabs-item"] {
+
+			&.has-child-selected,
+			&.is-selected {
+				display: block;
+			}
+        }
+
+		& .tab-header {
+			position: absolute;
+			display: flex;
+			padding: 6px 12px;
+			box-sizing: border-box;
+			align-items: center;
+			top: calc(calc(-1 * var(--tab-item-height)) + 2px);
+			left: 0;
+			background-color: var(--c-white);
+			height: calc(var(--tab-item-height) - 2px);
+			text-align: center;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+			font-size: 13px;
+
+			&.orientation-vertical {
+				top: 0;
+				left: calc(calc(-1 * var(--tab-item-width)) + 2px);
+			}
+
+			& .rich-text {
+				width: 100%;
+				text-align: center;
+				line-height: 1.2em;
+			}
+		}
+    }
+
+    &:not(.has-child-selected) {
+
+        & .wp-block-tenup-tabs {
+
+            &.components-tab-panel__tabs-item-is-editing .tab-group > .block-editor-inner-blocks .wp-block[data-type="tenup/tabs-item"] {
+
+				&[data-is-tab-header-editing]{
+					display: block;
+				}
+            }
+
+            &:not(.components-tab-panel__tabs-item-is-editing) .tab-group > .block-editor-inner-blocks .wp-block[data-type="tenup/tabs-item"] {
+
+				&:first-child {
+					display: block;
+				}
+            }
+        }
+
+        & .wp-block-tenup-tabs {
+
+			&.tabs-horizontal {
+				& .components-button {
+
+					&:first-child {
+						border-bottom-color: var(--c-white);
+					}
+				}
+			}
+
+			&.tabs-vertical {
+				& .components-button {
+
+					&:first-child {
+						border-right-color: var(--c-white);
+					}
+				}
+			}
+
+            & .is-active {
+                border-bottom-color: var(--c-gray);
+            }
+        }
+    }
+}
+
+.wp-block-tenup-tabs {
+
+    & .tab-group > .block-editor-inner-blocks {
+
+		& > .block-editor-block-list__layout {
+
+			& > .wp-block {
+				& ~ .wp-block {
+					display: none;
+				}
+			}
+		}
+
+		& .wp-block[data-type="tenup/tabs-item"] {
+			display: none;
+			margin-top: 0;
+		}
+    }
+
+    & .tab-item {
+        border: 1px solid var(--c-gray);
+        display: inline-block;
+        text-decoration: none;
+		width: var(--tab-item-width);
+		height: var(--tab-item-height);
+		text-align: center;
+    }
+
+    & .components-tab-panel__tabs-item {
+
+        & .components-button {
+            border-radius: 0;
+        }
+
+        &.is-active {
+            background: var(--c-white);
+            border-bottom-color: var(--c-white);
+            box-shadow: none;
+            position: relative;
+            z-index: 1;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        &.rich-text {
+            align-items: center;
+            display: flex;
+			font-weight: 500;
+
+            &:hover {
+                color: #1e1e1e;
+            }
+        }
+
+		&.untitled {
+			color: #6C6C6C;
+		}
+    }
+
+	& .add-tab-button {
+		margin-top: 11px;
+		margin-left: 6px;
+	}
+
+    & .components-tab-panel__tabs {
+
+        &[aria-orientation="vertical"] {
+            display: flex;
+            flex-direction: column;
+            white-space: normal;
+
+            & .components-tab-panel__tabs-item.is-active {
+				border-right-color: var(--c-white);
+				border-bottom-color: var(--c-gray);
+            }
+
+			& .add-tab-button {
+				display: block;
+				margin-left: 0;
+			}
+        }
+
+        & .components-text-control__input {
+            margin-left: 5px;
+        }
+
+        & .untitled {
+            color: var(--c-placeholder-text);
+        }
+    }
+
+    &.components-tab-panel__tabs-item-is-editing .components-tab-panel__tabs {
+		& >:not(.is-active) {
+			border-bottom-color: var(--c-gray) !important;
+		}
+
+		& .is-active {
+			border-bottom-color: var(--c-white) !important;
+		}
+    }
+}
+
+.components-button.tabs-item-appender.is-tertiary:not(:disabled) {
+	background-color: var(--c-appender-button-bg);
+	color: var(--c-white);
+
+	&:hover {
+		color: var(--c-light-grey);
+	}
+}

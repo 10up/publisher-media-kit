@@ -19,7 +19,7 @@
 define( 'PUBLISHER_MEDIA_KIT_VERSION', '0.1.0' );
 define( 'PUBLISHER_MEDIA_KIT_URL', plugin_dir_url( __FILE__ ) );
 define( 'PUBLISHER_MEDIA_KIT_PATH', plugin_dir_path( __FILE__ ) );
-define( 'PUBLISHER_MEDIA_KIT_BLOCKS_PATH', plugin_dir_path( __FILE__ ) . 'blocks/' );
+define( 'PUBLISHER_MEDIA_KIT_BLOCKS_PATH', plugin_dir_path( __FILE__ ) . 'includes/blocks/block-editor/' );
 define( 'PUBLISHER_MEDIA_KIT_INC', PUBLISHER_MEDIA_KIT_PATH . 'includes/' );
 
 // Require Composer autoloader if it exists.
@@ -31,6 +31,8 @@ if ( file_exists( PUBLISHER_MEDIA_KIT_PATH . 'vendor/autoload.php' ) ) {
 require_once PUBLISHER_MEDIA_KIT_INC . '/core.php';
 // Block Editor
 require_once PUBLISHER_MEDIA_KIT_INC . '/blocks.php';
+// Block Context
+require_once PUBLISHER_MEDIA_KIT_INC . '/classes/blocks/BlockContext/Tabs.php';
 
 // Activation/Deactivation.
 register_activation_hook( __FILE__, '\PublisherMediaKit\Core\activate' );
@@ -40,3 +42,5 @@ register_deactivation_hook( __FILE__, '\PublisherMediaKit\Core\deactivate' );
 PublisherMediaKit\Core\setup();
 // Blocks
 PublisherMediaKit\Blocks\setup();
+// Block Context
+PublisherMediaKit\Blocks\BlockContext\Tabs::get_instance()->setup();

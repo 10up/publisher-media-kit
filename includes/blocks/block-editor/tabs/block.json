@@ -1,0 +1,57 @@
+{
+	"name": "tenup/tabs",
+	"title": "Tabs",
+	"description": "Display sections of content with brief headings in a compact tab layout that shows one section at a time.",
+	"text-domain": "10up-block-library",
+	"category": "tenup-blocks",
+	"example": {
+		"innerBlocks": [
+			{
+				"name": "tenup/tabs-item",
+				"attributes": {
+					"header": "Tab Header"
+				},
+				"innerBlocks": [
+					{
+						"name": "core/paragraph",
+						"attributes": {
+							"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et eros eu felis."
+						}
+					}
+				]
+			},
+			{
+				"name": "tenup/tabs-item",
+				"attributes": {
+					"header": "Tab Two Header"
+				},
+				"innerBlocks": [
+					{
+						"name": "core/paragraph",
+						"attributes": {
+							"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et eros eu felis."
+						}
+					},
+					{
+						"name": "core/image",
+						"attributes": {
+							"url": "https://s.w.org/images/core/5.3/Windbuchencom.jpg"
+						}
+					}
+				]
+			}
+		]
+	},
+	"attributes": {
+		"tabVertical": {
+			"type": "boolean",
+			"default": false
+		}
+  },
+  "supports": {
+    "html": false
+  },
+	"editorScript": "file:../../../../dist/blocks/tabs-block/editor.js",
+	"editorStyle": "file:../../../../dist/blocks/tabs-block/editor.css",
+	"style": "file:../../../../dist/blocks/tabs-block/editor.css"
+}

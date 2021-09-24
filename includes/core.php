@@ -145,6 +145,24 @@ function scripts() {
 		true
 	);
 
+	/*$tabs_dep = require_once PUBLISHER_MEDIA_KIT_PATH . 'dist/blocks/tabs-block/editor.asset.php';
+	wp_enqueue_script(
+		'publisher_media_kit_tabs_frontend',
+		PUBLISHER_MEDIA_KIT_URL . 'dist/blocks/tabs-block/editor.js',
+		[ 'wp-blocks'],// $tabs_dep['dependencies'],
+		$tabs_dep['version'],
+		true
+	);*/
+
+	$tabs_item_dep = require_once PUBLISHER_MEDIA_KIT_PATH . 'dist/blocks/tabs-item-block/editor.asset.php';
+	wp_enqueue_script(
+		'publisher_media_kit_tabs_item_frontend',
+		PUBLISHER_MEDIA_KIT_URL . 'dist/blocks/tabs-item-block/editor.js',
+		$tabs_item_dep['dependencies'],
+		$tabs_item_dep['version'],
+		true
+	);
+
 }
 
 /**
@@ -169,14 +187,6 @@ function admin_scripts() {
 		PUBLISHER_MEDIA_KIT_VERSION,
 		true
 	);
-
-	/*wp_enqueue_script(
-		'publisher_media_kit_admin_blocks',
-		PUBLISHER_MEDIA_KIT_URL . "dist/blocks/single-content-block/editor.js",
-		[],
-		PUBLISHER_MEDIA_KIT_VERSION,
-		true
-	);*/
 
 }
 
@@ -210,6 +220,12 @@ function styles() {
 		);
 	}
 
+	/*wp_enqueue_style(
+		'publisher_media_kit_tabs_frontend',
+		PUBLISHER_MEDIA_KIT_URL . 'dist/blocks/tabs-block/editor.css',
+		[],
+		PUBLISHER_MEDIA_KIT_VERSION
+	);*/
 }
 
 /**
