@@ -107,11 +107,6 @@ const TabsEdit = (props) => {
 		}
 	};
 
-	const onChangetitle = ( newTitle ) => {
-		console.log('new title:' + newTitle);
-		setAttributes( { tabsTitle: newTitle } );
-	};
-
 	const DisplayTabPanel = () => {
 		// eslint-disable-next-line react/prop-types
 		const tabPanels = innerBlocks.map((innerBlock) => {
