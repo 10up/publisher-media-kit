@@ -13,7 +13,7 @@ import { compose, ifCondition } from '@wordpress/compose';
 import { useState, useEffect, Fragment } from '@wordpress/element';
 import { withSelect, withDispatch } from '@wordpress/data';
 import { Button, PanelBody, ToggleControl, NavigableMenu } from '@wordpress/components';
-import { InnerBlocks, InspectorControls } from '@wordpress/block-editor';
+import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
 import { applyFilters } from '@wordpress/hooks';
 import { __ } from '@wordpress/i18n';
 
@@ -30,7 +30,7 @@ const FilterableTabsFooter = createFilterableComponent('tenup.tabs.footer');
 
 const TabsEdit = (props) => {
 	const {
-		attributes: { tabVertical },
+		attributes: { tabVertical, tabsTitle },
 		setAttributes,
 		isSelected,
 		className,
@@ -107,6 +107,11 @@ const TabsEdit = (props) => {
 		}
 	};
 
+	const onChangetitle = ( newTitle ) => {
+		console.log('new title:' + newTitle);
+		setAttributes( { tabsTitle: newTitle } );
+	};
+
 	const DisplayTabPanel = () => {
 		// eslint-disable-next-line react/prop-types
 		const tabPanels = innerBlocks.map((innerBlock) => {
@@ -169,7 +174,13 @@ const TabsEdit = (props) => {
 		});
 
 		return (
-			<Fragment>
+			<Fragment className="alignwide">
+				<RichText
+					tagName="p"
+					className="pmk-tabs-title"
+					onChange={(newTitle) => setAttributes({ tabsTitle: newTitle })}
+					value={tabsTitle}
+				/>
 				<NavigableMenu
 					stopNavigationEvents
 					eventToOffset={() => {

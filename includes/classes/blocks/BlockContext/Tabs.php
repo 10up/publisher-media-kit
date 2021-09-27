@@ -56,7 +56,9 @@ class Tabs {
 		if ( $block['innerBlocks'] ) {
 
 			// Add tab navigation controls
-			$tabs = '<div class="tab-control"><ul class="tab-list" role="tablist">';
+			$tabs = '<div class="tab-control"><div class="tab-control"><div class="tabs-header">
+				<p class="tab-title">' . $block['attrs']['tabsTitle'] . '</p>
+				<ul class="tab-list" role="tablist">';
 
 			if ( is_array( $block['innerBlocks'] ) ) {
 				foreach ( $block['innerBlocks'] as $inner_block ) {
@@ -68,6 +70,7 @@ class Tabs {
 						<a href="#' . esc_attr( $id ) . '" role="tab" aria-controls="' . esc_attr( $id ) . '">' . esc_html( $header ) . '</a>
 					</li>';
 				}
+				$tabs .= '</ul></div></div>';
 			}
 
 			$block_content = str_replace( '<!-- Tabs Placeholder -->', $tabs, $block_content );

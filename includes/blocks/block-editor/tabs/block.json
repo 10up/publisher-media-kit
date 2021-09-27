@@ -46,7 +46,10 @@
 		"tabVertical": {
 			"type": "boolean",
 			"default": false
-		}
+		},
+    "tabsTitle": {
+      "type": "string"
+    }
   },
   "supports": {
     "html": false
