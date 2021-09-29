@@ -1,0 +1,26 @@
+.wp-block-group .pmk-audience-profiles {
+
+	& h2 {
+		border-bottom: 1px solid var(--pmk-global-color-border);
+		margin-bottom: var(--pmk-spacing-components);
+		padding-bottom: var(--pmk-spacing-internal-xsmall);
+	}
+
+	& .wp-block-image {
+		align-items: center;
+		background-color: var(--pmk-global-color-background-focus);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		height: 14.6875rem; /* 235px */
+		padding: var(--pmk-spacing-internal-medium);
+		width: 14.6875rem; /* 235px */
+	}
+
+	& p {
+		font-size: var(--pmk-text-base-font-size);
+		line-height: var(--pmk-text-base-line-height);
+		margin-top: var(--pmk-spacing-related);
+	}
+}

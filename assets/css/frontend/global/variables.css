@@ -1,0 +1,74 @@
+/*
+ * PMK specific variables
+ */
+:root {
+
+	/* Colors */
+	--pmk-c-black: #000;
+	--pmk-c-white: #fff;
+	--pmk-c-grey-darker: #111;
+	--pmk-c-sapphire: #041133;
+	--pmk-c-ghost-white: #f8f9ff;
+	--pmk-c-light-salmon: #fc9e7f;
+	--pmk-c-light-slate-blue: #6785ff;
+	--pmk-c-neon-blue: #1a48ff;
+	--pmk-c-pattens-blue: #ebf0f7;
+
+	--pmk-box-shadow: 0 2px 31px rgba(0, 0, 0, 0.0968368);
+	--pmk-border-radius: 0.625rem; /* 10px */
+
+	/* Font Families */
+	--pmk-font-family-base: "Roboto", sans-serif;
+
+	/* Font Weights */
+	--pmk-font-weight-thin: 100;
+	--pmk-font-weight-extra-light: 200;
+	--pmk-font-weight-light: 300;
+	--pmk-font-weight-normal: 400;
+	--pmk-font-weight-medium: 500;
+	--pmk-font-weight-semi-bold: 600;
+	--pmk-font-weight-bold: 700;
+	--pmk-font-weight-extra-bold: 800;
+	--pmk-font-weight-black: 900;
+
+	/* Font Sizes */
+	--pmk-xs-font-size: 1rem; /* 16px */
+	--pmk-xs-line-height: 1.625rem; /* 26px */
+
+	--pmk-s-font-size: 1.25rem; /* 20px */
+	--pmk-s-line-height: 1.5rem; /* 24px */
+
+	--pmk-sm-font-size: 1.375rem; /* 22px */
+	--pmk-sm-line-height: 2rem; /* 32px */
+
+	--pmk-m-font-size: 1.5rem; /* 24px */
+	--pmk-m-line-height: 1.75rem; /* 28px */
+
+	--pmk-l-font-size: 2.1875rem; /* 35px */
+	--pmk-l-line-height: 2.5625rem; /* 41px */
+
+	--pmk-xl-font-size: 3.125rem; /* 50px */
+	--pmk-xl-line-height: 3.625rem; /* 58px */
+
+	/* Spacings */
+	--pmk-spacing-1: 0.0625rem; /* 1px */
+	--pmk-spacing-4: 0.25rem; /* 4px */
+	--pmk-spacing-6: 0.375rem; /* 6px */
+	--pmk-spacing-8: 0.5rem; /* 8px */
+	--pmk-spacing-10: 0.625rem; /* 10px */
+	--pmk-spacing-12: 0.75rem; /* 12px */
+	--pmk-spacing-16: 1rem; /* 16px */
+	--pmk-spacing-20: 1.25rem; /* 20px */
+	--pmk-spacing-24: 1.5rem; /* 24px */
+	--pmk-spacing-28: 1.75rem; /* 28px */
+	--pmk-spacing-30: 1.875rem; /* 30px */
+	--pmk-spacing-36: 2.25rem; /* 36px */
+	--pmk-spacing-40: 2.5rem; /* 40px */
+	--pmk-spacing-54: 3.375rem; /* 54px */
+	--pmk-spacing-56: 3.5rem; /* 56px */
+	--pmk-spacing-60: 3.75rem; /* 60px */
+	--pmk-spacing-65: 4.0625rem; /* 65px */
+	--pmk-spacing-70: 4.375rem; /* 70px */
+	--pmk-spacing-80: 5rem; /* 80px */
+	--pmk-spacing-100: 6.25rem; /* 100px */
+}

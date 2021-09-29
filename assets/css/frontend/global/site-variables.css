@@ -1,0 +1,58 @@
+/*
+ * Site variables
+ * These variables can be overridden
+ */
+:root {
+
+	/* Base colors */
+	--pmk-global-color-primary: var(--global--color-primary, --pmk-c-grey-darker);
+	--pmk-global-color-secondary: var(--global--color-secondary, --pmk-c-pattens-blue);
+	--pmk-global-color-background: var(--global--color-background, --pmk-c-white);
+	--pmk-global-color-background-focus: var(--global--color-secondary, --pmk-c-ghost-white);
+	--pmk-global-color-border: var(--global--color-border, --pmk-c-pattens-blue);
+
+	/* Buttons */
+	--pmk-color-button-primary-background: var(--pmk-c-light-slate-blue);
+	--pmk-color-button-primary-text: var(--pmk-c-white);
+	--pmk-color-button-primary-background-hover: var(--pmk-c-neon-blue);
+	--pmk-color-button-primary-text-hover: var(--pmk-c-white);
+
+	/* Spacings */
+	
+	/* Spacing between unrelated components */
+	--pmk-spacing-components: var(--pmk-spacing-80);
+
+	/* Spacing between related components */
+	--pmk-spacing-related: var(--pmk-spacing-30);
+	
+	/* Spacing between internal elements of the component */
+	--pmk-spacing-internal-xsmall: var(--pmk-spacing-8);
+	--pmk-spacing-internal-small: var(--pmk-spacing-12);
+	--pmk-spacing-internal-medium: var(--pmk-spacing-20);
+	--pmk-spacing-internal-large: var(--pmk-spacing-30);
+	--pmk-spacing-internal-xlarge: var(--pmk-spacing-40);
+
+	/* Font Family */
+	--pmk-global-font-family: var(--global--font-primary, --pmk-font-family-base);
+
+	/* Typography */
+	--pmk-heading-1-font-size: var(--pmk-xl-font-size);
+	--pmk-heading-1-line-height: var(--pmk-xl-line-height);
+	--pmk-heading-2-font-size: var(--pmk-l-font-size);
+	--pmk-heading-2-line-height: var(--pmk-l-line-height);
+	--pmk-heading-3-font-size: var(--pmk-m-font-size);
+	--pmk-heading-3-line-height: var(--pmk-m-line-height);
+	--pmk-heading-4-font-size: var(--pmk-sm-font-size);
+	--pmk-heading-4-line-height: var(--pmk-sm-line-height);
+	--pmk-heading-5-font-size: var(--pmk-s-font-size);
+	--pmk-heading-5-line-height: var(--pmk-s-line-height);
+	--pmk-heading-6-font-size: var(--pmk-xs-font-size);
+	--pmk-heading-6-line-height: var(--pmk-xs-line-height);
+
+	--pmk-text-small-font-size: var(--pmk-xs-font-size);
+	--pmk-text-small-line-height: var(--pmk-xs-line-height);
+	--pmk-text-base-font-size: var(--pmk-sm-font-size);
+	--pmk-text-base-line-height: var(--pmk-sm-line-height);
+	--pmk-text-large-font-size: var(--pmk-m-font-size);
+	--pmk-text-large-line-height: var(--pmk-m-line-height);
+}

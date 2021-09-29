@@ -1,0 +1,7 @@
+.wp-block-buttons {
+
+	& .wp-block-button__link {
+		background: var(--pmk-color-button-primary-background);
+		color: var(--pmk-color-button-primary-text);
+	}
+}
