@@ -3,25 +3,13 @@
 	margin-top: 0;
 	position: relative;
 
+	@mixin has-full-width-background;
+
 	&::after,
 	&::before {
-		background-color: var(--pmk-global-color-background-focus);
 		bottom: calc(-1 * var(--pmk-spacing-components));
-		content: "";
 		height: calc(50% + var(--pmk-spacing-components));
-		position: absolute;
-		width: 80vw;
-		z-index: 0;
-	}
-
-	&::before {
-		left: 50%;
-		margin-left: -60vw;
-	}
-
-	&::after {
-		margin-right: -60vw;
-		right: 50%;
+		top: unset;
 	}
 
 	& .pmk-stats-column {

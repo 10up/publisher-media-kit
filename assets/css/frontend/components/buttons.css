@@ -1,7 +1,16 @@
 .wp-block-buttons {
 
-	& .wp-block-button__link {
-		background: var(--pmk-color-button-primary-background);
-		color: var(--pmk-color-button-primary-text);
+	& .pmk-button {
+
+		& .wp-block-button__link {
+			background-color: var(--pmk-color-button-primary-background);
+			color: var(--pmk-color-button-primary-text);
+
+			&:hover,
+			&:focus {
+				background-color: var(--pmk-color-button-primary-background-hover);
+				color: var(--pmk-color-button-primary-text-hover);
+			}
+		}
 	}
 }
