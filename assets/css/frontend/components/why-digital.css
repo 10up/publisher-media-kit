@@ -1,0 +1,40 @@
+.entry .entry-content .wp-block-group.pmk-why-digital {
+	background-color: var(--pmk-global-color-background-focus);
+	color: var(--pmk-global-color-text-on-background);
+	margin-top: 0;
+	padding: var(--pmk-spacing-internal-medium) 0 var(--pmk-spacing-internal-xlarge);
+
+	@mixin has-full-width-background;
+
+	& h2 {
+		font-size: var(--pmk-heading-2-font-size);
+		font-weight: var(--pmk-font-weight-normal);
+		line-height: var(--pmk-heading-2-line-height);
+		margin-bottom: var(--pmk-spacing-internal-xlarge);
+	}
+
+	& h3 {
+		font-size: var(--pmk-heading-5-font-size);
+		font-weight: var(--pmk-font-weight-normal);
+		line-height: var(--pmk-heading-5-line-height);
+		margin-bottom: var(--pmk-spacing-internal-small);
+	}
+
+	& p {
+		color: var(--pmk-global-color-text-on-background-secondary);
+		font-size: var(--pmk-text-small-font-size);
+		line-height: var(--pmk-text-small-line-height);
+		margin-top: 0;
+	}
+
+	& .wp-block-columns {
+		margin-bottom: var(--pmk-spacing-internal-xlarge);
+	}
+
+	& .wp-block-column {
+		
+		@media (--wp-medium-max) {
+			margin-bottom: var(--pmk-spacing-internal-medium);
+		}
+	}
+}

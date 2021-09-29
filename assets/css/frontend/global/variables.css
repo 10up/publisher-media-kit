@@ -11,15 +11,11 @@
 	--pmk-c-ghost-white: #f8f9ff;
 	--pmk-c-light-salmon: #fc9e7f;
 	--pmk-c-light-slate-blue: #6785ff;
-	--pmk-c-neon-blue: #1a48ff;
 	--pmk-c-pattens-blue: #ebf0f7;
 	--pmk-c-comet: #626679;
 
 	--pmk-box-shadow: 0 2px 31px rgba(0, 0, 0, 0.0968368);
 	--pmk-border-radius: 0.625rem; /* 10px */
-
-	/* Font Families */
-	--pmk-font-family-base: "Roboto", sans-serif;
 
 	/* Font Weights */
 	--pmk-font-weight-thin: 100;

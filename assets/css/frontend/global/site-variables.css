@@ -16,11 +16,12 @@
 	--pmk-global-color-background-focus: var(--global--color-secondary, var(--pmk-c-ghost-white));
 	--pmk-global-color-border: var(--global--color-border, var(--pmk-c-pattens-blue));
 	--pmk-global-color-text-on-background: var(--global--color-white, var(--pmk-c-sapphire));
+	--pmk-global-color-text-on-background-secondary: var(--global--color-light-gray, var(--pmk-global-color-secondary));
 
 	/* Buttons */
 	--pmk-color-button-primary-background: var(--pmk-c-light-slate-blue);
 	--pmk-color-button-primary-text: var(--pmk-c-white);
-	--pmk-color-button-primary-background-hover: var(--pmk-c-neon-blue);
+	--pmk-color-button-primary-background-hover: var(--pmk-c-sapphire);
 	--pmk-color-button-primary-text-hover: var(--pmk-c-white);
 
 	/* Spacings */
@@ -38,10 +39,7 @@
 	--pmk-spacing-internal-small: var(--pmk-spacing-12);
 	--pmk-spacing-internal-medium: var(--pmk-spacing-20);
 	--pmk-spacing-internal-large: var(--pmk-spacing-30);
-	--pmk-spacing-internal-xlarge: var(--pmk-spacing-40);
-
-	/* Font Family */
-	--pmk-global-font-family: var(--global--font-primary, --pmk-font-family-base);
+	--pmk-spacing-internal-xlarge: var(--pmk-spacing-56);
 
 	/* Typography */
 	--pmk-heading-1-font-size: var(--pmk-xl-font-size);
