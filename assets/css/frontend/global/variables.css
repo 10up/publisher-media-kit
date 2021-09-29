@@ -13,6 +13,7 @@
 	--pmk-c-light-slate-blue: #6785ff;
 	--pmk-c-neon-blue: #1a48ff;
 	--pmk-c-pattens-blue: #ebf0f7;
+	--pmk-c-comet: #626679;
 
 	--pmk-box-shadow: 0 2px 31px rgba(0, 0, 0, 0.0968368);
 	--pmk-border-radius: 0.625rem; /* 10px */
@@ -71,4 +72,6 @@
 	--pmk-spacing-70: 4.375rem; /* 70px */
 	--pmk-spacing-80: 5rem; /* 80px */
 	--pmk-spacing-100: 6.25rem; /* 100px */
+
+	--pmk-max-width: 78.75rem; /* 1260px */
 }

@@ -5,11 +5,17 @@
 :root {
 
 	/* Base colors */
+
+	/**
+	 * Checking if Theme variables (Twenty Twenty One) are present
+	 * otherwise falling back to PMK variables
+	 */
 	--pmk-global-color-primary: var(--global--color-primary, var(--pmk-c-grey-darker));
-	--pmk-global-color-secondary: var(--global--color-secondary, var(--pmk-c-pattens-blue));
+	--pmk-global-color-secondary: var(--global--color-secondary, var(--pmk-c-comet));
 	--pmk-global-color-background: var(--global--color-background, var(--pmk-c-white));
 	--pmk-global-color-background-focus: var(--global--color-secondary, var(--pmk-c-ghost-white));
 	--pmk-global-color-border: var(--global--color-border, var(--pmk-c-pattens-blue));
+	--pmk-global-color-text-on-background: var(--global--color-white, var(--pmk-c-sapphire));
 
 	/* Buttons */
 	--pmk-color-button-primary-background: var(--pmk-c-light-slate-blue);
@@ -18,6 +24,8 @@
 	--pmk-color-button-primary-text-hover: var(--pmk-c-white);
 
 	/* Spacings */
+
+	--pmk-global-max-width: var(--responsive--alignwide-width, var(--pmk-max-width));
 	
 	/* Spacing between unrelated components */
 	--pmk-spacing-components: var(--pmk-spacing-70);
