@@ -1,8 +1,9 @@
-.wp-block-group .pmk-audience-profiles {
+.entry .entry-content .wp-block-group.pmk-audience-profiles {
+	margin-bottom: var(--pmk-spacing-components);
 
 	& h2 {
 		border-bottom: 1px solid var(--pmk-global-color-border);
-		margin-bottom: var(--pmk-spacing-components);
+		margin-bottom: var(--pmk-spacing-internal-xlarge);
 		padding-bottom: var(--pmk-spacing-internal-xsmall);
 	}
 
@@ -22,5 +23,10 @@
 		font-size: var(--pmk-text-base-font-size);
 		line-height: var(--pmk-text-base-line-height);
 		margin-top: var(--pmk-spacing-related);
+	}
+
+	& figure {
+		max-height: 8.5625rem; /* 137px */
+		max-width: 8.5625rem; /* 137px */
 	}
 }

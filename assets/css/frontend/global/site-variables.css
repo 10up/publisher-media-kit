@@ -5,11 +5,11 @@
 :root {
 
 	/* Base colors */
-	--pmk-global-color-primary: var(--global--color-primary, --pmk-c-grey-darker);
-	--pmk-global-color-secondary: var(--global--color-secondary, --pmk-c-pattens-blue);
-	--pmk-global-color-background: var(--global--color-background, --pmk-c-white);
-	--pmk-global-color-background-focus: var(--global--color-secondary, --pmk-c-ghost-white);
-	--pmk-global-color-border: var(--global--color-border, --pmk-c-pattens-blue);
+	--pmk-global-color-primary: var(--global--color-primary, var(--pmk-c-grey-darker));
+	--pmk-global-color-secondary: var(--global--color-secondary, var(--pmk-c-pattens-blue));
+	--pmk-global-color-background: var(--global--color-background, var(--pmk-c-white));
+	--pmk-global-color-background-focus: var(--global--color-secondary, var(--pmk-c-ghost-white));
+	--pmk-global-color-border: var(--global--color-border, var(--pmk-c-pattens-blue));
 
 	/* Buttons */
 	--pmk-color-button-primary-background: var(--pmk-c-light-slate-blue);
@@ -20,7 +20,7 @@
 	/* Spacings */
 	
 	/* Spacing between unrelated components */
-	--pmk-spacing-components: var(--pmk-spacing-80);
+	--pmk-spacing-components: var(--pmk-spacing-70);
 
 	/* Spacing between related components */
 	--pmk-spacing-related: var(--pmk-spacing-30);
