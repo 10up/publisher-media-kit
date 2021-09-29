@@ -60,6 +60,16 @@ function init() {
  * @return void
  */
 function activate() {
+
+	if ( ! current_user_can( 'activate_plugins' ) ) return;
+
+	$n = function( $function ) {
+		return __NAMESPACE__ . "\\$function";
+	};
+
+	// Create a media kit page.
+	add_action('publisher_media_kit_init', $n('create_media_kit_page'));
+
 	// First load the init scripts in case any rewrite functionality is being loaded
 	init();
 	flush_rewrite_rules();
@@ -76,6 +86,47 @@ function deactivate() {
 
 }
 
+/**
+ * A function to create a Publisher Media Kit page automatically.
+ * A page will be created with 'pmk-page' meta key.
+ * It also checks if a page with 'pmk-page' exists already or not.
+ */
+function create_media_kit_page()
+{
+	// Check if the Media Kit page already created in past.
+	global $wpdb;
+
+	$pmk_page_exists = $wpdb->get_row(
+		"SELECT * FROM {$wpdb->prefix}postmeta as pm
+					LEFT JOIN {$wpdb->prefix}posts as p
+					ON p.ID = pm.post_id
+					WHERE pm.meta_key = 'pmk-page'
+					AND p.post_status != 'trash'
+					AND p.post_type = 'page'
+					", 'ARRAY_A');
+
+	if (null === $pmk_page_exists) {
+
+		$current_user = wp_get_current_user();
+
+		$pmk_page_content = 'Hey there! 👋🏻';
+
+		// create post object
+		$page = array(
+			'post_title' => __('Publisher Media Kit'),
+			'post_status' => 'draft',
+			'post_author' => $current_user->ID,
+			'post_type' => 'page',
+			'post_content' => $pmk_page_content,
+		);
+
+		// insert the post into the database
+		$post_id = wp_insert_post($page);
+
+		// insert post meta for identity.
+		add_post_meta($post_id, 'pmk-page', 1);
+	}
+}
 
 /**
  * The list of knows contexts for enqueuing scripts/styles.
