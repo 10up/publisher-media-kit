@@ -1,6 +1,7 @@
 .entry .entry-content .wp-block-group.pmk-why-digital {
 	background-color: var(--pmk-global-color-background-focus);
 	color: var(--pmk-global-color-text-on-background);
+	margin-bottom: var(--pmk-spacing-components);
 	margin-top: 0;
 	padding: var(--pmk-spacing-internal-medium) 0 var(--pmk-spacing-internal-xlarge);
 

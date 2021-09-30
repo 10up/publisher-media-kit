@@ -10,15 +10,16 @@
 .entry .entry-content .wp-block-group,
 .entry .entry-content .wp-block-group.alignfull,
 .entry .entry-content .wp-block-group.alignwide {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: auto !important;
+	margin-right: auto !important;
 	max-width: var(--pmk-global-max-width) !important;
 
 	& .wp-block-columns,
 	& .wp-block-columns.alignfull,
-	& .wp-block-columns.alignwide {
-		margin-left: auto;
-		margin-right: auto;
+	& .wp-block-columns.alignwide,
+	& .tabs {
+		margin-left: auto !important;
+		margin-right: auto !important;
 		max-width: var(--pmk-global-max-width) !important;
 	}
 }
