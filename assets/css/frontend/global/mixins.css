@@ -2,6 +2,7 @@
 	background-color: var(--pmk-global-color-background);
 	border-radius: var(--pmk-border-radius);
 	box-shadow: var(--pmk-box-shadow);
+	color: var(--pmk-global-color-primary);
 	padding: var(--pmk-spacing-internal-xlarge) var(--pmk-spacing-internal-medium);
 }
 

@@ -1,0 +1,89 @@
+.entry .entry-content .wp-block-group.pmk-packages {
+	color: var(--pmk-global-color-primary);
+	margin-bottom: var(--pmk-spacing-components);
+	padding: var(--pmk-spacing-internal-medium) 0 var(--pmk-spacing-internal-xlarge);
+
+	@mixin has-full-width-background;
+
+	& h2 {
+		color: var(--pmk-global-color-text-on-background);
+		font-size: var(--pmk-heading-2-font-size);
+		font-weight: var(--pmk-font-weight-normal);
+		line-height: var(--pmk-heading-2-line-height);
+	}
+
+	& p {
+		color: var(--pmk-global-color-text-on-background-secondary);
+		font-size: var(--pmk-text-small-font-size);
+		line-height: var(--pmk-text-small-line-height);
+		margin: 0 auto var(--pmk-spacing-internal-medium);
+		max-width: 80%;
+	}
+
+	& .wp-block-column {
+		display: flex;
+		flex-direction: column;
+		font-size: var(--pmk-text-small-font-size);
+		line-height: var(--pmk-text-small-line-height);
+		
+		@mixin has-box-shadow;
+
+		padding: var(--pmk-spacing-internal-large) var(--pmk-spacing-internal-large) var(--pmk-spacing-internal-xlarge);
+		
+		@media (--wp-medium-max) {
+			margin-bottom: var(--pmk-spacing-internal-medium);
+		}
+
+		& h3 {
+			font-size: var(--pmk-heading-4-font-size);
+			line-height: var(--pmk-heading-4-line-height);
+			margin-bottom: var(--pmk-spacing-internal-medium);
+		}
+
+		& p {
+			color: var(--pmk-global-color-secondary);
+			max-width: unset;
+		}
+
+		& ul {
+			color: var(--pmk-global-color-secondary);
+			flex-grow: 1;
+			list-style-type: none;
+			margin: 0 0 var(--pmk-spacing-internal-large);
+			padding: 0 var(--pmk-spacing-internal-medium);
+		}
+
+		& li {
+			align-items: center;
+			display: flex;
+			margin-bottom: var(--pmk-spacing-internal-medium);
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			&::before {
+				background-color: var(--pmk-global-color-accent-secondary);
+				content: "";
+				display: block;
+				height: 15px;
+				margin-right: var(--pmk-spacing-internal-xsmall);
+				-webkit-mask-image: url("../images/svg/ico-tick.svg");
+				mask-image: url("../images/svg/ico-tick.svg");
+				-webkit-mask-size: 20px 15px;
+				mask-size: 20px 15px;
+				position: relative;
+				width: 20px;
+			}
+		}
+	}
+
+	& .pmk-big-font {
+		border-top: 1px solid var(--pmk-global-color-border);
+		color: var(--pmk-global-color-secondary);
+		font-size: var(--pmk-text-large-font-size);
+		line-height: var(--pmk-text-large-line-height);
+		margin: 0 auto;
+		padding-top: var(--pmk-spacing-internal-medium);
+	}
+}

@@ -12,8 +12,8 @@
 	 */
 	--pmk-global-color-primary: var(--global--color-primary, var(--pmk-c-grey-darker));
 	--pmk-global-color-secondary: var(--global--color-secondary, var(--pmk-c-comet));
-	--pmk-global-color-accent: var(--global--color-red, var(--pmk-c-light-slate-blue));
-	--pmk-global-color-accent-secondary: var(--global--color-blue, var(--pmk-c-light-salmon));
+	--pmk-global-color-accent: var(--global--color-gray, var(--pmk-c-light-slate-blue));
+	--pmk-global-color-accent-secondary: var(--global--color-gray, var(--pmk-c-light-salmon));
 	--pmk-global-color-background: var(--global--color-background, var(--pmk-c-white));
 	--pmk-global-color-background-focus: var(--global--color-secondary, var(--pmk-c-ghost-white));
 	--pmk-global-color-border: var(--global--color-border, var(--pmk-c-pattens-blue));
