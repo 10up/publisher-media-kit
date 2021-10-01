@@ -1,0 +1,15 @@
+.entry .entry-content .wp-block-cover.pmk-cover {
+	margin-bottom: var(--pmk-spacing-components);
+
+	& h1 {
+		font-size: var(--pmk-heading-1-font-size);
+		font-weight: var(--pmk-font-weight-normal);
+		line-height: var(--pmk-heading-1-font-size);
+	}
+
+	& p {
+		font-size: var(--pmk-text-small-font-size);
+		line-height: var(--pmk-text-small-line-height);
+		margin-bottom: var(--pmk-spacing-internal-medium);
+	}
+}

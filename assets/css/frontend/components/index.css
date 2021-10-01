@@ -3,14 +3,16 @@
 @import url("audience-profiles.css");
 @import url("buttons.css");
 @import url("content-grid.css");
+@import url("cover.css");
 @import url("our-packages.css");
+@import url("question-block.css");
 @import url("stats.css");
 @import url("tabs.css");
 @import url("why-digital.css");
 
-.entry .entry-content .wp-block-group,
-.entry .entry-content .wp-block-group.alignfull,
-.entry .entry-content .wp-block-group.alignwide {
+/* .entry .entry-content .wp-block-group:not(.pmk-cover),
+.entry .entry-content .wp-block-group.alignfull:not(.pmk-cover),
+.entry .entry-content .wp-block-group.alignwide:not(.pmk-cover) {
 	margin-left: auto !important;
 	margin-right: auto !important;
 	max-width: var(--pmk-global-max-width) !important;
@@ -23,4 +25,4 @@
 		margin-right: auto !important;
 		max-width: var(--pmk-global-max-width) !important;
 	}
-}
+} */

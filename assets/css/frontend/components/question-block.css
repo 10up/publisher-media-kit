@@ -1,0 +1,30 @@
+.entry .entry-content .wp-block-group.pmk-question-block {
+	align-items: center;
+	background-color: var(--pmk-global-color-background-focus);
+	color: var(--pmk-global-color-text-on-background);
+	display: flex;
+	justify-content: center;
+	padding: var(--pmk-spacing-internal-large);
+
+	& .wp-block-column {
+		margin: 0;
+	}
+
+	& .wp-block-group__inner-container,
+	& .wp-block-columns {
+		flex-grow: 1;
+	}
+
+	& .pmk-question-left {
+		align-items: center;
+		display: flex;
+		flex-grow: 2;
+		font-weight: var(--pmk-font-weight-normal);
+		justify-content: flex-end;
+		margin-right: var(--pmk-spacing-internal-medium);
+	}
+
+	& .pmk-question-right {
+		flex-grow: 1;
+	}
+}
