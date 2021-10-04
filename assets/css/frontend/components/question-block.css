@@ -1,10 +1,24 @@
 div.wp-block-group.pmk-question-block {
-	align-items: center;
 	background-color: var(--pmk-global-color-background-focus);
 	color: var(--pmk-global-color-text-on-background);
-	display: flex;
-	justify-content: center;
-	padding: var(--pmk-spacing-internal-large);
+
+	@media (--bp-medium) {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	& .wp-block-columns {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: var(--pmk-spacing-internal-large);
+
+		@media (--bp-medium) {
+			flex-direction: row;
+		}
+	}
 
 	& .wp-block-column {
 		margin: 0;
@@ -12,20 +26,33 @@ div.wp-block-group.pmk-question-block {
 
 	& .wp-block-group__inner-container,
 	& .wp-block-columns {
-		flex-grow: 1;
+
+		@media (--bp-medium) {
+			flex-grow: 1;
+		}
 	}
 
 	& .pmk-question-left {
 		align-items: center;
 		display: flex;
-		flex-grow: 2;
 		font-weight: var(--pmk-font-weight-normal);
-		justify-content: flex-end;
-		margin-right: var(--pmk-spacing-internal-large);
+		margin-bottom: var(--pmk-spacing-internal-large);
+		text-align: center;
+
+		@media (--bp-medium) {
+			flex-grow: 2;
+			justify-content: flex-end;
+			margin-bottom: 0;
+			margin-right: var(--pmk-spacing-internal-large);
+			text-align: left;
+		}
 	}
 
 	& .pmk-question-right {
-		flex-grow: 1;
+
+		@media (--bp-medium) {
+			flex-grow: 1;
+		}
 	}
 
 	& h2 {

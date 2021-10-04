@@ -33,4 +33,11 @@ div.wp-block-group.pmk-audience-profiles {
 		max-height: 8.5625rem; /* 137px */
 		max-width: 8.5625rem; /* 137px */
 	}
+
+	& .wp-block-column {
+
+		@media (--wp-medium-max) {
+			margin-bottom: var(--pmk-spacing-internal-medium);
+		}
+	}
 }

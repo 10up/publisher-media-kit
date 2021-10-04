@@ -20,6 +20,8 @@
 	--pmk-global-color-text-on-background: var(--global--color-white, var(--pmk-c-sapphire));
 	--pmk-global-color-text-on-background-secondary: var(--global--color-light-gray, var(--pmk-global-color-secondary));
 
+	--pmk-alignwide-width: var(--responsive--alignwide-width, 100%);
+
 	/* Buttons */
 	--pmk-color-button-primary-background: var(--pmk-c-light-slate-blue);
 	--pmk-color-button-primary-text: var(--pmk-c-white);

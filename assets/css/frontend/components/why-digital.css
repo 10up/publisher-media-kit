@@ -30,6 +30,10 @@ div.wp-block-group.pmk-why-digital {
 
 	& .wp-block-columns {
 		margin-bottom: var(--pmk-spacing-internal-xlarge);
+
+		@media (--wp-medium-max) {
+			padding: var(--pmk-spacing-internal-large);
+		}
 	}
 
 	& .wp-block-column {

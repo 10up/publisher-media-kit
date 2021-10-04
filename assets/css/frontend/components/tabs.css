@@ -6,8 +6,8 @@ div.wp-block-group.pmk-tabs-table {
 		& .tabs {
 			margin-left: auto !important; /* !important to override group styles */
 			margin-right: auto !important;
-			max-width: var(--responsive--alignfull-width) !important;
-			width: var(--responsive--alignwide-width) !important;
+			max-width: var(--pmk-alignwide-width) !important;
+			width: var(--pmk-alignwide-width) !important;
 		}
 	}
 
