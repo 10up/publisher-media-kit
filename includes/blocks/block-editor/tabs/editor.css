@@ -3,10 +3,9 @@
 :root {
 	--c-appender-button-bg: #000;
 	--c-white: #fff;
-	--c-gray: #777;
 	--c-light-grey: #d3d3d3;
 	--c-placeholder-text: #707070;
-	--tab-item-width: 120px;
+	--tab-item-width: 200px;
 	--tab-item-height: 60px;
 }
 
@@ -27,8 +26,6 @@
 			background-color: var(--c-white);
 			box-sizing: border-box;
 			display: flex;
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-			font-size: 13px;
 			height: calc(var(--tab-item-height) - 2px);
 			left: 0;
 			padding: 6px 12px;
@@ -42,9 +39,22 @@
 			}
 
 			& .rich-text {
-				line-height: 1.2em;
+				height: 100%;
+				line-height: 1.2;
+				position: relative;
 				text-align: center;
 				width: 100%;
+
+				&::after {
+					background-color: var(--pmk-global-color-accent);
+					bottom: 0;
+					content: "";
+					display: block;
+					height: 4px;
+					left: 0;
+					position: absolute;
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -67,33 +77,11 @@
 				}
 			}
 		}
+	}
 
-		& .wp-block-tenup-tabs {
-
-			&.tabs-horizontal {
-
-				& .components-button {
-
-					&:first-child {
-						border-bottom-color: var(--c-white);
-					}
-				}
-			}
-
-			&.tabs-vertical {
-
-				& .components-button {
-
-					&:first-child {
-						border-right-color: var(--c-white);
-					}
-				}
-			}
-
-			& .is-active {
-				border-bottom-color: var(--c-gray);
-			}
-		}
+	& .components-button {
+		font-family: unset;
+		font-size: unset;
 	}
 }
 
@@ -118,7 +106,6 @@
 	}
 
 	& .tab-item {
-		border: 1px solid var(--c-gray);
 		display: inline-block;
 		height: var(--tab-item-height);
 		text-align: center;
@@ -148,14 +135,6 @@
 			align-items: center;
 			display: flex;
 			font-weight: 500;
-
-			&:hover {
-				color: #1e1e1e;
-			}
-		}
-
-		&.untitled {
-			color: #6c6c6c;
 		}
 	}
 
@@ -171,11 +150,6 @@
 			flex-direction: column;
 			white-space: normal;
 
-			& .components-tab-panel__tabs-item.is-active {
-				border-bottom-color: var(--c-gray);
-				border-right-color: var(--c-white);
-			}
-
 			& .add-tab-button {
 				display: block;
 				margin-left: 0;
@@ -188,17 +162,6 @@
 
 		& .untitled {
 			color: var(--c-placeholder-text);
-		}
-	}
-
-	&.components-tab-panel__tabs-item-is-editing .components-tab-panel__tabs {
-
-		& > :not(.is-active) {
-			border-bottom-color: var(--c-gray) !important;
-		}
-
-		& .is-active {
-			border-bottom-color: var(--c-white) !important;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-.entry .entry-content .wp-block-group.pmk-packages {
+div.wp-block-group.pmk-packages {
 	color: var(--pmk-global-color-primary);
 	margin-bottom: var(--pmk-spacing-components);
 	padding: var(--pmk-spacing-internal-medium) 0 var(--pmk-spacing-internal-xlarge);

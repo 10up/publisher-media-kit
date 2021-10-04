@@ -1,4 +1,4 @@
-.entry .entry-content .wp-block-group.pmk-question-block {
+div.wp-block-group.pmk-question-block {
 	align-items: center;
 	background-color: var(--pmk-global-color-background-focus);
 	color: var(--pmk-global-color-text-on-background);

@@ -3,3 +3,12 @@
  * https://project-website.tld
  *
  */
+
+/* Global - global pieces like media queries, mixins and placholders */
+@import url("../frontend/global/index.css");
+
+/* Base - base styles such as fonts, typography, and wordpress overrides */
+@import url("../frontend/base/index.css");
+
+/* Components */
+@import url("../frontend/components/index.css");
