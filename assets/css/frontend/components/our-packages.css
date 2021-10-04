@@ -1,9 +1,13 @@
 div.wp-block-group.pmk-packages {
 	color: var(--pmk-global-color-primary);
 	margin-bottom: var(--pmk-spacing-components);
-	padding: var(--pmk-spacing-internal-medium) 0 var(--pmk-spacing-internal-xlarge);
 
-	@mixin has-full-width-background;
+	& .wp-block-group__inner-container {
+
+		@mixin has-full-width-background;
+
+		padding: var(--pmk-spacing-internal-medium) 0 var(--pmk-spacing-internal-xlarge);
+	}
 
 	& h2 {
 		color: var(--pmk-global-color-text-on-background);

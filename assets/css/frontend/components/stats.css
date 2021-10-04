@@ -3,13 +3,16 @@ div.wp-block-group.pmk-stats {
 	margin-top: 0;
 	position: relative;
 
-	@mixin has-full-width-background;
+	& .wp-block-group__inner-container {
 
-	&::after,
-	&::before {
-		bottom: calc(-1 * var(--pmk-spacing-components));
-		height: calc(50% + var(--pmk-spacing-components));
-		top: unset;
+		@mixin has-full-width-background;
+
+		&::after,
+		&::before {
+			bottom: calc(-1 * var(--pmk-spacing-components));
+			height: calc(50% + var(--pmk-spacing-components));
+			top: unset;
+		}
 	}
 
 	& .wp-block-column {
