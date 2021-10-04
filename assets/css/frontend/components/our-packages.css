@@ -28,7 +28,7 @@
 		
 		@mixin has-box-shadow;
 
-		padding: var(--pmk-spacing-internal-large) var(--pmk-spacing-internal-large) var(--pmk-spacing-internal-xlarge);
+		padding: var(--pmk-spacing-internal-large) var(--pmk-spacing-internal-medium) var(--pmk-spacing-internal-xlarge);
 		
 		@media (--wp-medium-max) {
 			margin-bottom: var(--pmk-spacing-internal-medium);
@@ -48,6 +48,8 @@
 		& ul {
 			color: var(--pmk-global-color-secondary);
 			flex-grow: 1;
+			font-size: var(--pmk-text-smaller-font-size);
+			line-height: var(--pmk-text-smaller-line-height);
 			list-style-type: none;
 			margin: 0 0 var(--pmk-spacing-internal-large);
 			padding: 0;
@@ -74,6 +76,10 @@
 				mask-size: 20px 15px;
 				position: relative;
 				width: 20px;
+			}
+
+			& strong {
+				margin-right: 3px;
 			}
 		}
 	}

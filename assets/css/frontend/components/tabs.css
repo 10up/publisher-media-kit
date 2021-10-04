@@ -1,5 +1,15 @@
-.pmk-tabs-table {
+.entry .entry-content .wp-block-group.pmk-tabs-table {
 	margin-bottom: var(--pmk-spacing-components);
+
+	&.alignwide {
+
+		& .tabs {
+			margin-left: auto !important; /* !important to override group styles */
+			margin-right: auto !important;
+			max-width: var(--responsive--alignfull-width) !important;
+			width: var(--responsive--alignwide-width) !important;
+		}
+	}
 
 	& .tab-title {
 		font-size: var(--pmk-heading-2-font-size);

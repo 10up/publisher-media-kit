@@ -21,10 +21,18 @@
 		flex-grow: 2;
 		font-weight: var(--pmk-font-weight-normal);
 		justify-content: flex-end;
-		margin-right: var(--pmk-spacing-internal-medium);
+		margin-right: var(--pmk-spacing-internal-large);
 	}
 
 	& .pmk-question-right {
 		flex-grow: 1;
+	}
+
+	& h2 {
+		font-weight: var(--pmk-font-weight-normal);
+	}
+
+	& .wp-block-button {
+		margin-bottom: 0;
 	}
 }

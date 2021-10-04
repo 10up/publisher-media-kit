@@ -1,5 +1,5 @@
 .entry .entry-content .wp-block-group.pmk-stats {
-	margin-bottom: var(--pmk-spacing-components);
+	margin-bottom: 0;
 	margin-top: 0;
 	position: relative;
 
@@ -12,7 +12,7 @@
 		top: unset;
 	}
 
-	& .pmk-stats-column {
+	& .wp-block-column {
 		z-index: 1;
 
 		@mixin has-box-shadow;

@@ -57,6 +57,8 @@
 	--pmk-heading-6-font-size: var(--pmk-xs-font-size);
 	--pmk-heading-6-line-height: var(--pmk-xs-line-height);
 
+	--pmk-text-smaller-font-size: var(--pmk-xxs-font-size);
+	--pmk-text-smaller-line-height: var(--pmk-xxs-line-height);
 	--pmk-text-small-font-size: var(--pmk-xs-font-size);
 	--pmk-text-small-line-height: var(--pmk-xs-line-height);
 	--pmk-text-base-font-size: var(--pmk-sm-font-size);

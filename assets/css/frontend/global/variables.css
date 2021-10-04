@@ -29,6 +29,9 @@
 	--pmk-font-weight-black: 900;
 
 	/* Font Sizes */
+	--pmk-xxs-font-size: 0.875rem; /* 14px */
+	--pmk-xxs-line-height: 1rem; /* 16px */
+
 	--pmk-xs-font-size: 1rem; /* 16px */
 	--pmk-xs-line-height: 1.625rem; /* 26px */
 
