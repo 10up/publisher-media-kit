@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
 /**
  * External dependencies
  */
@@ -10,23 +9,17 @@ import classnames from 'classnames';
 /* eslint-disable import/no-extraneous-dependencies */
 import { createBlock } from '@wordpress/blocks';
 import { compose, ifCondition } from '@wordpress/compose';
-import { useState, useEffect, Fragment } from '@wordpress/element';
+import { useState, useEffect } from '@wordpress/element';
 import { withSelect, withDispatch } from '@wordpress/data';
-import { Button, PanelBody, ToggleControl, NavigableMenu } from '@wordpress/components';
-import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
 import { applyFilters } from '@wordpress/hooks';
 import { __ } from '@wordpress/i18n';
 
 /**
  * Internal dependencies
  */
-import createFilterableComponent from '../../utils/createFilterableComponent';
 import { editPropsShape } from './props-shape';
 
 import './editor.css';
-
-const FilterableTabsHeader = createFilterableComponent('tenup.tabs.header');
-const FilterableTabsFooter = createFilterableComponent('tenup.tabs.footer');
 
 const TabsEdit = (props) => {
 	const {
@@ -100,15 +93,11 @@ const TabsEdit = (props) => {
 			`#block-${clientId} > .wp-block-tenup-tabs .wp-block[data-is-tab-header-editing]`,
 		);
 		if (isEditing) {
-			isEditing.forEach((block) =>
-				// eslint-disable-next-line prettier/prettier, react/prop-types
-				block.removeAttribute('data-is-tab-header-editing')
-			);
+			isEditing.forEach((block) => block.removeAttribute('data-is-tab-header-editing'));
 		}
 	};
 
 	const DisplayTabPanel = () => {
-		// eslint-disable-next-line react/prop-types
 		const tabPanels = innerBlocks.map((innerBlock) => {
 			const { attributes, clientId } = innerBlock;
 			const { header } = attributes;
@@ -140,7 +129,6 @@ const TabsEdit = (props) => {
 		 * Hacky solution to positioning the tab header in the correct place
 		 */
 		useEffect(() => {
-			// eslint-disable-next-line react/prop-types
 			innerBlocks.forEach((innerBlock) => {
 				const tabHeader = document.querySelector(
 					`.tab-header[data-tab-block="${innerBlock.clientId}"]`,
@@ -191,7 +179,6 @@ const TabsEdit = (props) => {
 						icon="plus"
 						label={__('Add New Tab', '10up-block-library')}
 						onClick={() => {
-							// eslint-disable-next-line react/prop-types
 							const created = createBlock(
 								'tenup/tabs-item',
 								{

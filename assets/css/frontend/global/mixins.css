@@ -18,14 +18,11 @@
 		background-color: var(--pmk-global-color-background-focus);
 		content: "";
 		height: 100%;
+		left: 50%;
+		margin-left: -50vw;
 		position: absolute;
 		top: 0;
 		width: 99.6vw;
 		z-index: 0;
-	}
-
-	&::before {
-		left: 50%;
-		margin-left: -50vw;
 	}
 }
