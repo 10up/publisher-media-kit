@@ -14,24 +14,18 @@
 		z-index: 1;
 	}
 
-	&::after,
 	&::before {
 		background-color: var(--pmk-global-color-background-focus);
 		content: "";
 		height: 100%;
 		position: absolute;
 		top: 0;
-		width: 80vw;
+		width: 99.6vw;
 		z-index: 0;
 	}
 
 	&::before {
 		left: 50%;
-		margin-left: -60vw;
-	}
-
-	&::after {
-		margin-right: -60vw;
-		right: 50%;
+		margin-left: -50vw;
 	}
 }
