@@ -15,6 +15,13 @@ div.wp-block-group.pmk-stats {
 		}
 	}
 
+	& .wp-block-columns {
+
+		@media (--wp-medium-max) {
+			justify-content: center;
+		}
+	}
+
 	& .wp-block-column {
 		z-index: 1;
 
