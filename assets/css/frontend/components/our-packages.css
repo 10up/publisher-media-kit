@@ -24,19 +24,21 @@ div.wp-block-group.pmk-packages {
 		max-width: 80%;
 	}
 
+	& .wp-block-columns {
+		flex-wrap: wrap;
+	}
+
 	& .wp-block-column {
 		display: flex;
 		flex-direction: column;
 		font-size: var(--pmk-text-small-font-size);
 		line-height: var(--pmk-text-small-line-height);
+		margin: var(--pmk-spacing-internal-small);
+		min-width: 300px;
 		
 		@mixin has-box-shadow;
 
 		padding: var(--pmk-spacing-internal-large) var(--pmk-spacing-internal-medium) var(--pmk-spacing-internal-xlarge);
-		
-		@media (--wp-medium-max) {
-			margin-bottom: var(--pmk-spacing-internal-medium);
-		}
 
 		& h3 {
 			font-size: var(--pmk-heading-4-font-size);

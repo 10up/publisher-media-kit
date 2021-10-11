@@ -16,6 +16,7 @@ div.wp-block-group.pmk-stats {
 	}
 
 	& .wp-block-columns {
+		flex-wrap: wrap;
 
 		@media (--wp-medium-max) {
 			justify-content: center;
@@ -23,13 +24,11 @@ div.wp-block-group.pmk-stats {
 	}
 
 	& .wp-block-column {
+		margin: var(--pmk-spacing-internal-small);
+		min-width: 200px;
 		z-index: 1;
 
 		@mixin has-box-shadow;
-
-		@media (--wp-medium-max) {
-			margin: var(--pmk-spacing-internal-medium);
-		}
 	}
 
 	& h3 {
