@@ -41,10 +41,14 @@ div.wp-block-group.pmk-why-digital {
 	}
 
 	& .wp-block-column {
-		
+
 		@media (--wp-medium-max) {
 			margin-bottom: var(--pmk-spacing-internal-medium);
 		}
+	}
+
+	& .wp-block-image {
+		text-align: left;
 	}
 
 	& .wp-block-image.alignleft {
