@@ -6,6 +6,10 @@ import PropTypes from 'prop-types';
 /**
  * WordPress dependencies
  */
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Fragment } from '@wordpress/element';
+import { Inserter } from '@wordpress/block-editor';
+import { Button } from '@wordpress/components';
 
 /**
  * CustomBlockAppender.
