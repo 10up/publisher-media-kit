@@ -17,9 +17,9 @@ The plugin adds a new "Media Kit" page, block patterns, and placeholder content 
 
 ## Installation
 
-1. Clone the repository into your `/plugins` directory.
-1. Inside the repository directory, run `npm install` and then `npm run build`.
-1. Inside the repository directory, run `composer install`.
+1. Install the plugin via the plugin installer, either by searching for it or uploading a .ZIP file.
+1. Activate the plugin.
+1. Open the "Media Kit" page, edit the content to your needs, and hit publish!
 
 ## Support Level
 
