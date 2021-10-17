@@ -21,5 +21,5 @@ Pre-configured Media Kit Page using Gutenberg Block Patterns.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * Initial plugin release 🎉
