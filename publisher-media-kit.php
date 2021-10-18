@@ -1,9 +1,10 @@
 <?php
 /**
  * Plugin Name:       Publisher Media Kit
- * Description:       Serves a Landing Page for a Publisher Media Kit with Gutenberg Block Patterns.
+ * Plugin URI:        https://github.com/10up/publisher-media-kit
+ * Description:       Pre-configured Media Kit Page using Gutenberg Block Patterns.
  * Version:           0.1.0
- * Requires at least: 4.9
+ * Requires at least: 5.4
  * Requires PHP:      7.2
  * Author:            10up
  * Author URI:        https://10up.com
