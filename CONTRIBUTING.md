@@ -6,7 +6,7 @@ The following is a set of guidelines for contributors as well as information and
 
 ## Installation
 
-The following command is required to start contribution. this command will install required dependencies.
+The following command is required to start contribution. This command will install required dependencies.
 
 ### `npm install`
 
