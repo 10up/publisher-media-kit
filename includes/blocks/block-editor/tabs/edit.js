@@ -163,47 +163,49 @@ const TabsEdit = (props) => {
 		});
 
 		return (
-			<Fragment className="alignwide">
-				<RichText
-					tagName="p"
-					className="pmk-tabs-title"
-					onChange={(newTitle) => setAttributes({ tabsTitle: newTitle })}
-					value={tabsTitle}
-				/>
-				<NavigableMenu
-					stopNavigationEvents
-					eventToOffset={() => {
-						return false;
-					}}
-					role="tablist"
-					orientation={orientation}
-					className="components-tab-panel__tabs"
-				>
-					{tabPanels}
-					<Button
-						className="add-tab-button"
-						icon="plus"
-						label={__('Add New Tab', '10up-block-library')}
-						onClick={() => {
-							const created = createBlock(
-								'tenup/tabs-item',
-								{
-									header: '',
-								},
-								// eslint-disable-next-line prettier/prettier
+			<div className="tab-control">
+				<div className="tabs-header">
+					<RichText
+						tagName="h2"
+						className="tab-title"
+						onChange={(newTitle) => setAttributes({ tabsTitle: newTitle })}
+						value={tabsTitle}
+					/>
+					<NavigableMenu
+						stopNavigationEvents
+						eventToOffset={() => {
+							return false;
+						}}
+						role="tablist"
+						orientation={orientation}
+						className="components-tab-panel__tabs tab-list"
+					>
+						{tabPanels}
+						<Button
+							className="add-tab-button"
+							icon="plus"
+							label={__('Add New Tab', '10up-block-library')}
+							onClick={() => {
+								const created = createBlock(
+									'tenup/tabs-item',
+									{
+										header: '',
+									},
+									// eslint-disable-next-line prettier/prettier
 								[
 									createBlock(
 										'core/paragraph',
 									),
-								]
-							);
-							insertBlock(created, undefined, clientId);
-							resetEditing();
-							onSelect(created.clientId);
-						}}
-					/>
-				</NavigableMenu>
-			</Fragment>
+									]
+								);
+								insertBlock(created, undefined, clientId);
+								resetEditing();
+								onSelect(created.clientId);
+							}}
+						/>
+					</NavigableMenu>
+				</div>
+			</div>
 		);
 	};
 
