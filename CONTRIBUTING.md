@@ -4,6 +4,23 @@ First, thank you for taking the time to contribute!
 
 The following is a set of guidelines for contributors as well as information and instructions around our maintenance process.  The two are closely tied together in terms of how we all work together and set expectations, so while you may not need to know everything in here to submit an issue or pull request, it's best to keep them in the same document.
 
+## Installation
+
+The following command is required to start contribution. this command will install required dependencies.
+
+### `npm install`
+
+### NPM  Commands
+
+* `npm run start` (install dependencies)
+* `npm run watch` (start watch on files)
+* `npm run build` (build all files)
+* `npm run format-js` (format JS using eslint)
+* `npm run lint-js` (lint JS)
+* `npm run lint-style` (lint CSS)
+* `npm run test` (run phpunit)
+* `npm run clean-dist` (remove the `dist` folder)
+
 ## Ways to contribute
 
 Contributing isn't just writing code - it's anything that improves the project.  All contributions are managed right here on GitHub.  Here are some ways you can help:
