@@ -117,7 +117,7 @@ const TabsEdit = (props) => {
 							{ untitled: !header },
 							'components-tab-panel__tabs-item',
 						)}
-						label={header || __('Tab Header', '10up-block-library')}
+						label={header || __('Tab Header', 'publisher-media-kit')}
 						onClick={() => {
 							resetEditing();
 							onSelect(clientId);
@@ -125,7 +125,7 @@ const TabsEdit = (props) => {
 							document.getElementById(`block-${clientId}`).setAttribute('data-is-tab-header-editing', 1);
 						}}
 					>
-						{header || __('Tab Header', '10up-block-library')}
+						{header || __('Tab Header', 'publisher-media-kit')}
 					</Button>
 				</Fragment>
 			);
@@ -184,7 +184,7 @@ const TabsEdit = (props) => {
 						<Button
 							className="add-tab-button"
 							icon="plus"
-							label={__('Add New Tab', '10up-block-library')}
+							label={__('Add New Tab', 'publisher-media-kit')}
 							onClick={() => {
 								const created = createBlock(
 									'tenup/tabs-item',
@@ -213,9 +213,9 @@ const TabsEdit = (props) => {
 		return (
 			<InspectorControls>
 				{applyFilters('tenup.tabs.showOrientationOption', true, clientId) ? (
-					<PanelBody title={__('Orientation Options', '10up-block-library')}>
+					<PanelBody title={__('Orientation Options', 'publisher-media-kit')}>
 						<ToggleControl
-							label={__('Vertical Layout', '10up-block-library')}
+							label={__('Vertical Layout', 'publisher-media-kit')}
 							checked={tabVertical}
 							onChange={() => setAttributes({ tabVertical: !tabVertical })}
 						/>

@@ -2,7 +2,7 @@
 	"name": "tenup/tabs",
 	"title": "Tabs",
 	"description": "Display sections of content with brief headings in a compact tab layout that shows one section at a time.",
-	"text-domain": "10up-block-library",
+	"text-domain": "publisher-media-kit",
 	"category": "common",
 	"example": {
 		"innerBlocks": [

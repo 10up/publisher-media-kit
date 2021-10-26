@@ -45,7 +45,7 @@ const TabsItemEdit = (props) => {
 					<RichText
 						tagName="div"
 						value={header}
-						placeholder={__('Tab Header', '10up-block-library')}
+						placeholder={__('Tab Header', 'publisher-media-kit')}
 						onChange={(newHeader) => {
 							// eslint-disable-next-line prettier/prettier
 							setAttributes({ header: newHeader.replace( /<\/?[a-z][^>]*?>/gi, ' ' ) });
@@ -64,7 +64,7 @@ const TabsItemEdit = (props) => {
 							rootClientId={clientId}
 							isTertiary
 							showTooltip
-							label={__('Insert Tab Content', '10up-block-library')}
+							label={__('Insert Tab Content', 'publisher-media-kit')}
 						/>
 					)}
 				/>
