@@ -93,7 +93,7 @@ function pmk_admin_notice_notice() {
 
 		?>
         <div class="updated notice is-dismissible">
-            <p>A Media Kit page is created! Please <a href="<?php echo esc_url( $media_kit_link ) ?>">click here</a> to see the edit page.</p>
+            <p>A "Media Kit" page has been created! Please <a href="<?php echo esc_url( $media_kit_link ) ?>">click here</a> to edit and publish the page.</p>
         </div>
 		<?php
 		/* Delete transient, only display this notice once. */
@@ -142,7 +142,7 @@ function create_media_kit_page()
 		// create post object
 		$page = array(
 			'post_title' => __('Media Kit'),
-			'post_status' => 'publish',
+			'post_status' => 'draft',
 			'post_author' => $current_user->ID,
 			'post_type' => 'page',
 			'post_name' => 'media-kit',
