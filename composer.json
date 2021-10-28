@@ -14,5 +14,14 @@
     "psr-4": {
       "PublisherMediaKit\\": "includes/classes/"
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.2",
+    "10up/wp_mock": "dev-master",
+    "10up/phpcs-composer": "dev-master"
+  },
+  "scripts": {
+    "lint": "phpcs .",
+    "lint-fix": "phpcbf ."
   }
 }
