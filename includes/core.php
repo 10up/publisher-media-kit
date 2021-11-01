@@ -92,11 +92,10 @@ function pmk_admin_notice_notice() {
 	if ( get_transient( 'pmk-admin-notice' ) ) {
 		$media_kit_id   = get_option( 'pmk-page' );
 		$media_kit_link = $media_kit_id ? get_edit_post_link( $media_kit_id ) : admin_url( 'edit.php?post_type=page' );
-
 		?>
-        <div class="updated notice is-dismissible">
-            <p>A "Media Kit" page has been created! Please <a href="<?php echo esc_url( $media_kit_link ) ?>">click here</a> to edit and publish the page.</p>
-        </div>
+		<div class="updated notice is-dismissible">
+			<p>A "Media Kit" page has been created! Please <a href="<?php echo esc_url( $media_kit_link ); ?>">click here</a> to edit and publish the page.</p>
+		</div>
 		<?php
 		/* Delete transient, only display this notice once. */
 		delete_transient( 'pmk-admin-notice' );
@@ -130,8 +129,9 @@ function create_media_kit_page() {
 					ON p.ID = pm.post_id
 					WHERE pm.meta_key = 'pmk-page'
 					AND p.post_status != 'trash'
-					AND p.post_type = 'page'
-					", 'ARRAY_A' );
+					AND p.post_type = 'page'",
+		'ARRAY_A'
+	);
 
 	if ( null === $pmk_page_exists ) {
 
@@ -286,13 +286,6 @@ function styles() {
 			PUBLISHER_MEDIA_KIT_VERSION
 		);
 	}
-
-	/*wp_enqueue_style(
-		'publisher_media_kit_tabs_frontend',
-		PUBLISHER_MEDIA_KIT_URL . 'dist/blocks/tabs-block/editor.css',
-		[],
-		PUBLISHER_MEDIA_KIT_VERSION
-	);*/
 }
 
 /**
