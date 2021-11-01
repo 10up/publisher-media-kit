@@ -18,8 +18,8 @@ import metadata from './block.json';
 const { name } = metadata;
 
 const labels = {
-	title: __('Tabs Item', '10up-block-library'),
-	description: __('Add a new tab.', '10up-block-library'),
+	title: __('Tabs Item', 'publisher-media-kit'),
+	description: __('Add a new tab.', 'publisher-media-kit'),
 };
 
 export default {

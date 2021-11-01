@@ -20,8 +20,8 @@ import transforms from './transforms';
 const { name } = metadata;
 
 const labels = {
-	title: __('Tabs', '10up-block-library'),
-	description: __('Add tabbed content.', '10up-block-library'),
+	title: __('Tabs', 'publisher-media-kit'),
+	description: __('Add tabbed content.', 'publisher-media-kit'),
 };
 
 export default {
