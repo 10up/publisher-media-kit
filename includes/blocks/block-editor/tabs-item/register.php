@@ -17,9 +17,9 @@ function register() {
 
 	if ( function_exists( 'register_block_type_from_metadata' ) ) {
 		register_block_type_from_metadata(
-			PUBLISHER_MEDIA_KIT_BLOCKS_PATH . "/tabs-item", // this is the directory where the block.json is found.
+			PUBLISHER_MEDIA_KIT_BLOCKS_PATH . '/tabs-item', // this is the directory where the block.json is found.
 			[
-				'render_callback' => $n('render_tabs_item_block_callback'),
+				'render_callback' => $n( 'render_tabs_item_block_callback' ),
 			]
 		);
 	}

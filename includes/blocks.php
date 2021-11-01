@@ -12,15 +12,14 @@ namespace PublisherMediaKit\Blocks;
  *
  * @return void
  */
-function setup()
-{
-	$n = function ($function) {
+function setup() {
+	$n = function ( $function ) {
 		return __NAMESPACE__ . "\\$function";
 	};
 
-	add_action('init', $n('register_blocks'));
+	add_action( 'init', $n( 'register_blocks' ) );
 
-	add_action('init', $n('block_patterns_and_categories'));
+	add_action( 'init', $n( 'block_patterns_and_categories' ) );
 
 }
 
@@ -29,8 +28,7 @@ function setup()
  *
  * @return void
  */
-function register_blocks()
-{
+function register_blocks() {
 	// Require custom blocks.
 	require_once PUBLISHER_MEDIA_KIT_BLOCKS_PATH . '/tabs/register.php';
 
@@ -44,7 +42,7 @@ function register_blocks()
 	TabsItem\register();
 
 	// Remove the filter after we register the blocks
-	remove_filter('plugins_url', __NAMESPACE__ . '\filter_plugins_url', 10, 2);
+	remove_filter( 'plugins_url', __NAMESPACE__ . '\filter_plugins_url', 10, 2 );
 }
 
 /**
@@ -55,10 +53,10 @@ function register_blocks()
  *
  * @return string The overridden url to the block asset.
  */
-function filter_plugins_url($url, $path)
-{
-	$file = preg_replace('/\.\.\//', '', $path);
-	return trailingslashit(get_stylesheet_directory_uri()) . $file;
+function filter_plugins_url( $url, $path ) {
+	$file = preg_replace( '/\.\.\//', '', $path );
+
+	return trailingslashit( get_stylesheet_directory_uri() ) . $file;
 }
 
 /**
@@ -68,8 +66,7 @@ function filter_plugins_url($url, $path)
  *
  * @return void
  */
-function block_patterns_and_categories()
-{
+function block_patterns_and_categories() {
 	// phpcs:disable
 
 	// Register block pattern category for Publisher Media Kit.
