@@ -27,7 +27,7 @@ The plugin adds a new "Media Kit" page, block patterns, and placeholder content 
 
 ## Changelog
 
-A complete listing of all notable changes to Convert to Blocks are documented in [CHANGELOG.md](https://github.com/10up/publisher-media-kit/blob/develop/CHANGELOG.md).
+A complete listing of all notable changes to Publisher Media Kit are documented in [CHANGELOG.md](https://github.com/10up/publisher-media-kit/blob/develop/CHANGELOG.md).
 
 ## Contributing
 
