@@ -158,7 +158,7 @@ function create_media_kit_page() {
 		// insert the post into the database
 		$post_ID = wp_insert_post( $page );
 
-        if ( is_wp_error( $post_ID ) || 0 === $post_ID ) {
+		if ( is_wp_error( $post_ID ) || 0 === $post_ID ) {
 			throw new \Exception( $post_ID->get_error_message() );
 		}
 
