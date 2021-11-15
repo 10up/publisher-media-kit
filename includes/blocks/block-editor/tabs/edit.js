@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /**
  * External dependencies
  */
@@ -104,6 +105,7 @@ const TabsEdit = (props) => {
 	};
 
 	const DisplayTabPanel = () => {
+		// eslint-disable-next-line react/prop-types
 		const tabPanels = innerBlocks.map((innerBlock) => {
 			const { attributes, clientId } = innerBlock;
 			const { header } = attributes;
@@ -135,6 +137,7 @@ const TabsEdit = (props) => {
 		 * Hacky solution to positioning the tab header in the correct place
 		 */
 		useEffect(() => {
+			// eslint-disable-next-line react/prop-types
 			innerBlocks.forEach((innerBlock) => {
 				const tabHeader = document.querySelector(
 					`.tab-header[data-tab-block="${innerBlock.clientId}"]`,
@@ -186,6 +189,7 @@ const TabsEdit = (props) => {
 							icon="plus"
 							label={__('Add New Tab', 'publisher-media-kit')}
 							onClick={() => {
+							// eslint-disable-next-line react/prop-types
 								const created = createBlock(
 									'tenup/tabs-item',
 									{
