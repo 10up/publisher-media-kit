@@ -3,10 +3,13 @@
 :root {
 	--c-appender-button-bg: #000;
 	--c-white: #fff;
+	--c-gray: #777;
 	--c-light-grey: #d3d3d3;
 	--c-placeholder-text: #707070;
 	--tab-item-width: 200px;
 	--tab-item-height: 60px;
+	--tenup-tabs-rich-text-color: #1e1e1e;
+	--tenup-tabs-untitled-tab-color: #6c6c6c;
 }
 
 .wp-block[data-type="tenup/tabs"] {
@@ -26,6 +29,8 @@
 			background-color: var(--c-white);
 			box-sizing: border-box;
 			display: flex;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+			font-size: 13px;
 			height: calc(var(--tab-item-height) - 2px);
 			left: 0;
 			padding: 6px 12px;
@@ -106,6 +111,7 @@
 	}
 
 	& .tab-item {
+		border: 1px solid var(--c-gray);
 		display: inline-block;
 		height: var(--tab-item-height);
 		text-align: center;
@@ -135,6 +141,14 @@
 			align-items: center;
 			display: flex;
 			font-weight: 500;
+
+			&:hover {
+				color: var(--tenup-tabs-rich-text-color);
+			}
+		}
+
+		&.untitled {
+			color: var(--tenup-tabs-untitled-tab-color);
 		}
 	}
 
@@ -150,6 +164,11 @@
 			flex-direction: column;
 			white-space: normal;
 
+			& .components-tab-panel__tabs-item.is-active {
+				border-bottom-color: var(--c-gray);
+				border-right-color: var(--c-white);
+			}
+
 			& .add-tab-button {
 				display: block;
 				margin-left: 0;
@@ -162,6 +181,17 @@
 
 		& .untitled {
 			color: var(--c-placeholder-text);
+		}
+	}
+
+	&.components-tab-panel__tabs-item-is-editing .components-tab-panel__tabs {
+
+		& > :not(.is-active) {
+			border-bottom-color: var(--c-gray) !important;
+		}
+
+		& .is-active {
+			border-bottom-color: var(--c-white) !important;
 		}
 	}
 }

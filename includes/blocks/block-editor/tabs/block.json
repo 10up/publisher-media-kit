@@ -47,9 +47,9 @@
 			"type": "boolean",
 			"default": false
 		},
-    "tabsTitle": {
-      "type": "string"
-    }
+		"tabsTitle": {
+		  "type": "string"
+		}
   },
   "supports": {
     "html": false
