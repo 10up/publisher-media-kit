@@ -23,5 +23,5 @@ The plugin adds a new "Media Kit" page, block patterns, and placeholder content 
 
 == Changelog ==
 
-= 1.0.0 =
+= 0.9.0 =
 * Initial plugin release 🎉
