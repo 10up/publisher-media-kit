@@ -7,14 +7,10 @@
 /tests
 
 # Files
-.babelrc
-.browserslistrc
 .distignore
-.editorconfig
 .eslintignore
 .eslintrc
 .gitignore
-.stylelintrc
 CHANGELOG.md
 CODE_OF_CONDUCT.md
 composer.json
@@ -24,4 +20,5 @@ CREDITS.md
 LICENSE.md
 package-lock.json
 package.json
+phpcs.xml
 README.md
