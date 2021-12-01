@@ -2,7 +2,8 @@
  * Site variables
  * These variables can be overridden
  */
-:root {
+:root,
+.editor-styles-wrapper {
 
 	/* Base colors */
 
@@ -31,13 +32,13 @@
 	/* Spacings */
 
 	--pmk-global-max-width: var(--responsive--alignwide-width, var(--pmk-max-width));
-	
+
 	/* Spacing between unrelated components */
 	--pmk-spacing-components: var(--pmk-spacing-70);
 
 	/* Spacing between related components */
 	--pmk-spacing-related: var(--pmk-spacing-30);
-	
+
 	/* Spacing between internal elements of the component */
 	--pmk-spacing-internal-xsmall: var(--pmk-spacing-8);
 	--pmk-spacing-internal-small: var(--pmk-spacing-12);

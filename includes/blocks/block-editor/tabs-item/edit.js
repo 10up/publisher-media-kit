@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /**
  * Wordpress dependencies
  */
@@ -38,14 +39,14 @@ const TabsItemEdit = (props) => {
 			<div className={classes}>
 				<div
 					data-tab-block={clientId}
-					className={`tab-header orientation-${orientation} position-${position}`}
+					className={`orientation-${orientation} position-${position}`}
 				>
 					{/* The reason we don't have the RichText field in the parent block is so that when you are editing tab header text you are selecting
 					the child block. */}
 					<RichText
 						tagName="div"
 						value={header}
-						placeholder={__('Tab Header', '10up-block-library')}
+						placeholder={__('Tab Header', 'publisher-media-kit')}
 						onChange={(newHeader) => {
 							// eslint-disable-next-line prettier/prettier
 							setAttributes({ header: newHeader.replace( /<\/?[a-z][^>]*?>/gi, ' ' ) });
@@ -64,7 +65,7 @@ const TabsItemEdit = (props) => {
 							rootClientId={clientId}
 							isTertiary
 							showTooltip
-							label={__('Insert Tab Content', '10up-block-library')}
+							label={__('Insert Tab Content', 'publisher-media-kit')}
 						/>
 					)}
 				/>

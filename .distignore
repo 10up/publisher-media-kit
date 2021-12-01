@@ -1,0 +1,24 @@
+# Directories
+/.git
+/.github
+/.wordpress-org
+/bin
+/node_modules
+/tests
+
+# Files
+.distignore
+.eslintignore
+.eslintrc
+.gitignore
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+composer.json
+composer.lock
+CONTRIBUTING.md
+CREDITS.md
+LICENSE.md
+package-lock.json
+package.json
+phpcs.xml
+README.md

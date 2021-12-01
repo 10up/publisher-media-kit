@@ -17,9 +17,9 @@ function register() {
 
 	if ( function_exists( 'register_block_type_from_metadata' ) ) {
 		register_block_type_from_metadata(
-			PUBLISHER_MEDIA_KIT_BLOCKS_PATH . "/tabs", // this is the directory where the block.json is found.
+			PUBLISHER_MEDIA_KIT_BLOCKS_PATH . '/tabs', // this is the directory where the block.json is found.
 			[
-				'render_callback' => $n('render_tabs_block_callback'),
+				'render_callback' => $n( 'render_tabs_block_callback' ),
 			]
 		);
 	}
@@ -58,7 +58,6 @@ function render_tabs_block_callback( $attributes, $content, $block ) {
 		if ( file_exists( PUBLISHER_MEDIA_KIT_BLOCKS_PATH . '/tabs/markup.php' ) ) {
 			require PUBLISHER_MEDIA_KIT_BLOCKS_PATH . '/tabs/markup.php';
 		}
-
 	}
 	return ob_get_clean();
 }

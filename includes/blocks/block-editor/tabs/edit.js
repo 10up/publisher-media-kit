@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /**
  * External dependencies
  */
@@ -104,6 +105,7 @@ const TabsEdit = (props) => {
 	};
 
 	const DisplayTabPanel = () => {
+		// eslint-disable-next-line react/prop-types
 		const tabPanels = innerBlocks.map((innerBlock) => {
 			const { attributes, clientId } = innerBlock;
 			const { header } = attributes;
@@ -117,7 +119,7 @@ const TabsEdit = (props) => {
 							{ untitled: !header },
 							'components-tab-panel__tabs-item',
 						)}
-						label={header || __('Tab Header', '10up-block-library')}
+						label={header || __('Tab Header', 'publisher-media-kit')}
 						onClick={() => {
 							resetEditing();
 							onSelect(clientId);
@@ -125,7 +127,7 @@ const TabsEdit = (props) => {
 							document.getElementById(`block-${clientId}`).setAttribute('data-is-tab-header-editing', 1);
 						}}
 					>
-						{header || __('Tab Header', '10up-block-library')}
+						{header || __('Tab Header', 'publisher-media-kit')}
 					</Button>
 				</Fragment>
 			);
@@ -135,6 +137,7 @@ const TabsEdit = (props) => {
 		 * Hacky solution to positioning the tab header in the correct place
 		 */
 		useEffect(() => {
+			// eslint-disable-next-line react/prop-types
 			innerBlocks.forEach((innerBlock) => {
 				const tabHeader = document.querySelector(
 					`.tab-header[data-tab-block="${innerBlock.clientId}"]`,
@@ -163,47 +166,50 @@ const TabsEdit = (props) => {
 		});
 
 		return (
-			<Fragment className="alignwide">
-				<RichText
-					tagName="p"
-					className="pmk-tabs-title"
-					onChange={(newTitle) => setAttributes({ tabsTitle: newTitle })}
-					value={tabsTitle}
-				/>
-				<NavigableMenu
-					stopNavigationEvents
-					eventToOffset={() => {
-						return false;
-					}}
-					role="tablist"
-					orientation={orientation}
-					className="components-tab-panel__tabs"
-				>
-					{tabPanels}
-					<Button
-						className="add-tab-button"
-						icon="plus"
-						label={__('Add New Tab', '10up-block-library')}
-						onClick={() => {
-							const created = createBlock(
-								'tenup/tabs-item',
-								{
-									header: '',
-								},
-								// eslint-disable-next-line prettier/prettier
+			<div className="tab-control">
+				<div className="tabs-header">
+					<RichText
+						tagName="h2"
+						className="tab-title"
+						onChange={(newTitle) => setAttributes({ tabsTitle: newTitle })}
+						value={tabsTitle}
+					/>
+					<NavigableMenu
+						stopNavigationEvents
+						eventToOffset={() => {
+							return false;
+						}}
+						role="tablist"
+						orientation={orientation}
+						className="components-tab-panel__tabs tab-list"
+					>
+						{tabPanels}
+						<Button
+							className="add-tab-button"
+							icon="plus"
+							label={__('Add New Tab', 'publisher-media-kit')}
+							onClick={() => {
+							// eslint-disable-next-line react/prop-types
+								const created = createBlock(
+									'tenup/tabs-item',
+									{
+										header: '',
+									},
+									// eslint-disable-next-line prettier/prettier
 								[
 									createBlock(
 										'core/paragraph',
 									),
-								]
-							);
-							insertBlock(created, undefined, clientId);
-							resetEditing();
-							onSelect(created.clientId);
-						}}
-					/>
-				</NavigableMenu>
-			</Fragment>
+									]
+								);
+								insertBlock(created, undefined, clientId);
+								resetEditing();
+								onSelect(created.clientId);
+							}}
+						/>
+					</NavigableMenu>
+				</div>
+			</div>
 		);
 	};
 
@@ -211,9 +217,9 @@ const TabsEdit = (props) => {
 		return (
 			<InspectorControls>
 				{applyFilters('tenup.tabs.showOrientationOption', true, clientId) ? (
-					<PanelBody title={__('Orientation Options', '10up-block-library')}>
+					<PanelBody title={__('Orientation Options', 'publisher-media-kit')}>
 						<ToggleControl
-							label={__('Vertical Layout', '10up-block-library')}
+							label={__('Vertical Layout', 'publisher-media-kit')}
 							checked={tabVertical}
 							onChange={() => setAttributes({ tabVertical: !tabVertical })}
 						/>
