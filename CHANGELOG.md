@@ -4,8 +4,8 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased]
 
-## [1.0.0] - TBD
+## [0.9.0] - 2021-11-30
 - Initial plugin release 🎉
 
 [Unreleased]: https://github.com/10up/publisher-media-kit/compare/trunk...develop
-[1.0.0]: https://github.com/10up/publisher-media-kit/tree/commit-hash-here
+[0.9.0]: https://github.com/10up/publisher-media-kit/tree/commit-hash-here
