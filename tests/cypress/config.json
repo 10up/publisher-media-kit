@@ -11,6 +11,6 @@
   "testFiles": [
     "pmk-plugin-activation.test.js",
     "pmk-media-kit-page-creation.test.js",
-    "pmk-block-patters.test.js"
+    "pmk-block-patterns.test.js"
   ]
 }

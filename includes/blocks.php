@@ -58,14 +58,21 @@ function block_patterns_and_categories() {
 		array( 'label' => __( 'Publisher Media Kit', 'publisher-media-kit' ) )
 	);
 
+	global $wp_version;
+	$cover_patter_file = version_compare( $wp_version, '5.7', '<' ) ? 'cover' : 'cover-esperanza';
+
 	// Register block pattern for cover image.
+	ob_start();
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . $cover_patter_file . '.php';
+	$cover_pattern = ob_get_clean();
+
 	register_block_pattern(
 		'publisher-media-kit/cover-pattern',
 		array(
 			'title'       => __( 'Publisher Media Kit - Cover', 'publisher-media-kit' ),
 			'description' => __( 'The main cover image for the Publisher Media Kit page.', 'publisher-media-kit' ),
 			'categories'  => [ 'publisher-media-kit' ],
-			'content'     => '<!-- wp:cover {"url":"/wp-content/plugins/publisher-media-kit/assets/images/cover-image.jpeg","id":17,"align":"full","className":"pmk-cover"} --><div class="wp-block-cover alignfull has-background-dim pmk-cover"><img class="wp-block-cover__image-background wp-image-17" alt="" src="/wp-content/plugins/publisher-media-kit/assets/images/cover-image.jpeg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","level":1} --><h1 class="has-text-align-center">Media Kit</h1><!-- /wp:heading --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui<br>tortor, porttitor ut enim non, iaculis sagittis dolor.</p><!-- /wp:paragraph --><!-- wp:buttons {"contentJustification":"center"} --><div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"className":"pmk-button is-style-fill"} --><div class="wp-block-button pmk-button is-style-fill"><a class="wp-block-button__link">CONTACT US</a></div><!-- /wp:button --></div><!-- /wp:buttons --></div></div><!-- /wp:cover -->',
+			'content'     => $cover_pattern
 		)
 	);
 
