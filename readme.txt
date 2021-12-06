@@ -1,7 +1,7 @@
 === Publisher Media Kit ===
 Contributors:      10up, jeffpaul, faisal03
 Tags:              media kit, audience profiles, digital ad specs, ad rates
-Requires at least: 5.4
+Requires at least: 5.5
 Tested up to:      5.8
 Stable tag:        0.9.0
 Requires PHP:      7.2
@@ -44,9 +44,9 @@ Click the block inserter (`+` button) in the top left of the block editor, click
 
 Click the block inserter (`+` button) in the top left of the block editor, click the `Patterns` tab, select `Publisher Media Kit` in the dropdown, and select the specific Block Pattern that you want to add to your post/page.
 
-= Why do you require WordPress 5.4 and above?  Why not 5.0 and above? =
+= Why do you require WordPress 5.5 and above?  Why not 5.0 and above? =
 
-We require WordPress 5.4 and above as this is when Block Patterns became available in WordPress core and they are of the main components of the Publisher Media Kit plugin.  In fact, we recommend that you utilize the latest major version of WordPress and commit to testing and ensuring that Publisher Media Kit works on the latest WordPress version.
+We require WordPress 5.5 and above as this is when `register_block_pattern_category` function introduced to register Block Patterns Categories in WordPress core and it is used in the Publisher Media Kit plugin.  In fact, we recommend that you utilize the latest major version of WordPress and commit to testing and ensuring that Publisher Media Kit works on the latest WordPress version.
 
 == Screenshots ==
 
