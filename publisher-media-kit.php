@@ -4,7 +4,7 @@
  * Plugin URI:        https://github.com/10up/publisher-media-kit
  * Description:       Pre-configured Media Kit Page using Gutenberg Block Patterns.
  * Version:           0.9.0
- * Requires at least: 5.4
+ * Requires at least: 5.5
  * Requires PHP:      7.2
  * Author:            10up
  * Author URI:        https://10up.com
