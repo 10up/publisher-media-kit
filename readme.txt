@@ -50,8 +50,10 @@ We require WordPress 5.5 and above as this is when `register_block_pattern_categ
 
 == Screenshots ==
 
-1. View of block patterns and placeholder content within the block editor.
+1. View of block patterns and placeholder content within the block editor running the Twenty Twenty One default theme.
 2. Media Kit page on frontend of site running the Twenty Twenty One default theme.
+3. View of block patterns and placeholder content within the block editor running the Newspack base theme.
+4. Media Kit page on frontend of site running the Newspack base theme.
 
 == Changelog ==
 
