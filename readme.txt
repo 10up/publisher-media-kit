@@ -55,5 +55,8 @@ We require WordPress 5.5 and above as this is when `register_block_pattern_categ
 
 == Changelog ==
 
+= 1.0.0 =
+* Initial public plugin release 🎉
+
 = 0.9.0 =
-* Initial plugin release 🎉
+* Initial private plugin release 🎉
