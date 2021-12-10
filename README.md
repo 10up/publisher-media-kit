@@ -8,7 +8,15 @@
 
 Publisher Media Kit provides a quick and easy option for small to medium sized publishers to digitize their media kit.  If you are a publisher hoping for a page like the [NY Times' Advertising Standard Units](https://nytmediakit.com/standard-units), but do not have a designer or developer on staff?  Then this plugin is for you.  If you are still using a print or PDF version of your media kit to sell space on your website, but want show advertisers looking to buy digital real estate that you are a digital-forward partner?  Then this plugin is for you.
 
+Twenty Twenty One default theme | Newspack base theme
+------------- | -----------------
+[![Media Kit page on frontend of site running the Twenty Twenty One default theme.](.wordpress-org/screenshot-2.png)](.wordpress-org/screenshot-2.png) | [![Media Kit page on frontend of site running the Newspack base theme.](.wordpress-org/screenshot-4.png)](.wordpress-org/screenshot-4.png)
+
 The plugin adds a new "Media Kit" page, block patterns, and placeholder content that can then be customized to fit your need (e.g., text, links, colors, images, adding page link to site footer).
+
+Twenty Twenty One default theme | Newspack base theme
+------------- | -----------------
+[![View of block patterns and placeholder content within the block editor running the Twenty Twenty One default theme.](.wordpress-org/screenshot-1.png)](.wordpress-org/screenshot-1.png) | [![View of block patterns and placeholder content within the block editor running the Newspack base theme.](.wordpress-org/screenshot-3.png)](.wordpress-org/screenshot-3.png)
 
 ## Requirements
 

@@ -3,8 +3,8 @@
  * Plugin Name:       Publisher Media Kit
  * Plugin URI:        https://github.com/10up/publisher-media-kit
  * Description:       Pre-configured Media Kit Page using Gutenberg Block Patterns.
- * Version:           0.9.0
- * Requires at least: 5.4
+ * Version:           1.0.0
+ * Requires at least: 5.5
  * Requires PHP:      7.2
  * Author:            10up
  * Author URI:        https://10up.com
@@ -17,11 +17,12 @@
  */
 
 // Useful global constants.
-define( 'PUBLISHER_MEDIA_KIT_VERSION', '0.9.0' );
+define( 'PUBLISHER_MEDIA_KIT_VERSION', '1.0.0' );
 define( 'PUBLISHER_MEDIA_KIT_URL', plugin_dir_url( __FILE__ ) );
 define( 'PUBLISHER_MEDIA_KIT_PATH', plugin_dir_path( __FILE__ ) );
 define( 'PUBLISHER_MEDIA_KIT_BLOCKS_PATH', plugin_dir_path( __FILE__ ) . 'includes/blocks/block-editor/' );
 define( 'PUBLISHER_MEDIA_KIT_INC', PUBLISHER_MEDIA_KIT_PATH . 'includes/' );
+define( 'PUBLISHER_MEDIA_KIT_BLOCK_PATTERS', PUBLISHER_MEDIA_KIT_PATH . 'includes/block-patterns/' );
 
 // Require Composer autoloader if it exists.
 if ( file_exists( PUBLISHER_MEDIA_KIT_PATH . 'vendor/autoload.php' ) ) {
