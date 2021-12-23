@@ -2,6 +2,7 @@ div.wp-block-group.pmk-question-block {
 	background-color: var(--pmk-global-color-background-focus);
 	color: var(--pmk-global-color-text-on-background);
 	padding: 20px 0;
+	text-align: center;
 
 	& .wp-block-group__inner-container {
 		align-items: center;
@@ -11,9 +12,9 @@ div.wp-block-group.pmk-question-block {
 	}
 
 	& h2 {
+		display: inline-block;
 		font-size: var(--pmk-l-font-size);
 		margin: 10px 20px !important;  /* !important to override base style */
-		text-align: center;
 	}
 
 	& .wp-block-buttons {
