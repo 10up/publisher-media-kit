@@ -37,13 +37,6 @@ div.wp-block-group.pmk-packages {
 		flex-direction: column;
 		font-size: var(--pmk-text-small-font-size);
 		line-height: var(--pmk-text-small-line-height);
-		margin: var(--pmk-spacing-internal-small);
-
-		@media (--wp-small-max) {
-			margin-left: 0;
-			margin-right: 0;
-			min-width: 280px;
-		}
 
 		@mixin has-box-shadow;
 
