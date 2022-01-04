@@ -2,6 +2,14 @@ div.wp-block-group.pmk-packages {
 	color: var(--pmk-global-color-primary);
 	margin-bottom: var(--pmk-spacing-components);
 
+	@media (--wp-small) and (--wp-medium-max) {
+
+		.wp-block-column:not(:only-child) {
+			flex-basis: calc(50% - 1.5em) !important; /* !important to override column styles */
+			flex-grow: 1;
+		}
+	}
+
 	& .wp-block-group__inner-container {
 
 		@mixin has-full-width-background;
