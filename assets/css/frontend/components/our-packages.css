@@ -28,14 +28,16 @@ div.wp-block-group.pmk-packages {
 		flex-wrap: wrap;
 	}
 
+	& .pmk-packages-columns {
+		justify-content: center;
+	}
+
 	& .wp-block-column {
 		display: flex;
 		flex-direction: column;
 		font-size: var(--pmk-text-small-font-size);
 		line-height: var(--pmk-text-small-line-height);
-		margin: var(--pmk-spacing-internal-small);
-		min-width: 300px;
-		
+
 		@mixin has-box-shadow;
 
 		padding: var(--pmk-spacing-internal-large) var(--pmk-spacing-internal-medium) var(--pmk-spacing-internal-xlarge);
