@@ -4,6 +4,7 @@ div.wp-block-group.pmk-stats {
 	position: relative;
 
 	@media (--wp-small) and (--wp-medium-max) {
+
 		.wp-block-column:not(:only-child) {
 			flex-basis: calc(50% - 1.5em) !important; /* !important to override column styles */
 			flex-grow: 0;

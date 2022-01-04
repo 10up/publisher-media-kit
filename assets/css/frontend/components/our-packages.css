@@ -3,6 +3,7 @@ div.wp-block-group.pmk-packages {
 	margin-bottom: var(--pmk-spacing-components);
 
 	@media (--wp-small) and (--wp-medium-max) {
+
 		.wp-block-column:not(:only-child) {
 			flex-basis: calc(50% - 1.5em) !important; /* !important to override column styles */
 			flex-grow: 1;
@@ -35,13 +36,15 @@ div.wp-block-group.pmk-packages {
 		flex-wrap: wrap;
 	}
 
+	& .pmk-packages-columns {
+		justify-content: center;
+	}
+
 	& .wp-block-column {
 		display: flex;
 		flex-direction: column;
 		font-size: var(--pmk-text-small-font-size);
 		line-height: var(--pmk-text-small-line-height);
-		margin: var(--pmk-spacing-internal-small);
-		min-width: 300px;
 
 		@mixin has-box-shadow;
 
