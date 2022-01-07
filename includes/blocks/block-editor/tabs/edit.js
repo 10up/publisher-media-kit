@@ -189,7 +189,7 @@ const TabsEdit = (props) => {
 							icon="plus"
 							label={__('Add New Tab', 'publisher-media-kit')}
 							onClick={() => {
-							// eslint-disable-next-line react/prop-types
+								// eslint-disable-next-line react/prop-types
 								const created = createBlock(
 									'tenup/tabs-item',
 									{
