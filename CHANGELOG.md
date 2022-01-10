@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased]
 
-## [1.0.0] - 2021-12-09
+## [1.0.0] - 2021-12-10
 - Initial public plugin release 🎉
 
 ## [0.9.0] - 2021-12-01
