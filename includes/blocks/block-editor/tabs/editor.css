@@ -44,22 +44,10 @@
 			}
 
 			& .rich-text {
-				height: 100%;
 				line-height: 1.2;
 				position: relative;
 				text-align: center;
 				width: 100%;
-
-				&::after {
-					background-color: var(--pmk-global-color-accent);
-					bottom: 0;
-					content: "";
-					display: block;
-					height: 4px;
-					left: 0;
-					position: absolute;
-					width: 100%;
-				}
 			}
 		}
 	}
