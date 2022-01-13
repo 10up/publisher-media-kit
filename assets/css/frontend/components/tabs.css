@@ -44,8 +44,8 @@ div.wp-block-group.pmk-tabs-table {
 		font-size: var(--pmk-heading-2-font-size);
 		font-weight: var(--pmk-font-weight-normal);
 		line-height: var(--pmk-heading-2-line-height);
-		margin: 0 calc(var(--pmk-spacing-internal-medium) * 2) 15px 0;
 		border-bottom: 1px solid var(--pmk-global-color-border);
+		margin: 0 calc(var(--pmk-spacing-internal-medium) * 2) 15px 0;
 		position: relative;
 	}
 	
