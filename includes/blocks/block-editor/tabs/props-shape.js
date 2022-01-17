@@ -4,9 +4,6 @@
 import PropTypes from 'prop-types';
 
 export const propsShape = {
-	attributes: PropTypes.shape({
-		tabVertical: PropTypes.boolean,
-	}).isRequired,
 	clientId: PropTypes.string.isRequired,
 };
 
