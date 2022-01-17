@@ -30,7 +30,7 @@ const FilterableTabsFooter = createFilterableComponent('tenup.tabs.footer');
 
 const TabsEdit = (props) => {
 	const {
-		attributes: { tabVertical, tabsTitle },
+		attributes: { tabsTitle },
 		setAttributes,
 		isSelected,
 		className,
@@ -42,7 +42,6 @@ const TabsEdit = (props) => {
 		activeClass = 'is-active',
 	} = props;
 	const { innerBlocks } = block;
-	const orientation = tabVertical ? 'vertical' : 'horizontal';
 	const [tabCount, setTabCount] = useState(innerBlocks.length);
 	const [editTab, setEditTab] = useState('');
 
@@ -149,18 +148,9 @@ const TabsEdit = (props) => {
 				const positionInfo = tabHeaderButton.getBoundingClientRect();
 
 				if (tabHeader && tabHeaderButton) {
-					if (orientation === 'horizontal') {
-						// console.log(`${header} - Move to ${tabHeaderButton.offsetLeft}`);
-						tabHeader.style.left = `${tabHeaderButton.offsetLeft}px`;
-						tabHeader.style.width = `${positionInfo.width - 2}px`;
-						tabHeader.style.top = '-58px';
-
-						// debugger;
-					} else {
-						tabHeader.style.top = `${tabHeaderButton.offsetTop}px`;
-						tabHeader.style.left = '-118px';
-						tabHeader.style.width = '120px';
-					}
+					tabHeader.style.left = `${tabHeaderButton.offsetLeft}px`;
+					tabHeader.style.width = `${positionInfo.width - 2}px`;
+					tabHeader.style.top = '-58px';
 				}
 			});
 		});
@@ -180,7 +170,7 @@ const TabsEdit = (props) => {
 							return false;
 						}}
 						role="tablist"
-						orientation={orientation}
+						orientation="horizontal"
 						className="components-tab-panel__tabs tab-list"
 					>
 						{tabPanels}
@@ -213,34 +203,14 @@ const TabsEdit = (props) => {
 		);
 	};
 
-	const orientationOptions = () => {
-		return (
-			<InspectorControls>
-				{applyFilters('tenup.tabs.showOrientationOption', true, clientId) ? (
-					<PanelBody title={__('Orientation Options', 'publisher-media-kit')}>
-						<ToggleControl
-							label={__('Vertical Layout', 'publisher-media-kit')}
-							checked={tabVertical}
-							onChange={() => setAttributes({ tabVertical: !tabVertical })}
-						/>
-					</PanelBody>
-				) : (
-					''
-				)}
-			</InspectorControls>
-		);
-	};
-
 	return (
 		<>
-			{orientationOptions()}
-
-			<div className={`${className} ${classes} tabs-${orientation}`}>
+			<div className={`${className} ${classes} tabs-horizontal`}>
 				<FilterableTabsHeader blockProps={props} />
 				{DisplayTabPanel()}
 				<div className="tab-group">
 					<InnerBlocks
-						orientation={orientation}
+						orientation="horizontal"
 						allowedBlocks={['tenup/tabs-item']}
 						// eslint-disable-next-line prettier/prettier
 						template={[['tenup/tabs-item', { header: '' }, [[ 'core/paragraph', {} ]]]]}
