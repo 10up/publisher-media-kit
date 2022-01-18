@@ -2,7 +2,7 @@
 
 > Pre-configured Media Kit Page using Gutenberg Block Patterns.
 
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level) [![E2E Tests](https://github.com/10up/publisher-media-kit/actions/workflows/cypress.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/cypress.yml) [![Linting](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml) [![Release Version](https://img.shields.io/github/release/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/releases/latest) ![WordPress tested up to version](https://img.shields.io/badge/WordPress-v5.9%20tested-success.svg) [![GPLv2 License](https://img.shields.io/github/license/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/blob/develop/LICENSE.md)
+[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level) [![E2E Tests](https://github.com/10up/publisher-media-kit/actions/workflows/cypress.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/cypress.yml) [![Linting](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml) [![Release Version](https://img.shields.io/github/release/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/releases/latest) ![WordPress tested up to version](https://img.shields.io/wordpress/plugin/tested/publisher-media-kit?label=WordPress) [![GPLv2 License](https://img.shields.io/github/license/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/blob/develop/LICENSE.md)
 
 ## Overview
 
