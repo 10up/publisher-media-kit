@@ -25,16 +25,17 @@
     "cypress-file-upload": "^5.0.8"
   },
   "dependencies": {
+    "@10up/component-tabs": "^2.0.0",
     "@wordpress/blocks": "^11.1.0",
+    "@wordpress/hooks": "^3.2.2",
     "@wordpress/i18n": "^4.2.2",
+    "@wordpress/icons": "^2.9.0",
     "classnames": "^2.3.1",
     "normalize.css": "^8.0.1",
+    "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react-autocomplete": "^1.8.1",
-    "react-sortable-hoc": "^2.0.0",
-    "@10up/component-tabs": "^2.0.0",
-    "@wordpress/icons": "^2.9.0",
-    "path": "^0.12.7"
+    "react-sortable-hoc": "^2.0.0"
   },
   "10up-toolkit": {
     "devURL": "https://publisher-media.test/",

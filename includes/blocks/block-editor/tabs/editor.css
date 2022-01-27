@@ -38,11 +38,6 @@
 			text-align: center;
 			top: calc(calc(-1 * var(--tab-item-height)) + 2px);
 
-			&.orientation-vertical {
-				left: calc(calc(-1 * var(--tab-item-width)) + 2px);
-				top: 0;
-			}
-
 			& .rich-text {
 				height: 100%;
 				line-height: 1.2;
@@ -158,22 +153,6 @@
 	}
 
 	& .components-tab-panel__tabs {
-
-		&[aria-orientation="vertical"] {
-			display: flex;
-			flex-direction: column;
-			white-space: normal;
-
-			& .components-tab-panel__tabs-item.is-active {
-				border-bottom-color: var(--c-gray);
-				border-right-color: var(--c-white);
-			}
-
-			& .add-tab-button {
-				display: block;
-				margin-left: 0;
-			}
-		}
 
 		& .components-text-control__input {
 			margin-left: 5px;
