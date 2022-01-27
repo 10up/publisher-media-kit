@@ -30,17 +30,19 @@ div.wp-block-group.pmk-tabs-table {
 			width: 1px;
 		}
 	}
-	
+
 	& .tabs-header {
 		border-bottom: 1px solid var(--pmk-global-color-border);
 		display: flex;
 		margin-bottom: var(--pmk-spacing-internal-xlarge);
+		padding-bottom: 10px;
 		position: relative;
 	}
 
 	& .tab-list {
 		align-items: center;
 		display: flex;
+		overflow: initial;
 	}
 
 	& .tab-item, {
@@ -53,7 +55,7 @@ div.wp-block-group.pmk-tabs-table {
 
 			&::after {
 				background-color: var(--pmk-global-color-accent);
-				bottom: 0;
+				bottom: -10px;
 				content: "";
 				display: block;
 				height: 4px;
