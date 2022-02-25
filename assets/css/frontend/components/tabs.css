@@ -48,9 +48,10 @@ div.wp-block-group.pmk-tabs-table {
 		margin: 0 calc(var(--pmk-spacing-internal-medium) * 2) 0 0;
 		position: relative;
 	}
-	
+
 	& .tabs-header {
 		border-bottom: 1px solid var(--pmk-global-color-border);
+		padding-bottom: 10px;
 		position: relative;
 	}
 
@@ -71,7 +72,7 @@ div.wp-block-group.pmk-tabs-table {
 
 			&::after {
 				background-color: var(--pmk-global-color-accent);
-				bottom: 0;
+				bottom: -10px;
 				content: "";
 				display: block;
 				height: 4px;

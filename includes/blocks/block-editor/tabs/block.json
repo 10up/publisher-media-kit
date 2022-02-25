@@ -43,10 +43,6 @@
 		]
 	},
 	"attributes": {
-		"tabVertical": {
-			"type": "boolean",
-			"default": false
-		},
 		"tabsTitle": {
 		  "type": "string"
 		}
