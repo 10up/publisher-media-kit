@@ -55,9 +55,10 @@ class Tabs {
 
 		if ( $block['innerBlocks'] ) {
 
+			$tabs_title = $block['attrs']['tabsTitle'] ?? '';
 			// Add tab navigation controls
 			$tabs = '<div class="tab-control"><div class="tabs-header">
-				<h2 class="tab-title">' . $block['attrs']['tabsTitle'] . '</h2>
+				<h2 class="tab-title">' . esc_html( $tabs_title ) . '</h2>
 				<ul class="tab-list" role="tablist">';
 
 			if ( is_array( $block['innerBlocks'] ) ) {

@@ -38,7 +38,7 @@ const TabsItemEdit = (props) => {
 			<div className={classes}>
 				<div
 					data-tab-block={clientId}
-					className={`orientation-horizontal position-${position}`}
+					className={`tab-header orientation-horizontal position-${position}`}
 				>
 					{/* The reason we don't have the RichText field in the parent block is so that when you are editing tab header text you are selecting
 					the child block. */}
