@@ -21,6 +21,12 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 - The Orientation Options are removed (props [@faisal-alvi](https://github.com/faisal-alvi), [@peterwilsoncc](https://github.com/peterwilsoncc), via #65)
 
+### Security
+
+- Bump `nanoid` from 3.1.25 to 3.2.0 (props [@dependabot](https://github.com/apps/dependabot) via #67)
+- Bump `follow-redirects` from 1.14.4 to 1.14.8 (props [@dependabot](https://github.com/apps/dependabot) via #68 & #69)
+- Bump `url-parse` from 1.5.3 to 1.5.10 (props [@dependabot](https://github.com/apps/dependabot) via #70 & #71)
+
 ## [1.0.0] - 2021-12-10
 - Initial public plugin release 🎉
 
