@@ -19,7 +19,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ### Removed
 
-- The Orientation Options are removed (props [@faisal-alvi](https://github.com/faisal-alvi), [@peterwilsoncc](https://github.com/peterwilsoncc), via #65)
+- The Orientation Options are removed (props [@faisal-alvi](https://github.com/faisal-alvi), [@peterwilsoncc](https://github.com/peterwilsoncc) via #65)
 
 ### Security
 
