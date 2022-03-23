@@ -63,7 +63,7 @@ function block_patterns_and_categories() {
 
 	// Register block pattern for cover image.
 	ob_start();
-	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . $cover_patter_file . '.php';
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . $cover_patter_file . '.html';
 	$cover = ob_get_clean();
 	register_block_pattern(
 		'publisher-media-kit/cover-pattern',
