@@ -5,4 +5,7 @@
 	<exclude-pattern>dist/</exclude-pattern>
 	<exclude-pattern>vendor/</exclude-pattern>
 	<exclude-pattern>tests/</exclude-pattern>
+	<rule ref="Internal.NoCodeFound">
+		<exclude-pattern>includes/block-patterns/*</exclude-pattern>
+	</rule>
 </ruleset>
