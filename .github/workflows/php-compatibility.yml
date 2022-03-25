@@ -49,4 +49,4 @@ jobs:
         run: composer install
 
       - name: Check PHP Compatibility
-        run: ./vendor/bin/phpcs -p publisher-media-kit.php includes --standard=PHPCompatibilityWP --extensions=php --runtime-set testVersion ${{ matrix.php }} --ignore=includes/block-patterns
+        run: ./vendor/bin/phpcs -p publisher-media-kit.php includes --standard=PHPCompatibilityWP --extensions=php --runtime-set testVersion ${{ matrix.php }}
