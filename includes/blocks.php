@@ -63,7 +63,7 @@ function block_patterns_and_categories() {
 
 	// Register block pattern for cover image.
 	ob_start();
-	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . $cover_patter_file . '.html';
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . $cover_patter_file . '.php';
 	$cover = ob_get_clean();
 	register_block_pattern(
 		'publisher-media-kit/cover-pattern',
@@ -77,7 +77,7 @@ function block_patterns_and_categories() {
 
 	// Register block pattern for audience profiles.
 	ob_start();
-	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'audience-profiles.html';
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'audience-profiles.php';
 	$audience_profiles = ob_get_clean();
 	register_block_pattern(
 		'publisher-media-kit/audience-profiles',
@@ -91,7 +91,7 @@ function block_patterns_and_categories() {
 
 	// Register block pattern for 5 column statics block.
 	ob_start();
-	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'stats.html';
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'stats.php';
 	$stats = ob_get_clean();
 	register_block_pattern(
 		'publisher-media-kit/five-column-statics',
@@ -105,7 +105,7 @@ function block_patterns_and_categories() {
 
 	// Register block pattern for 3 column why choose digital.
 	ob_start();
-	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'why-digital.html';
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'why-digital.php';
 	$why_digital = ob_get_clean();
 	register_block_pattern(
 		'publisher-media-kit/why-choose-digital',
@@ -119,7 +119,7 @@ function block_patterns_and_categories() {
 
 	// Register block pattern for tabs with table structure for Ad specs.
 	ob_start();
-	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'digital-ad-specs.html';
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'digital-ad-specs.php';
 	$digital_ad_specs = ob_get_clean();
 	register_block_pattern(
 		'publisher-media-kit/tabs-table-ad-specs',
@@ -133,7 +133,7 @@ function block_patterns_and_categories() {
 
 	// Register block pattern for our packages section.
 	ob_start();
-	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'our-packages.html';
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'our-packages.php';
 	$our_packages = ob_get_clean();
 	register_block_pattern(
 		'publisher-media-kit/our-packages',
@@ -147,7 +147,7 @@ function block_patterns_and_categories() {
 
 	// Register block pattern for tabs with table structure for Our rates.
 	ob_start();
-	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'our-rates.html';
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'our-rates.php';
 	$our_rates = ob_get_clean();
 	register_block_pattern(
 		'publisher-media-kit/tabs-table-our-rates',
@@ -161,7 +161,7 @@ function block_patterns_and_categories() {
 
 	// Register block pattern for still questions contact us block.
 	ob_start();
-	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'question-block.html';
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'question-block.php';
 	$question_block = ob_get_clean();
 	register_block_pattern(
 		'publisher-media-kit/still-questions',

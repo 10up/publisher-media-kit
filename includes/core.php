@@ -149,14 +149,14 @@ function create_media_kit_page() {
 		// Get block patterns to insert in a page.
 		ob_start();
 
-		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . $cover_patter_file . '.html';
-		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'audience-profiles.html';
-		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'stats.html';
-		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'why-digital.html';
-		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'digital-ad-specs.html';
-		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'our-packages.html';
-		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'our-rates.html';
-		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'question-block.html';
+		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . $cover_patter_file . '.php';
+		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'audience-profiles.php';
+		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'stats.php';
+		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'why-digital.php';
+		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'digital-ad-specs.php';
+		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'our-packages.php';
+		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'our-rates.php';
+		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'question-block.php';
 
 		$pmk_page_content = ob_get_clean();
 
