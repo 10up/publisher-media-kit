@@ -13,7 +13,7 @@ describe( 'Check if Media Kit Block Pattern is available for use', () => {
             }
         });
 
-        cy.get( '[aria-label="Publisher Media Kit - Cover"] .block-editor-block-preview__container' ).click({ force: true });
+        cy.get( '[aria-label="Publisher Media Kit - Cover"] .block-editor-block-patterns-list__item-title' ).click({ force: true });
         cy.get('.edit-post-header-toolbar__inserter-toggle').click();
         cy.get( '[data-type="core/heading"]' ).should( 'contain.text', 'Media Kit' );
     } );
