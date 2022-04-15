@@ -1,11 +1,15 @@
 body:not(.wp-admin) div.wp-block-group.pmk-tabs-table {
 
 	& .tabs-header {
-		display: flex;
-		margin-bottom: var(--pmk-spacing-internal-small);
+		margin-bottom: var(--pmk-spacing-internal-medium);
 
 		@media (--wp-small) {
 			margin-bottom: var(--pmk-spacing-internal-xlarge);
+		}
+
+		@media (--bp-large) {
+			display: flex;
+			margin-bottom: var(--pmk-spacing-internal-small);
 		}
 	}
 
