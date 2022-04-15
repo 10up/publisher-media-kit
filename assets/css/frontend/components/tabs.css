@@ -4,12 +4,8 @@ body:not(.wp-admin) div.wp-block-group.pmk-tabs-table {
 		margin-bottom: var(--pmk-spacing-internal-medium);
 
 		@media (--wp-small) {
-			margin-bottom: var(--pmk-spacing-internal-xlarge);
-		}
-
-		@media (--bp-large) {
 			display: flex;
-			margin-bottom: var(--pmk-spacing-internal-small);
+			margin-bottom: var(--pmk-spacing-internal-xlarge);
 		}
 	}
 
@@ -77,16 +73,23 @@ div.wp-block-group.pmk-tabs-table {
 		height: auto;
 		overflow-x: auto;
 		overflow-y: hidden;
+		padding-left: 0;
 
 		@media (--wp-small) {
 			height: var(--tab-item-height);
 			overflow: inherit;
+			padding-left: inherit;
 		}
 	}
 
 	& .tab-item {
 		border: 0;
 		height: 100%;
+
+		/* Ensure list bullets stay hidden */
+		&::before {
+			display: none;
+		}
 
 		&.is-active [role="tab"] {
 			background: none;
