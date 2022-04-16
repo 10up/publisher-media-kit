@@ -12,9 +12,8 @@ import { createBlock } from '@wordpress/blocks';
 import { compose, ifCondition } from '@wordpress/compose';
 import { useState, useEffect, Fragment } from '@wordpress/element';
 import { withSelect, withDispatch } from '@wordpress/data';
-import { Button, PanelBody, ToggleControl, NavigableMenu } from '@wordpress/components';
-import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
-import { applyFilters } from '@wordpress/hooks';
+import { Button, NavigableMenu } from '@wordpress/components';
+import { InnerBlocks, RichText } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';
 
 /**

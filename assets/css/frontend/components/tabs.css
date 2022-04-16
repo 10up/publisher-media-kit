@@ -1,8 +1,12 @@
 body:not(.wp-admin) div.wp-block-group.pmk-tabs-table {
 
 	& .tabs-header {
-		display: flex;
-		margin-bottom: var(--pmk-spacing-internal-xlarge);
+		margin-bottom: var(--pmk-spacing-internal-medium);
+
+		@media (--wp-small) {
+			display: flex;
+			margin-bottom: var(--pmk-spacing-internal-xlarge);
+		}
 	}
 
 	& .tab-title {
@@ -42,11 +46,19 @@ div.wp-block-group.pmk-tabs-table {
 
 	& .tab-title {
 		border-bottom: 1px solid var(--pmk-global-color-border);
-		font-size: var(--pmk-heading-2-font-size);
+		font-size: var(--pmk-heading-5-font-size);
 		font-weight: var(--pmk-font-weight-normal);
-		line-height: var(--pmk-heading-2-line-height);
+		line-height: var(--pmk-heading-5-line-height);
 		margin: 0 calc(var(--pmk-spacing-internal-medium) * 2) 0 0;
 		position: relative;
+
+
+		@media (--wp-small) {
+			font-size: var(--pmk-heading-2-font-size);
+			line-height: var(--pmk-heading-2-line-height);
+			overflow: inherit;
+		}
+
 	}
 
 	& .tabs-header {
@@ -58,13 +70,26 @@ div.wp-block-group.pmk-tabs-table {
 	& .tab-list {
 		align-items: center;
 		display: flex;
-		height: var(--tab-item-height);
-		overflow: inherit;
+		height: auto;
+		overflow-x: auto;
+		overflow-y: hidden;
+		padding-left: 0;
+
+		@media (--wp-small) {
+			height: var(--tab-item-height);
+			overflow: inherit;
+			padding-left: inherit;
+		}
 	}
 
-	& .tab-item, {
+	& .tab-item {
 		border: 0;
 		height: 100%;
+
+		/* Ensure list bullets stay hidden */
+		&::before {
+			display: none;
+		}
 
 		&.is-active [role="tab"] {
 			background: none;
@@ -72,13 +97,19 @@ div.wp-block-group.pmk-tabs-table {
 
 			&::after {
 				background-color: var(--pmk-global-color-accent);
-				bottom: -10px;
+				bottom: auto;
 				content: "";
 				display: block;
 				height: 4px;
 				left: 0;
 				position: absolute;
+				top: 0;
 				width: 100%;
+
+				@media (--wp-small) {
+					bottom: -10px;
+					top: auto;
+				}
 			}
 		}
 
@@ -86,12 +117,17 @@ div.wp-block-group.pmk-tabs-table {
 			align-items: center;
 			border: 0;
 			display: flex;
-			font-size: var(--pmk-text-small-font-size);
+			font-size: var(--pmk-text-smaller-font-size);
 			font-weight: var(--pmk-font-weight-bold);
 			height: 100%;
 			line-height: var(--pmk-text-small-line-height);
 			margin-right: var(--pmk-spacing-internal-large);
-			padding: 0;
+			padding: 0 0 var(--pmk-spacing-internal-small);
+
+			@media (--wp-small) {
+				font-size: var(--pmk-text-small-font-size);
+				padding: 0;
+			}
 
 			&:first-of-type {
 				padding-left: 0;
@@ -114,6 +150,11 @@ div.wp-block-group.pmk-tabs-table {
 	}
 
 	& .tab-content {
+		font-size: var(--pmk-text-smaller-font-size);
+
+		@media (--wp-small) {
+			font-size: var(--pmk-text-small-font-size);
+		}
 
 		& .wp-block-table {
 			margin: 0;
@@ -129,7 +170,7 @@ div.wp-block-group.pmk-tabs-table {
 		}
 
 		& th,
-		& td, {
+		& td {
 			border: 0;
 			padding: var(--pmk-spacing-internal-medium) var(--pmk-spacing-internal-large);
 			text-align: left;
