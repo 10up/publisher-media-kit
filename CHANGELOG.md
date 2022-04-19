@@ -7,7 +7,6 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Added mobile styling and fixed linting errors (props [@cldhmmr](https://github.com/cldhmmr), [@treykane](https://github.com/treykane), [@faisal-alvi](https://github.com/faisal-alvi), [@sudip-10up](https://github.com/sudip-10up), [@jeffpaul](https://github.com/jeffpaul) via [#72](https://github.com/10up/publisher-media-kit/pull/72))
 
 ### Changed
-
 - WP Version bump to 5.9 (props [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul), [@sudip-10up](https://github.com/sudip-10up), [@ankitguptaindia](https://github.com/ankitguptaindia) via [#64](https://github.com/10up/publisher-media-kit/pull/64))
 - Compatible tabs with the upstream version 1.0.2 (props [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#81](https://github.com/10up/publisher-media-kit/pull/81))
 
@@ -19,11 +18,9 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Tab Title is editable from below the tab (props [@faisal-alvi](https://github.com/faisal-alvi), [@peterwilsoncc](https://github.com/peterwilsoncc), [@kdo](https://github.com/kdo), [@jeffpaul](https://github.com/jeffpaul) via [#63](https://github.com/10up/publisher-media-kit/pull/63))
 
 ### Removed
-
 - The Orientation Options are removed (props [@faisal-alvi](https://github.com/faisal-alvi), [@peterwilsoncc](https://github.com/peterwilsoncc) via [#65](https://github.com/10up/publisher-media-kit/pull/65))
 
 ### Security
-
 - Bump `nanoid` from 3.1.25 to 3.2.0 (props [@dependabot](https://github.com/apps/dependabot) via [#67](https://github.com/10up/publisher-media-kit/pull/67))
 - Bump `follow-redirects` from 1.14.4 to 1.14.8 (props [@dependabot](https://github.com/apps/dependabot) via [#68](https://github.com/10up/publisher-media-kit/pull/68) & [#69](https://github.com/10up/publisher-media-kit/pull/69))
 - Bump `url-parse` from 1.5.3 to 1.5.10 (props [@dependabot](https://github.com/apps/dependabot) via [#70](https://github.com/10up/publisher-media-kit/pull/70) & [#71](https://github.com/10up/publisher-media-kit/pull/71))
