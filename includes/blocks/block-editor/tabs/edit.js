@@ -14,6 +14,7 @@ import { useState, useEffect, Fragment } from '@wordpress/element';
 import { withSelect, withDispatch } from '@wordpress/data';
 import { Button, NavigableMenu } from '@wordpress/components';
 import { InnerBlocks, RichText } from '@wordpress/block-editor';
+import { decodeEntities } from '@wordpress/html-entities';
 import { __ } from '@wordpress/i18n';
 
 /**
@@ -125,7 +126,7 @@ const TabsEdit = (props) => {
 							document.getElementById(`block-${clientId}`).setAttribute('data-is-tab-header-editing', 1);
 						}}
 					>
-						{header || __('Tab Header', 'publisher-media-kit')}
+						{decodeEntities(header) || __('Tab Header', 'publisher-media-kit')}
 					</Button>
 				</Fragment>
 			);
