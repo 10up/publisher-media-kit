@@ -3,9 +3,9 @@
  * Plugin Name:       Publisher Media Kit
  * Plugin URI:        https://github.com/10up/publisher-media-kit
  * Description:       Pre-configured Media Kit Page using Gutenberg Block Patterns.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Requires at least: 5.5
- * Requires PHP:      7.2
+ * Requires PHP:      7.0
  * Author:            10up
  * Author URI:        https://10up.com
  * License:           GPL v2 or later
@@ -17,7 +17,7 @@
  */
 
 // Useful global constants.
-define( 'PUBLISHER_MEDIA_KIT_VERSION', '1.0.0' );
+define( 'PUBLISHER_MEDIA_KIT_VERSION', '1.1.0' );
 define( 'PUBLISHER_MEDIA_KIT_URL', plugin_dir_url( __FILE__ ) );
 define( 'PUBLISHER_MEDIA_KIT_PATH', plugin_dir_path( __FILE__ ) );
 define( 'PUBLISHER_MEDIA_KIT_BLOCKS_PATH', plugin_dir_path( __FILE__ ) . 'includes/blocks/block-editor/' );

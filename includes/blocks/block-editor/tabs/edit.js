@@ -12,9 +12,9 @@ import { createBlock } from '@wordpress/blocks';
 import { compose, ifCondition } from '@wordpress/compose';
 import { useState, useEffect, Fragment } from '@wordpress/element';
 import { withSelect, withDispatch } from '@wordpress/data';
-import { Button, PanelBody, ToggleControl, NavigableMenu } from '@wordpress/components';
-import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
-import { applyFilters } from '@wordpress/hooks';
+import { Button, NavigableMenu } from '@wordpress/components';
+import { InnerBlocks, RichText } from '@wordpress/block-editor';
+import { decodeEntities } from '@wordpress/html-entities';
 import { __ } from '@wordpress/i18n';
 
 /**
@@ -30,7 +30,7 @@ const FilterableTabsFooter = createFilterableComponent('tenup.tabs.footer');
 
 const TabsEdit = (props) => {
 	const {
-		attributes: { tabVertical, tabsTitle },
+		attributes: { tabsTitle },
 		setAttributes,
 		isSelected,
 		className,
@@ -42,7 +42,6 @@ const TabsEdit = (props) => {
 		activeClass = 'is-active',
 	} = props;
 	const { innerBlocks } = block;
-	const orientation = tabVertical ? 'vertical' : 'horizontal';
 	const [tabCount, setTabCount] = useState(innerBlocks.length);
 	const [editTab, setEditTab] = useState('');
 
@@ -127,7 +126,7 @@ const TabsEdit = (props) => {
 							document.getElementById(`block-${clientId}`).setAttribute('data-is-tab-header-editing', 1);
 						}}
 					>
-						{header || __('Tab Header', 'publisher-media-kit')}
+						{decodeEntities(header) || __('Tab Header', 'publisher-media-kit')}
 					</Button>
 				</Fragment>
 			);
@@ -149,18 +148,9 @@ const TabsEdit = (props) => {
 				const positionInfo = tabHeaderButton.getBoundingClientRect();
 
 				if (tabHeader && tabHeaderButton) {
-					if (orientation === 'horizontal') {
-						// console.log(`${header} - Move to ${tabHeaderButton.offsetLeft}`);
-						tabHeader.style.left = `${tabHeaderButton.offsetLeft}px`;
-						tabHeader.style.width = `${positionInfo.width - 2}px`;
-						tabHeader.style.top = '-58px';
-
-						// debugger;
-					} else {
-						tabHeader.style.top = `${tabHeaderButton.offsetTop}px`;
-						tabHeader.style.left = '-118px';
-						tabHeader.style.width = '120px';
-					}
+					tabHeader.style.left = `${tabHeaderButton.offsetLeft}px`;
+					tabHeader.style.width = `${positionInfo.width - 2}px`;
+					tabHeader.style.top = '-58px';
 				}
 			});
 		});
@@ -180,7 +170,7 @@ const TabsEdit = (props) => {
 							return false;
 						}}
 						role="tablist"
-						orientation={orientation}
+						orientation="horizontal"
 						className="components-tab-panel__tabs tab-list"
 					>
 						{tabPanels}
@@ -189,7 +179,7 @@ const TabsEdit = (props) => {
 							icon="plus"
 							label={__('Add New Tab', 'publisher-media-kit')}
 							onClick={() => {
-							// eslint-disable-next-line react/prop-types
+								// eslint-disable-next-line react/prop-types
 								const created = createBlock(
 									'tenup/tabs-item',
 									{
@@ -213,34 +203,14 @@ const TabsEdit = (props) => {
 		);
 	};
 
-	const orientationOptions = () => {
-		return (
-			<InspectorControls>
-				{applyFilters('tenup.tabs.showOrientationOption', true, clientId) ? (
-					<PanelBody title={__('Orientation Options', 'publisher-media-kit')}>
-						<ToggleControl
-							label={__('Vertical Layout', 'publisher-media-kit')}
-							checked={tabVertical}
-							onChange={() => setAttributes({ tabVertical: !tabVertical })}
-						/>
-					</PanelBody>
-				) : (
-					''
-				)}
-			</InspectorControls>
-		);
-	};
-
 	return (
 		<>
-			{orientationOptions()}
-
-			<div className={`${className} ${classes} tabs-${orientation}`}>
+			<div className={`${className} ${classes} tabs-horizontal`}>
 				<FilterableTabsHeader blockProps={props} />
 				{DisplayTabPanel()}
 				<div className="tab-group">
 					<InnerBlocks
-						orientation={orientation}
+						orientation="horizontal"
 						allowedBlocks={['tenup/tabs-item']}
 						// eslint-disable-next-line prettier/prettier
 						template={[['tenup/tabs-item', { header: '' }, [[ 'core/paragraph', {} ]]]]}

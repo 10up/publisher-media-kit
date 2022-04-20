@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
 /**
  * Wordpress dependencies
  */
@@ -8,13 +7,14 @@ import { InnerBlocks, RichText } from '@wordpress/block-editor';
 import { compose } from '@wordpress/compose';
 import { withSelect } from '@wordpress/data';
 import { applyFilters } from '@wordpress/hooks';
+import { decodeEntities } from '@wordpress/html-entities';
 
 /**
  * Internal dependencies
  */
-import { editPropsShape } from './props-shape';
-import createFilterableComponent from '../../utils/createFilterableComponent';
 import CustomBlockAppender from '../../components/custom-block-appender';
+import createFilterableComponent from '../../utils/createFilterableComponent';
+import { editPropsShape } from './props-shape';
 
 const FilterableTabsItemHeader = createFilterableComponent('tenup.tabsItem.header');
 const FilterableTabsItemFooter = createFilterableComponent('tenup.tabsItem.footer');
@@ -25,7 +25,6 @@ const TabsItemEdit = (props) => {
 		hasSelectedInnerBlock,
 		setAttributes,
 		clientId,
-		orientation,
 		position,
 		name,
 		attributes: { header },
@@ -39,7 +38,7 @@ const TabsItemEdit = (props) => {
 			<div className={classes}>
 				<div
 					data-tab-block={clientId}
-					className={`orientation-${orientation} position-${position}`}
+					className={`tab-header orientation-horizontal position-${position}`}
 				>
 					{/* The reason we don't have the RichText field in the parent block is so that when you are editing tab header text you are selecting
 					the child block. */}
@@ -49,7 +48,7 @@ const TabsItemEdit = (props) => {
 						placeholder={__('Tab Header', 'publisher-media-kit')}
 						onChange={(newHeader) => {
 							// eslint-disable-next-line prettier/prettier
-							setAttributes({ header: newHeader.replace( /<\/?[a-z][^>]*?>/gi, ' ' ) });
+							setAttributes({ header: decodeEntities(newHeader).replace( /<\/?[a-z][^>]*?>/gi, ' ' ) });
 						}}
 						allowedFormats={[]}
 					/>
@@ -97,7 +96,6 @@ export default compose(
 
 		return {
 			position,
-			orientation: parentBlock.attributes.tabVertical ? 'vertical' : 'horizontal',
 			hasSelectedInnerBlock,
 		};
 	}),
