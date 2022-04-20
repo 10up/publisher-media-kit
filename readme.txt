@@ -3,7 +3,7 @@ Contributors:      10up, jeffpaul, faisal03
 Tags:              media kit, audience profiles, digital ad specs, ad rates
 Requires at least: 5.5
 Tested up to:      5.9
-Stable tag:        1.0.0
+Stable tag:        1.1.0
 Requires PHP:      7.2
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -56,6 +56,20 @@ We require WordPress 5.5 and above as this is when `register_block_pattern_categ
 4. Media Kit page on frontend of site running the Newspack base theme.
 
 == Changelog ==
+
+= 1.1.0 =
+* **Added:** Added mobile styling and fixed linting errors (props [@cldhmmr](https://github.com/cldhmmr), [@treykane](https://github.com/treykane), [@faisal-alvi](https://github.com/faisal-alvi), [@sudip-10up](https://github.com/sudip-10up), [@jeffpaul](https://github.com/jeffpaul))
+* **Changed:** WP Version bump to 5.9 (props [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul), [@sudip-10up](https://github.com/sudip-10up), [@ankitguptaindia](https://github.com/ankitguptaindia))
+* **Changed:** Compatible tabs with the upstream version 1.0.2 (props [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul))
+* **Fixed:** Fix responsive issues of media kit page (props [@mehidi258](https://github.com/mehidi258), [@sudip-10up](https://github.com/sudip-10up) [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul))
+* **Fixed:** Fix eslint errors (props [@mehidi258](https://github.com/mehidi258), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul))
+* **Fixed:** Fix editor styles to match frontend design (props [@mehidi258](https://github.com/mehidi258), [@ankitguptaindia](https://github.com/ankitguptaindia), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul))
+* **Fixed:** Fix audience profiles border width (props [@mehidi258](https://github.com/mehidi258), [@Sidsector9](https://github.com/Sidsector9), [@ankitguptaindia](https://github.com/ankitguptaindia), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul))
+* **Fixed:** Tab Title is editable from below the tab (props [@faisal-alvi](https://github.com/faisal-alvi), [@peterwilsoncc](https://github.com/peterwilsoncc), [@kdo](https://github.com/kdo), [@jeffpaul](https://github.com/jeffpaul))
+* **Removed:** The Orientation Options are removed (props [@faisal-alvi](https://github.com/faisal-alvi), [@peterwilsoncc](https://github.com/peterwilsoncc))
+* **Security:** Bump `nanoid` from 3.1.25 to 3.2.0 (props [@dependabot](https://github.com/apps/dependabot))
+* **Security:** Bump `follow-redirects` from 1.14.4 to 1.14.8 (props [@dependabot](https://github.com/apps/dependabot))
+* **Security:** Bump `url-parse` from 1.5.3 to 1.5.10 (props [@dependabot](https://github.com/apps/dependabot))
 
 = 1.0.0 =
 * Initial public plugin release 🎉
