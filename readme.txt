@@ -2,7 +2,7 @@
 Contributors:      10up, jeffpaul, faisal03
 Tags:              media kit, audience profiles, digital ad specs, ad rates
 Requires at least: 5.5
-Tested up to:      5.9
+Tested up to:      6.0
 Stable tag:        1.1.0
 Requires PHP:      7.2
 License:           GPLv2 or later
