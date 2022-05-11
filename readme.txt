@@ -1,12 +1,12 @@
 === Publisher Media Kit ===
-Contributors:      10up, jeffpaul, faisal03
-Tags:              media kit, audience profiles, digital ad specs, ad rates
+Contributors: 10up, jeffpaul, faisal03
+Tags: media kit, audience profiles, digital ad specs, ad rates
 Requires at least: 5.5
-Tested up to:      6.0
-Stable tag:        1.1.0
-Requires PHP:      7.2
-License:           GPLv2 or later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 6.0
+Stable tag: 1.1.0
+Requires PHP: 7.2
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Pre-configured Media Kit Page using Gutenberg Block Patterns.
 
