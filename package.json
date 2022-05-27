@@ -26,6 +26,7 @@
     "cypress-file-upload": "^5.0.8"
   },
   "dependencies": {
+    "@10up/eslint-config": "^2.1.1",
     "@10up/component-tabs": "^2.0.1",
     "@wordpress/blocks": "^11.5.1",
     "@wordpress/hooks": "^3.6.0",
