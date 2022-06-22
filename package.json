@@ -23,7 +23,18 @@
     "@babel/preset-react": "^7.17.12",
     "@wordpress/env": "^4.5.0",
     "cypress": "^9.5.4",
-    "cypress-file-upload": "^5.0.8"
+    "cypress-file-upload": "^5.0.8",
+    "@10up/eslint-config": "^2.4.6",
+    "eslint": "^8.1.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^37.0.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^2.5.0"
   },
   "dependencies": {
     "@10up/component-tabs": "^2.0.1",
