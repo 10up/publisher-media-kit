@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).  Moving forward, this project will (more strictly) adhere to [Semantic Versioning](http://semver.org/).
 
-## [1.2.0] - 2022-06-XX
+## [1.2.0] - 2022-06-23
 ### Added
 - Dependency security scanning. (props [@jeffpaul.](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi) via [#84](https://github.com/10up/publisher-media-kit/pull/84))
 
