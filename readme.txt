@@ -60,7 +60,7 @@ We require WordPress 5.5 and above as this is when `register_block_pattern_categ
 = 1.2.0 = 2022-06-27
 * **Added:** Dependency security scanning. (props [@jeffpaul.](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi)) via [#84](https://github.com/10up/publisher-media-kit/pull/84))
 * **Changed:** Bump WordPress "tested up to" version 6.0. (props [@ajmaurya99](https://github.com/ajmaurya99), [@faisal-alvi](https://github.com/faisal-alvi), [@vikrampm1](https://github.com/vikrampm1)) via [#83](https://github.com/10up/publisher-media-kit/pull/83))
-* **Security:** Bump eventsource from 1.1.0 to 1.1.1 (props [@dependabot[bot]](https://github.com/apps/dependabot), [@jeffpaul](https://github.com/jeffpaul)) via [#86](https://github.com/10up/publisher-media-kit/pull/86))
+* **Security:** Bump eventsource from 1.1.0 to 1.1.1 (props [@dependabot](https://github.com/apps/dependabot), [@jeffpaul](https://github.com/jeffpaul)) via [#86](https://github.com/10up/publisher-media-kit/pull/86))
 
 = 1.1.0 = 2022-04-20
 * **Added:** Added mobile styling and fixed linting errors (props [@cldhmmr](https://github.com/cldhmmr), [@treykane](https://github.com/treykane), [@faisal-alvi](https://github.com/faisal-alvi), [@sudip-10up](https://github.com/sudip-10up), [@jeffpaul](https://github.com/jeffpaul))
