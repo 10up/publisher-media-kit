@@ -3,7 +3,7 @@ Contributors:      10up, jeffpaul, faisal03
 Tags:              media kit, audience profiles, digital ad specs, ad rates
 Requires at least: 5.5
 Tested up to:      6.0
-Stable tag:        1.1.0
+Stable tag:        1.2.0
 Requires PHP:      7.2
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -57,7 +57,12 @@ We require WordPress 5.5 and above as this is when `register_block_pattern_categ
 
 == Changelog ==
 
-= 1.1.0 =
+= 1.2.0 = 2022-06-27
+* **Added:** Dependency security scanning. (props [@jeffpaul.](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi)) via [#84](https://github.com/10up/publisher-media-kit/pull/84))
+* **Changed:** Bump WordPress "tested up to" version 6.0. (props [@ajmaurya99](https://github.com/ajmaurya99), [@faisal-alvi](https://github.com/faisal-alvi), [@vikrampm1](https://github.com/vikrampm1)) via [#83](https://github.com/10up/publisher-media-kit/pull/83))
+* **Security:** Bump eventsource from 1.1.0 to 1.1.1 (props [@dependabot[bot]](https://github.com/apps/dependabot), [@jeffpaul](https://github.com/jeffpaul)) via [#86](https://github.com/10up/publisher-media-kit/pull/86))
+
+= 1.1.0 = 2022-04-20
 * **Added:** Added mobile styling and fixed linting errors (props [@cldhmmr](https://github.com/cldhmmr), [@treykane](https://github.com/treykane), [@faisal-alvi](https://github.com/faisal-alvi), [@sudip-10up](https://github.com/sudip-10up), [@jeffpaul](https://github.com/jeffpaul))
 * **Changed:** WP Version bump to 5.9 (props [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul), [@sudip-10up](https://github.com/sudip-10up), [@ankitguptaindia](https://github.com/ankitguptaindia))
 * **Changed:** Compatible tabs with the upstream version 1.0.2 (props [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul))
@@ -71,8 +76,8 @@ We require WordPress 5.5 and above as this is when `register_block_pattern_categ
 * **Security:** Bump `follow-redirects` from 1.14.4 to 1.14.8 (props [@dependabot](https://github.com/apps/dependabot))
 * **Security:** Bump `url-parse` from 1.5.3 to 1.5.10 (props [@dependabot](https://github.com/apps/dependabot))
 
-= 1.0.0 =
+= 1.0.0 = 2021-12-10
 * Initial public plugin release 🎉
 
-= 0.9.0 =
+= 0.9.0 = 2021-12-01
 * Initial private plugin release 🎉
