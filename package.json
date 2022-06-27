@@ -1,6 +1,6 @@
 {
   "name": "publisher-media-kit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "scripts": {
     "start": "10up-toolkit start",
     "watch": "10up-toolkit watch",
@@ -18,17 +18,29 @@
     "node": ">=12.0.0"
   },
   "devDependencies": {
-    "10up-toolkit": "^1.0.13",
-    "@babel/preset-react": "^7.16.7",
+    "10up-toolkit": "^4.0.0",
+    "@10up/babel-preset-default": "^1.1.2",
+    "@babel/preset-react": "^7.17.12",
     "@wordpress/env": "^4.5.0",
     "cypress": "^9.5.4",
-    "cypress-file-upload": "^5.0.8"
+    "cypress-file-upload": "^5.0.8",
+    "@10up/eslint-config": "^2.4.6",
+    "eslint": "^8.1.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^37.0.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^2.5.0"
   },
   "dependencies": {
     "@10up/component-tabs": "^2.0.1",
-    "@wordpress/blocks": "^11.5.1",
-    "@wordpress/hooks": "^3.6.0",
-    "@wordpress/i18n": "^4.6.0",
+    "@wordpress/blocks": "^11.9.0",
+    "@wordpress/hooks": "^3.10.0",
+    "@wordpress/i18n": "^4.10.0",
     "@wordpress/icons": "^2.9.0",
     "classnames": "^2.3.1",
     "normalize.css": "^8.0.1",

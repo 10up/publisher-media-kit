@@ -5,6 +5,7 @@
 /bin
 /node_modules
 /tests
+/assets
 
 # Files
 .distignore

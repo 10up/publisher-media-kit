@@ -2,7 +2,18 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).  Moving forward, this project will (more strictly) adhere to [Semantic Versioning](http://semver.org/).
 
-## [1.1.0] - 2022-03-24
+## [1.2.0] - 2022-06-27
+### Added
+- Dependency security scanning. (props [@jeffpaul.](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi) via [#84](https://github.com/10up/publisher-media-kit/pull/84))
+
+### Changed
+- Bump WordPress "tested up to" version 6.0. (props [@ajmaurya99](https://github.com/ajmaurya99), [@faisal-alvi](https://github.com/faisal-alvi), [@vikrampm1](https://github.com/vikrampm1) via [#83](https://github.com/10up/publisher-media-kit/pull/83))
+
+### Security
+- Upgrade 10up-toolkit to v4 (props [@jeffpaul](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi), [@Sidsector9](https://github.com/Sidsector9) via [#85](https://github.com/10up/publisher-media-kit/pull/85))
+- Bump eventsource from 1.1.0 to 1.1.1 (props [@dependabot[bot]](https://github.com/apps/dependabot), [@jeffpaul](https://github.com/jeffpaul) via [#86](https://github.com/10up/publisher-media-kit/pull/86))
+
+## [1.1.0] - 2022-04-20
 ### Added
 - Added mobile styling and fixed linting errors (props [@cldhmmr](https://github.com/cldhmmr), [@treykane](https://github.com/treykane), [@faisal-alvi](https://github.com/faisal-alvi), [@sudip-10up](https://github.com/sudip-10up), [@jeffpaul](https://github.com/jeffpaul) via [#72](https://github.com/10up/publisher-media-kit/pull/72))
 
