@@ -11,7 +11,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ### Security
 - Upgrade 10up-toolkit to v4 (props [@jeffpaul](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi), [@Sidsector9](https://github.com/Sidsector9) via [#85](https://github.com/10up/publisher-media-kit/pull/85))
-- Bump eventsource from 1.1.0 to 1.1.1 (props [@dependabot[bot]](https://github.com/apps/dependabot), [@jeffpaul](https://github.com/jeffpaul) via [#86](https://github.com/10up/publisher-media-kit/pull/86))
+- Bump eventsource from 1.1.0 to 1.1.1 (props [@dependabot](https://github.com/apps/dependabot), [@jeffpaul](https://github.com/jeffpaul) via [#86](https://github.com/10up/publisher-media-kit/pull/86))
 
 ## [1.1.0] - 2022-04-20
 ### Added
