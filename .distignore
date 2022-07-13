@@ -5,7 +5,9 @@
 /bin
 /node_modules
 /tests
-/assets
+/assets/css
+/assets/js
+/assets/svg
 
 # Files
 .distignore
