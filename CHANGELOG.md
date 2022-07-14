@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).  Moving forward, this project will (more strictly) adhere to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased] - TBD
+
 ## [1.2.0] - 2022-06-27
 ### Added
 - Dependency security scanning. (props [@jeffpaul.](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi) via [#84](https://github.com/10up/publisher-media-kit/pull/84))
@@ -43,5 +45,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Initial private plugin release 🎉
 
 [Unreleased]: https://github.com/10up/publisher-media-kit/compare/trunk...develop
+[1.2.0]: https://github.com/10up/publisher-media-kit/compare/1.1.0...1.2.0
+[1.1.0]: https://github.com/10up/publisher-media-kit/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/10up/publisher-media-kit/compare/0.9.0...1.0.0
 [0.9.0]: https://github.com/10up/publisher-media-kit/tree/0.9.0
