@@ -57,6 +57,10 @@ We require WordPress 5.5 and above as this is when `register_block_pattern_categ
 
 == Changelog ==
 
+= 1.2.1 = 2022-07-19
+* **Changed:** Updated the `CONTRIBUTING.md` file (props [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#89](https://github.com/10up/publisher-media-kit/pull/89))
+* **Fixed:** Bring back the `/assets/images` directory to avoid broken images (props [@dkotter](https://github.com/dkotter), [@kmwilkerson](https://github.com/kmwilkerson), [@faisal-alvi](https://github.com/faisal-alvi) via [#91](https://github.com/10up/publisher-media-kit/pull/91))
+
 = 1.2.0 = 2022-06-27
 * **Added:** Dependency security scanning. (props [@jeffpaul.](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi)) via [#84](https://github.com/10up/publisher-media-kit/pull/84))
 * **Changed:** Bump WordPress "tested up to" version 6.0. (props [@ajmaurya99](https://github.com/ajmaurya99), [@faisal-alvi](https://github.com/faisal-alvi), [@vikrampm1](https://github.com/vikrampm1)) via [#83](https://github.com/10up/publisher-media-kit/pull/83))
