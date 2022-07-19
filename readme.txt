@@ -3,7 +3,7 @@ Contributors:      10up, jeffpaul, faisal03
 Tags:              media kit, audience profiles, digital ad specs, ad rates
 Requires at least: 5.5
 Tested up to:      6.0
-Stable tag:        1.2.0
+Stable tag:        1.2.1
 Requires PHP:      7.2
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -56,6 +56,10 @@ We require WordPress 5.5 and above as this is when `register_block_pattern_categ
 4. Media Kit page on frontend of site running the Newspack base theme.
 
 == Changelog ==
+
+= 1.2.1 = 2022-07-19
+* **Changed:** Updated the `CONTRIBUTING.md` file (props [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#89](https://github.com/10up/publisher-media-kit/pull/89))
+* **Fixed:** Bring back the `/assets/images` directory to avoid broken images (props [@dkotter](https://github.com/dkotter), [@kmwilkerson](https://github.com/kmwilkerson), [@faisal-alvi](https://github.com/faisal-alvi) via [#91](https://github.com/10up/publisher-media-kit/pull/91))
 
 = 1.2.0 = 2022-06-27
 * **Added:** Dependency security scanning. (props [@jeffpaul.](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi)) via [#84](https://github.com/10up/publisher-media-kit/pull/84))
