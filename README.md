@@ -20,8 +20,8 @@ Twenty Twenty One default theme | Newspack base theme
 
 ## Requirements
 
-* PHP Requires: 7.0
-* WordPress Requires at least: 5.5
+* PHP Requires: 7.4
+* WordPress Requires at least: 5.7
 
 ## Theme Compatibility
 
