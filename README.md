@@ -20,8 +20,8 @@ Twenty Twenty One default theme | Newspack base theme
 
 ## Requirements
 
-* PHP Requires: 7.0
-* WordPress Requires at least: 5.5
+* PHP Requires: 7.4
+* WordPress Requires at least: 5.7
 
 ## Theme Compatibility
 
@@ -50,10 +50,6 @@ Click the block inserter (`+` button) in the top left of the block editor, click
 ### I want to add block from my `Media Kit` page on a different post/page, how do I add it outside the `Media Kit` page?
 
 Click the block inserter (`+` button) in the top left of the block editor, click the `Patterns` tab, select `Publisher Media Kit` in the dropdown, and select the specific Block Pattern that you want to add to your post/page.
-
-### Why do you require WordPress 5.4 and above?  Why not 5.0 and above?
-
-We require WordPress 5.4 and above as this is when Block Patterns became available in WordPress core and they are of the main components of the Publisher Media Kit plugin.  In fact, we recommend that you utilize the latest major version of WordPress and commit to testing and ensuring that Publisher Media Kit works on the latest WordPress version.
 
 ## Support Level
 

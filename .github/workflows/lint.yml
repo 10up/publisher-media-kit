@@ -50,9 +50,9 @@ jobs:
     - name: Set PHP version
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '7.2'
+        php-version: '7.4'
         coverage: none
-        tools: prestissimo, composer:v2
+        tools: composer:v2
     - name: composer install
       run: composer install --ignore-platform-reqs
     - name: Check PHPCS standard
@@ -60,4 +60,4 @@ jobs:
     - name: PHPCS check
       uses: chekalsky/phpcs-action@v1
       with:
-        phpcs_bin_path: './vendor/bin/phpcs . --runtime-set testVersion 7.0-'
+        phpcs_bin_path: './vendor/bin/phpcs . --runtime-set testVersion 7.4-'
