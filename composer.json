@@ -8,7 +8,7 @@
     }
   ],
   "require": {
-    "php": ">=7.0"
+    "php": ">=7.4"
   },
   "autoload": {
     "psr-4": {
@@ -21,7 +21,7 @@
     "10up/phpcs-composer": "dev-master"
   },
   "scripts": {
-    "lint": "phpcs . --runtime-set testVersion 7.0-",
+    "lint": "phpcs . --runtime-set testVersion 7.4-",
     "lint-fix": "phpcbf ."
   }
 }
