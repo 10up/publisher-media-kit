@@ -53,6 +53,10 @@ Click the block inserter (`+` button) in the top left of the block editor, click
 
 == Changelog ==
 
+= 1.3.0 = 2022-09-13
+* **Changed:** Bump min WordPress to 5.7 and min PHP to 7.4 (props [@vikrampm1](https://github.com/vikrampm1), [@faisal-alvi](https://github.com/faisal-alvi), [@Sidsector9](https://github.com/Sidsector9) via [#96](https://github.com/10up/publisher-media-kit/pull/96))
+* **Security:** Bump terser from 5.14.0 to 5.14.2 (props [@dependabot](https://github.com/apps/dependabot), [@jeffpaul](https://github.com/faisal-alvi) via [#95](https://github.com/10up/publisher-media-kit/pull/95))
+
 = 1.2.1 = 2022-07-19
 * **Changed:** Updated the `CONTRIBUTING.md` file (props [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#89](https://github.com/10up/publisher-media-kit/pull/89))
 * **Fixed:** Bring back the `/assets/images` directory to avoid broken images (props [@dkotter](https://github.com/dkotter), [@kmwilkerson](https://github.com/kmwilkerson), [@faisal-alvi](https://github.com/faisal-alvi) via [#91](https://github.com/10up/publisher-media-kit/pull/91))
