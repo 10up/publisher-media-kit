@@ -53,7 +53,7 @@ Click the block inserter (`+` button) in the top left of the block editor, click
 
 == Changelog ==
 
-= 1.3.0 = 2022-09-13
+= 1.3.0 = 2022-09-14
 **Note that this release bumps the minimum required version of WordPress from 5.5 to 5.7 and PHP from 7.0 to 7.4.**
 
 * **Changed:** Bump minimum required version of WordPress from 5.5 to 5.7 (props [@vikrampm1](https://github.com/vikrampm1), [@faisal-alvi](https://github.com/faisal-alvi), [@Sidsector9](https://github.com/Sidsector9) via [#96](https://github.com/10up/publisher-media-kit/pull/96)).
