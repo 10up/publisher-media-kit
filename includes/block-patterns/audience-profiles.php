@@ -1,4 +1,34 @@
 <?php
 // phpcs:ignoreFile
 ?>
-<!-- wp:group {"align":"wide","className":"pmk-audience-profiles"} --><div class="wp-block-group alignwide pmk-audience-profiles"><!-- wp:heading {"textAlign":"center","level":2} --><h2 class="has-text-align-center">Audience Profiles</h2><!-- /wp:heading --><!-- wp:columns {"align":"wide"} --><div class="wp-block-columns alignwide"><!-- wp:column --><div class="wp-block-column"><!-- wp:image {"align":"center","width":60,"height":137} --><div id="block-ad47cc21-f741-4805-a4d7-85e15762d9d9" class="wp-block-image"><figure class="aligncenter is-resized"><img src="/wp-content/plugins/publisher-media-kit/assets/images/icon-woman.png" alt="Female visitors" width="60" height="137"/></figure></div><!-- /wp:image --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center" id="block-80c8c75b-6f07-4ca5-a041-fe48703c3e56">The average female visitor is<br><strong>38 years old</strong></p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column --><div class="wp-block-column"><!-- wp:image {"align":"center","width":60,"height":137} --><div id="block-7db2072f-dbec-47c8-afdb-8e3c78404377" class="wp-block-image"><figure class="aligncenter is-resized"><img src="/wp-content/plugins/publisher-media-kit/assets/images/icon-man.png" alt="Male visitors" width="60" height="137"/></figure></div><!-- /wp:image --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center" id="block-5faaca4c-38a7-4e2f-aee3-a7312df7cd8f">The average male visitor is<br><strong>52 years old</strong></p><!-- /wp:paragraph --></div><!-- /wp:column --></div><!-- /wp:columns --></div><!-- /wp:group -->
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"margin":{"top":"4.38rem"}}},"fontSize":"large"} -->
+    <h2 class="has-text-align-center has-large-font-size" style="font-style:normal;font-weight:400;margin-top:4.38rem">Audience Profiles</h2>
+    <!-- /wp:heading -->
+
+    <!-- wp:separator {"style":{"color":{"background":"#ebf0f7"}},"className":"is-style-wide"} -->
+    <hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="background-color:#ebf0f7;color:#ebf0f7"/>
+    <!-- /wp:separator -->
+
+    <!-- wp:columns -->
+    <div class="wp-block-columns"><!-- wp:column -->
+        <div class="wp-block-column"><!-- wp:image {"id":21,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"0px"}},"className":"is-style-default"} -->
+            <figure class="wp-block-image size-full is-style-default" style="border-radius:0px"><img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd21batch1-rp-t-1904-110-jj.jpg?w=1200&h=1200&fit=clip&crop=default&dpr=1&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=207bed756c4424663d41800e1cb1eaae"  alt="" class="wp-image-21"/></figure>
+            <!-- /wp:image -->
+
+            <!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
+            <p class="has-text-align-center has-medium-font-size">The average female visitor is<br><strong>38 years old</strong></p>
+            <!-- /wp:paragraph --></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column -->
+        <div class="wp-block-column"><!-- wp:image {"id":20,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image size-full"><img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd21batch1-rp-t-1904-118-jj.jpg?w=1200&h=1200&fit=clip&crop=default&dpr=1&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=6cefe64dfa474a8cf23c19a74cf5626d" alt="" class="wp-image-20"/></figure>
+            <!-- /wp:image -->
+
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">The average male visitor is<br><strong>52 years old</strong></p>
+            <!-- /wp:paragraph --></div>
+        <!-- /wp:column --></div>
+    <!-- /wp:columns --></div>
+<!-- /wp:group -->

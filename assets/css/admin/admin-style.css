@@ -12,6 +12,3 @@
 
 /* Components */
 @import url("../frontend/components/index.css");
-
-/* Editor specific styles */
-@import url("./editor-style.css");

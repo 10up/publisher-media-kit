@@ -1,4 +1,56 @@
 <?php
 // phpcs:ignoreFile
 ?>
-<!-- wp:group {"align":"wide","className":"pmk-stats"} --><div class="wp-block-group alignwide pmk-stats"><!-- wp:columns {"align":"wide"} --><div class="wp-block-columns alignwide"><!-- wp:column {"className":"pmk-stats-column"} --><div class="wp-block-column pmk-stats-column"><!-- wp:heading {"textAlign":"center","level":3} --><h3 class="has-text-align-center">2.5M</h3><!-- /wp:heading --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">Monthly Unique Visitors on 10up.com</p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column {"className":"pmk-stats-column"} --><div class="wp-block-column pmk-stats-column"><!-- wp:heading {"textAlign":"center","level":3} --><h3 class="has-text-align-center">7M</h3><!-- /wp:heading --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">Monthly Page Views on 10up.com</p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column {"className":"pmk-stats-column"} --><div class="wp-block-column pmk-stats-column"><!-- wp:heading {"textAlign":"center","level":3} --><h3 class="has-text-align-center">646K</h3><!-- /wp:heading --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">Facebook Followers</p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column {"className":"pmk-stats-column"} --><div class="wp-block-column pmk-stats-column"><!-- wp:heading {"textAlign":"center","level":3} --><h3 class="has-text-align-center">389K</h3><!-- /wp:heading --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">Twitter Followers</p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column {"className":"pmk-stats-column"} --><div class="wp-block-column pmk-stats-column"><!-- wp:heading {"textAlign":"center","level":3} --><h3 class="has-text-align-center">72K</h3><!-- /wp:heading --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">Instagram Followers</p><!-- /wp:paragraph --></div><!-- /wp:column --></div><!-- /wp:columns --></div><!-- /wp:group -->
+<!-- wp:group {"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:columns -->
+    <div class="wp-block-columns"><!-- wp:column {"style":{"color":{"background":"#f8f9ff"},"spacing":{"padding":{"top":"3.33rem","left":"1.25rem","bottom":"3.5rem","right":"1.25rem"}}},"layout":{"contentSize":""}} -->
+        <div class="wp-block-column has-background" style="background-color:#f8f9ff;padding-top:3.33rem;padding-right:1.25rem;padding-bottom:3.5rem;padding-left:1.25rem"><!-- wp:heading {"textAlign":"center","level":3,"fontSize":"large"} -->
+            <h3 class="has-text-align-center has-large-font-size">2.5M</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
+            <p class="has-text-align-center has-small-font-size">Monthly Unique Visitors on 10up.com</p>
+            <!-- /wp:paragraph --></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"style":{"color":{"background":"#f8f9ff"},"spacing":{"padding":{"top":"3.33rem","left":"1.25rem","bottom":"3.5rem","right":"1.25rem"}}},"layout":{"contentSize":""}} -->
+        <div class="wp-block-column has-background" style="background-color:#f8f9ff;padding-top:3.33rem;padding-right:1.25rem;padding-bottom:3.5rem;padding-left:1.25rem"><!-- wp:heading {"textAlign":"center","level":3,"fontSize":"large"} -->
+            <h3 class="has-text-align-center has-large-font-size">2.5M</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
+            <p class="has-text-align-center has-small-font-size">Monthly Unique Visitors on 10up.com</p>
+            <!-- /wp:paragraph --></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"style":{"color":{"background":"#f8f9ff"},"spacing":{"padding":{"top":"3.33rem","left":"1.25rem","bottom":"3.5rem","right":"1.25rem"}}},"layout":{"contentSize":""}} -->
+        <div class="wp-block-column has-background" style="background-color:#f8f9ff;padding-top:3.33rem;padding-right:1.25rem;padding-bottom:3.5rem;padding-left:1.25rem"><!-- wp:heading {"textAlign":"center","level":3,"fontSize":"large"} -->
+            <h3 class="has-text-align-center has-large-font-size">2.5M</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
+            <p class="has-text-align-center has-small-font-size">Facebook Followers</p>
+            <!-- /wp:paragraph --></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"style":{"color":{"background":"#f8f9ff"},"spacing":{"padding":{"top":"3.33rem","left":"1.25rem","bottom":"3.5rem","right":"1.25rem"}}},"layout":{"contentSize":""}} -->
+        <div class="wp-block-column has-background" style="background-color:#f8f9ff;padding-top:3.33rem;padding-right:1.25rem;padding-bottom:3.5rem;padding-left:1.25rem"><!-- wp:heading {"textAlign":"center","level":3,"fontSize":"large"} -->
+            <h3 class="has-text-align-center has-large-font-size">2.5M</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
+            <p class="has-text-align-center has-small-font-size">Twitter Followers</p>
+            <!-- /wp:paragraph --></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"style":{"color":{"background":"#f8f9ff"},"spacing":{"padding":{"top":"3.33rem","left":"1.25rem","bottom":"3.5rem","right":"1.25rem"}}},"layout":{"contentSize":""}} -->
+        <div class="wp-block-column has-background" style="background-color:#f8f9ff;padding-top:3.33rem;padding-right:1.25rem;padding-bottom:3.5rem;padding-left:1.25rem"><!-- wp:heading {"textAlign":"center","level":3,"fontSize":"large"} -->
+            <h3 class="has-text-align-center has-large-font-size">2.5M</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
+            <p class="has-text-align-center has-small-font-size">Instagram Followers</p>
+            <!-- /wp:paragraph --></div>
+        <!-- /wp:column --></div>
+    <!-- /wp:columns --></div>
+<!-- /wp:group -->
