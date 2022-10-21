@@ -12,8 +12,8 @@
 
     <!-- wp:columns -->
     <div class="wp-block-columns"><!-- wp:column -->
-        <div class="wp-block-column"><!-- wp:image {"id":21,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"0px"}},"className":"is-style-default"} -->
-            <figure class="wp-block-image size-full is-style-default" style="border-radius:0px"><img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd21batch1-rp-t-1904-110-jj.jpg?w=1200&h=1200&fit=clip&crop=default&dpr=1&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=207bed756c4424663d41800e1cb1eaae"  alt="" class="wp-image-21"/></figure>
+        <div class="wp-block-column"><!-- wp:image {"align":"center","id":21,"width":74,"height":160,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full is-resized"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Woman_-_The_Noun_Project.svg" alt="" class="wp-image-21" width="74" height="160"/></figure>
             <!-- /wp:image -->
 
             <!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
@@ -22,12 +22,12 @@
         <!-- /wp:column -->
 
         <!-- wp:column -->
-        <div class="wp-block-column"><!-- wp:image {"id":20,"sizeSlug":"full","linkDestination":"none"} -->
-            <figure class="wp-block-image size-full"><img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd21batch1-rp-t-1904-118-jj.jpg?w=1200&h=1200&fit=clip&crop=default&dpr=1&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=6cefe64dfa474a8cf23c19a74cf5626d" alt="" class="wp-image-20"/></figure>
+        <div class="wp-block-column"><!-- wp:image {"align":"center","id":20,"width":59,"height":160,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full is-resized"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Man_-_The_Noun_Project.svg" alt="" class="wp-image-20" width="59" height="160"/></figure>
             <!-- /wp:image -->
 
-            <!-- wp:paragraph {"align":"center"} -->
-            <p class="has-text-align-center">The average male visitor is<br><strong>52 years old</strong></p>
+            <!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
+            <p class="has-text-align-center has-medium-font-size">The average male visitor is<br><strong>52 years old</strong></p>
             <!-- /wp:paragraph --></div>
         <!-- /wp:column --></div>
     <!-- /wp:columns --></div>

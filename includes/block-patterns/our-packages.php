@@ -22,7 +22,7 @@
 
             <!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
             <div class="wp-block-group"><!-- wp:image {"id":49,"width":24,"height":24,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full is-resized"><img src="http://localhost:10030/wp-content/uploads/2022/09/Noun_Project_tick_icon_675776_cc.png" alt="" class="wp-image-49" width="24" height="24"/></figure>
+                <figure class="wp-block-image size-full is-resized"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Noun_Project_tick_icon_675776_cc.svg" alt="" class="wp-image-49" width="24" height="24"/></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.75rem"}}} -->
@@ -32,7 +32,7 @@
 
             <!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal","justifyContent":"left"}} -->
             <div class="wp-block-group"><!-- wp:image {"id":49,"width":24,"height":24,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full is-resized"><img src="http://localhost:10030/wp-content/uploads/2022/09/Noun_Project_tick_icon_675776_cc.png" alt="" class="wp-image-49" width="24" height="24"/></figure>
+                <figure class="wp-block-image size-full is-resized"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Noun_Project_tick_icon_675776_cc.svg" alt="" class="wp-image-49" width="24" height="24"/></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.75rem"}}} -->
@@ -60,7 +60,7 @@
 
             <!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
             <div class="wp-block-group"><!-- wp:image {"id":49,"width":24,"height":24,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full is-resized"><img src="http://localhost:10030/wp-content/uploads/2022/09/Noun_Project_tick_icon_675776_cc.png" alt="" class="wp-image-49" width="24" height="24"/></figure>
+                <figure class="wp-block-image size-full is-resized"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Noun_Project_tick_icon_675776_cc.svg" alt="" class="wp-image-49" width="24" height="24"/></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.75rem"}}} -->
@@ -70,7 +70,7 @@
 
             <!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal","justifyContent":"left"}} -->
             <div class="wp-block-group"><!-- wp:image {"id":49,"width":24,"height":24,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full is-resized"><img src="http://localhost:10030/wp-content/uploads/2022/09/Noun_Project_tick_icon_675776_cc.png" alt="" class="wp-image-49" width="24" height="24"/></figure>
+                <figure class="wp-block-image size-full is-resized"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Noun_Project_tick_icon_675776_cc.svg" alt="" class="wp-image-49" width="24" height="24"/></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.75rem"}}} -->
@@ -98,7 +98,7 @@
 
             <!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
             <div class="wp-block-group"><!-- wp:image {"id":49,"width":24,"height":24,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full is-resized"><img src="http://localhost:10030/wp-content/uploads/2022/09/Noun_Project_tick_icon_675776_cc.png" alt="" class="wp-image-49" width="24" height="24"/></figure>
+                <figure class="wp-block-image size-full is-resized"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Noun_Project_tick_icon_675776_cc.svg" alt="" class="wp-image-49" width="24" height="24"/></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.75rem"}}} -->
@@ -108,7 +108,7 @@
 
             <!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal","justifyContent":"left"}} -->
             <div class="wp-block-group"><!-- wp:image {"id":49,"width":24,"height":24,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full is-resized"><img src="http://localhost:10030/wp-content/uploads/2022/09/Noun_Project_tick_icon_675776_cc.png" alt="" class="wp-image-49" width="24" height="24"/></figure>
+                <figure class="wp-block-image size-full is-resized"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Noun_Project_tick_icon_675776_cc.svg" alt="" class="wp-image-49" width="24" height="24"/></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.75rem"}}} -->
