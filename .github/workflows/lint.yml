@@ -60,4 +60,4 @@ jobs:
     - name: PHPCS check
       run: ./vendor/bin/phpcs . --runtime-set testVersion 7.4- --report-checkstyle=${RUNNER_TEMP}/phpcs-report.xml
     - name: Show PHPCS results in PR
-      run: cs2pr ${RUNNER_TEMP}/phpcs-report.xml
+      run: cs2pr --graceful-warnings ${RUNNER_TEMP}/phpcs-report.xml
