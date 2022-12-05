@@ -52,12 +52,12 @@ jobs:
       with:
         php-version: '7.4'
         coverage: none
-        tools: composer:v2
+        tools: composer:v2, cs2pr
     - name: composer install
       run: composer install --ignore-platform-reqs
     - name: Check PHPCS standard
       run: ./vendor/bin/phpcs -i
     - name: PHPCS check
-      uses: chekalsky/phpcs-action@v1
-      with:
-        phpcs_bin_path: './vendor/bin/phpcs . --runtime-set testVersion 7.4-'
+      run: ./vendor/bin/phpcs . --runtime-set testVersion 7.4- --report-checkstyle=${RUNNER_TEMP}/phpcs-report.xml
+    - name: Show PHPCS results in PR
+      run: cs2pr ${RUNNER_TEMP}/phpcs-report.xml
