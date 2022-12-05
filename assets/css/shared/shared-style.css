@@ -4,3 +4,8 @@
  * https://project-website.tld
  *
  */
+ @media screen and (max-device-width: 768px) {
+    .wp-block-tenup-tabs table, .tabs table {
+        font-size: 14px;
+    }
+}

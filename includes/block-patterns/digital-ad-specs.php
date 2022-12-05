@@ -1,8 +1,8 @@
 <?php
 // phpcs:ignoreFile
 ?>
-<!-- wp:group {"style":{"border":{"width":"0px","style":"none"}},"fontSize":"medium"} -->
-<div class="wp-block-group has-medium-font-size" style="border-style:none;border-width:0px"><!-- wp:heading {"textAlign":"center","level":3,"fontSize":"large"} -->
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":3,"fontSize":"large"} -->
     <h3 class="has-text-align-center has-large-font-size"><strong>Digital Ad Specs</strong></h3>
     <!-- /wp:heading -->
 
