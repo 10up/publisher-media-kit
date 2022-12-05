@@ -19,7 +19,7 @@
             <!-- /wp:heading -->
 
             <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
-            <p class="has-text-align-center has-small-font-size">Monthly Unique Views on 10up.com</p>
+            <p class="has-text-align-center has-small-font-size">Monthly Page Views on 10up.com</p>
             <!-- /wp:paragraph --></div>
         <!-- /wp:column -->
 
