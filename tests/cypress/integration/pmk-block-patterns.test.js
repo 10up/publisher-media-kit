@@ -6,6 +6,7 @@ describe('Check if Media Kit Block Pattern is available for use', () => {
 				cy.get('button[aria-label="Close dialog"]').click();
 			}
 		});
+		cy.wait(5000);
 		cy.get('#post-title-0, h1.editor-post-title__input').click().type('Test Block Pattern');
 		cy.get('.edit-post-header-toolbar__inserter-toggle').click();
 		cy.get('.components-tab-panel__tabs button:nth-child(2)').click();
