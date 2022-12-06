@@ -1,7 +1,7 @@
 === Publisher Media Kit ===
 Contributors:      10up, jeffpaul, faisal03
 Tags:              media kit, audience profiles, digital ad specs, ad rates
-Requires at least: 5.7
+Requires at least: 5.8
 Tested up to:      6.0
 Stable tag:        1.3.0
 Requires PHP:      7.4

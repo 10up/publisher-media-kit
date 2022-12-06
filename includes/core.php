@@ -140,16 +140,12 @@ function create_media_kit_page() {
 	wp_reset_postdata();
 
 	if ( empty( $post_ID ) ) {
-
-		global $wp_version;
-
 		$current_user      = wp_get_current_user();
-		$cover_patter_file = version_compare( $wp_version, '5.7', '<' ) ? 'cover' : 'cover-esperanza';
 
 		// Get block patterns to insert in a page.
 		ob_start();
 
-		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . $cover_patter_file . '.php';
+		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'cover-esperanza.php';
 		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'audience-profiles.php';
 		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'stats.php';
 		include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'why-digital.php';
