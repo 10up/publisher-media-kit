@@ -58,6 +58,8 @@ jobs:
     - name: Check PHPCS standard
       run: ./vendor/bin/phpcs -i
     - name: PHPCS check
+      id: phpcs
       run: ./vendor/bin/phpcs . --runtime-set testVersion 7.4- --report-checkstyle=${RUNNER_TEMP}/phpcs-report.xml
     - name: Show PHPCS results in PR
+      if: ${{ always() && steps.phpcs.outcome == 'failure' }}
       run: cs2pr --graceful-warnings ${RUNNER_TEMP}/phpcs-report.xml
