@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased] - TBD
 
+## [1.3.1] - 2022-12-08
+### Added
+- PR Helper GH Action (props [@iamdharmesh](https://github.com/iamdharmesh), [@faisal-alvi](https://github.com/faisal-alvi) via [#101](https://github.com/10up/publisher-media-kit/pull/101)).
+- Added "Build release zip" GitHub Action (props [@faisal-alvi](https://github.com/faisal-alvi), [@peterwilsoncc](https://github.com/peterwilsoncc) via [#114](https://github.com/10up/publisher-media-kit/pull/114)).
+
+### Changed
+- Update Support Level from Active to Stable (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter) via [#103](https://github.com/10up/publisher-media-kit/pull/103)).
+- Renamed PR Helper GitHub action to PR Automator (props [@iamdharmesh](https://github.com/iamdharmesh), [@jeffpaul](https://github.com/jeffpaul) via [#104](https://github.com/10up/publisher-media-kit/pull/104)).
+- Bump WP tested up to version to 6.1 (props [@faisal-alvi](https://github.com/faisal-alvi), [@cadic](https://github.com/cadic) via [#110](https://github.com/10up/publisher-media-kit/pull/110)).
+- Included images losslessly compressed to reduce file size (props [@peterwilsoncc](https://github.com/peterwilsoncc), [@faisal-alvi](https://github.com/faisal-alvi), [@dkotter](https://github.com/dkotter) via [#117](https://github.com/10up/publisher-media-kit/pull/117)).
+
+### Fixed
+- PHPCS Workflow errors (props [@peterwilsoncc](https://github.com/peterwilsoncc), [@faisal-alvi](https://github.com/faisal-alvi) via [#120](https://github.com/10up/publisher-media-kit/pull/120)).
+
+### Security
+- Bump got and @wordpress/env (props [@dependabot](https://github.com/dependabot) via [#100](https://github.com/10up/publisher-media-kit/pull/100)).
+- Bump loader-utils from 2.0.2 to 2.0.3 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#106](https://github.com/10up/publisher-media-kit/pull/106)).
+- Bump minimatch from 3.0.4 to 3.1.2 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#107](https://github.com/10up/publisher-media-kit/pull/107)).
+- Bump loader-utils from 2.0.3 to 2.0.4 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#109](https://github.com/10up/publisher-media-kit/pull/109)).
+
 ## [1.3.0] - 2022-09-14
 **Note that this release bumps the minimum required version of WordPress from 5.5 to 5.7 and PHP from 7.0 to 7.4.**
 
