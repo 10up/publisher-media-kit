@@ -1,6 +1,7 @@
 describe('Check if Media Kit Block Pattern is available for use', () => {
 	it('Can insert the block pattern', () => {
 		cy.visitAdminPage('post-new.php');
+		cy.wait(5000);
 		cy.get('body').then((body) => {
 			if (body.find('button[aria-label="Close dialog"]').length > 0) {
 				cy.get('button[aria-label="Close dialog"]').click();
