@@ -10,8 +10,8 @@
     "lint-style": "10up-toolkit lint-style",
     "test": "10up-toolkit test-unit-jest",
     "wp-env": "wp-env",
-    "cypress:open": "cypress open --config-file tests/cypress/config.json",
-    "cypress:run": "cypress run --config-file tests/cypress/config.json",
+    "cypress:open": "CYPRESS_BASE_URL=http://localhost:10004/ cypress open --config-file tests/cypress/config.config.js",
+    "cypress:run": "CYPRESS_BASE_URL=http://localhost:10004/ cypress run --config-file tests/cypress/config.config.js",
     "clean-dist": "rm -rf ./dist"
   },
   "engines": {
@@ -20,11 +20,11 @@
   "devDependencies": {
     "10up-toolkit": "^4.0.0",
     "@10up/babel-preset-default": "^1.1.2",
+    "@10up/eslint-config": "^2.4.6",
     "@babel/preset-react": "^7.17.12",
     "@wordpress/env": "^5.2.0",
-    "cypress": "^9.5.4",
+    "cypress": "^11.2.0",
     "cypress-file-upload": "^5.0.8",
-    "@10up/eslint-config": "^2.4.6",
     "eslint": "^8.1.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
