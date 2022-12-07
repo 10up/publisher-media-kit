@@ -42,6 +42,7 @@ register_deactivation_hook( __FILE__, '\PublisherMediaKit\Core\deactivate' );
 PublisherMediaKit\Core\setup();
 // Blocks
 PublisherMediaKit\Blocks\setup();
+
 /*
  * Please note the lowercase B in the blocks portion of the namespace.
  *
