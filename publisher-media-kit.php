@@ -33,8 +33,6 @@ if ( file_exists( PUBLISHER_MEDIA_KIT_PATH . 'vendor/autoload.php' ) ) {
 require_once PUBLISHER_MEDIA_KIT_INC . '/core.php';
 // Block Editor
 require_once PUBLISHER_MEDIA_KIT_INC . '/blocks.php';
-// Block Context
-require_once PUBLISHER_MEDIA_KIT_INC . '/classes/blocks/BlockContext/Tabs.php';
 
 // Activation/Deactivation.
 register_activation_hook( __FILE__, '\PublisherMediaKit\Core\activate' );
