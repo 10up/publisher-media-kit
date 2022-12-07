@@ -46,7 +46,7 @@ jobs:
 
       - name: Install Composer dependencies
         if: steps.cache-vendor.outputs.cache-hit != 'true'
-        run: composer install --no-dev
+        run: composer install --no-dev --optimize-autoloader
 
       - name: Build plugin
         run: npm run build
