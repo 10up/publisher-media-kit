@@ -42,5 +42,16 @@ register_deactivation_hook( __FILE__, '\PublisherMediaKit\Core\deactivate' );
 PublisherMediaKit\Core\setup();
 // Blocks
 PublisherMediaKit\Blocks\setup();
-// Block Context
-PublisherMediaKit\Blocks\BlockContext\Tabs::get_instance()->setup();
+/*
+ * Please note the lowercase B in the blocks portion of the namespace.
+ *
+ * Due to an earlier typo in the blocks folder name (it uses a lower case b),
+ * that part of the namespace is lowercase. This is to avoid breaking existing
+ * code that may be referencing this file directly.
+ *
+ * Namespaces are case insensitive whereas file systems can be case sensitive so
+ * the namespace case was modified to match the folder name.
+ *
+ * @see https://github.com/10up/publisher-media-kit/issues/118
+ */
+PublisherMediaKit\blocks\BlockContext\Tabs::get_instance()->setup();
