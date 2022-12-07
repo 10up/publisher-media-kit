@@ -10,8 +10,8 @@
     "lint-style": "10up-toolkit lint-style",
     "test": "10up-toolkit test-unit-jest",
     "wp-env": "wp-env",
-    "cypress:open": "CYPRESS_BASE_URL=http://localhost:8889/ cypress open --config-file tests/cypress/config.config.js",
-    "cypress:run": "CYPRESS_BASE_URL=http://localhost:8889/ cypress run --config-file tests/cypress/config.config.js",
+    "cypress:open": "cypress open --config-file tests/cypress/config.config.js",
+    "cypress:run": "cypress run --config-file tests/cypress/config.config.js",
     "clean-dist": "rm -rf ./dist"
   },
   "engines": {
