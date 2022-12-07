@@ -6,7 +6,7 @@
  */
 
 /*
- * Please not the lowercase B in the blocks portion of the namespace.
+ * Please note the lowercase B in the blocks portion of the namespace.
  *
  * Due to an earlier typo in the blocks folder name (it uses a lower case b),
  * that part of the namespace is lowercase. This is to avoid breaking existing
