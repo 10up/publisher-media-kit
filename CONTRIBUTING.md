@@ -6,11 +6,14 @@ The following is a set of guidelines for contributors as well as information and
 
 ## Installation
 
-The following command is required to start contribution. This command will install required dependencies.
+The following commands are required to start contribution. This command will install required dependencies.
 
-### `npm install`
+```sh
+composer install
+npm install
+```
 
-### NPM  Commands
+### NPM commands
 
 * `npm run start` (install dependencies)
 * `npm run watch` (start watch on files)
@@ -20,6 +23,11 @@ The following command is required to start contribution. This command will insta
 * `npm run lint-style` (lint CSS)
 * `npm run test` (run phpunit)
 * `npm run clean-dist` (remove the `dist` folder)
+
+### Composer commands
+
+* `composer run lint` (run PHP code sniffer)
+* `composer run lint-fix` (auto correct fixable PHP coding standards errors)
 
 ## Ways to contribute
 
