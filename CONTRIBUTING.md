@@ -6,11 +6,14 @@ The following is a set of guidelines for contributors as well as information and
 
 ## Installation
 
-The following command is required to start contribution. This command will install required dependencies.
+The following commands are required to start contribution. This command will install required dependencies.
 
-### `npm install`
+```sh
+composer install
+npm install
+```
 
-### NPM  Commands
+### NPM commands
 
 * `npm run start` (install dependencies)
 * `npm run watch` (start watch on files)
@@ -20,6 +23,11 @@ The following command is required to start contribution. This command will insta
 * `npm run lint-style` (lint CSS)
 * `npm run test` (run phpunit)
 * `npm run clean-dist` (remove the `dist` folder)
+
+### Composer commands
+
+* `composer run lint` (run PHP code sniffer)
+* `composer run lint-fix` (auto correct fixable PHP coding standards errors)
 
 ## Ways to contribute
 
@@ -55,6 +63,7 @@ The `develop` branch is the development branch which means it contains the next 
 - [ ] Merge: Make a non-fast-forward merge from your release branch to `develop` (or merge the pull request), then do the same for `develop` into `trunk` (`git checkout trunk && git merge --no-ff develop`).  `trunk` contains the stable development version.
 - [ ] Test: Run through common tasks while on `trunk` to be sure it functions correctly.
 - [ ] Push: Push your `trunk` branch to GitHub (e.g. `git push origin trunk`).
+- [ ] Test the pre-release ZIP locally by downloading it from the **Build release zip** action artifact to ensure the plugin doesn't break after release.
 - [ ] Release: Create a [new release](https://github.com/10up/publisher-media-kit/releases/new), naming the tag and the release with the new version number, and targeting the `trunk` branch. Paste the changelog from `CHANGELOG.md` into the body of the release and include a link to the closed issues on the [milestone](https://github.com/10up/publisher-media-kit/milestone/#?closed=1).
 - [ ] SVN: Wait for the [GitHub Action](https://github.com/10up/publisher-media-kit/actions/workflows/dotorg-push-deploy.yml) to finish deploying to the WordPress.org repository.  If all goes well, users with SVN commit access for that plugin will receive an emailed diff of changes.
 - [ ] Check WordPress.org: Ensure that the changes are live on https://wordpress.org/plugins/publisher-media-kit/.  This may take a few minutes.
