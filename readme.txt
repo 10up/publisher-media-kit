@@ -53,7 +53,7 @@ Click the block inserter (`+` button) in the top left of the block editor, click
 
 == Changelog ==
 
-= 1.3.1 = 2023-01-12
+= 1.3.1 = 2023-01-13
 * **Added:** PR Helper GH Action (props [@iamdharmesh](https://github.com/iamdharmesh), [@faisal-alvi](https://github.com/faisal-alvi) via [#101](https://github.com/10up/publisher-media-kit/pull/101)).
 * **Added:** Added "Build release zip" GitHub Action (props [@faisal-alvi](https://github.com/faisal-alvi), [@peterwilsoncc](https://github.com/peterwilsoncc) via [#114](https://github.com/10up/publisher-media-kit/pull/114)).
 * **Changed:** Update Support Level from Active to Stable (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter) via [#103](https://github.com/10up/publisher-media-kit/pull/103)).

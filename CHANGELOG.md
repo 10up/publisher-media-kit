@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased] - TBD
 
-## [1.3.1] - 2023-01-12
+## [1.3.1] - 2023-01-13
 ### Added
 - PR Helper GH Action (props [@iamdharmesh](https://github.com/iamdharmesh), [@faisal-alvi](https://github.com/faisal-alvi) via [#101](https://github.com/10up/publisher-media-kit/pull/101)).
 - Added "Build release zip" GitHub Action (props [@faisal-alvi](https://github.com/faisal-alvi), [@peterwilsoncc](https://github.com/peterwilsoncc) via [#114](https://github.com/10up/publisher-media-kit/pull/114)).
