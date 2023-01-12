@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Renamed PR Helper GitHub action to PR Automator (props [@iamdharmesh](https://github.com/iamdharmesh), [@jeffpaul](https://github.com/jeffpaul) via [#104](https://github.com/10up/publisher-media-kit/pull/104)).
 - Bump WP tested up to version to 6.1 (props [@faisal-alvi](https://github.com/faisal-alvi), [@cadic](https://github.com/cadic) via [#110](https://github.com/10up/publisher-media-kit/pull/110)).
 - Included images losslessly compressed to reduce file size (props [@peterwilsoncc](https://github.com/peterwilsoncc), [@faisal-alvi](https://github.com/faisal-alvi), [@dkotter](https://github.com/dkotter) via [#117](https://github.com/10up/publisher-media-kit/pull/117)).
-- Cypress integration migrated to 11+ (props [@jayedul](https://github.com/jayedul), [@iamdharmesh](https://github.com/iamdharmesh), [@faisal-alvi](https://github.com/faisal-alvi) via [#121](https://github.com/10up/publisher-media-kit/pull/121)).
+- Cypress integration migrated from 9.5.4 to 11.2.0 (props [@jayedul](https://github.com/jayedul), [@iamdharmesh](https://github.com/iamdharmesh), [@faisal-alvi](https://github.com/faisal-alvi) via [#121](https://github.com/10up/publisher-media-kit/pull/121)).
 
 ### Fixed
 - Image display on WordPress installs with non-standard content paths (props [@peterwilsoncc](https://github.com/peterwilsoncc), [@dkotter](https://github.com/dkotter), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#115](https://github.com/10up/publisher-media-kit/pull/115)).
@@ -22,12 +22,11 @@ All notable changes to this project will be documented in this file, per [the Ke
 - PSR-4 Autoloading (props [@peterwilsoncc](https://github.com/peterwilsoncc), [@faisal-alvi](https://github.com/faisal-alvi) via [#125](https://github.com/10up/publisher-media-kit/pull/125)).
 
 ### Security
-- Bump got and @wordpress/env (props [@dependabot](https://github.com/dependabot) via [#100](https://github.com/10up/publisher-media-kit/pull/100)).
-- Bump loader-utils from 2.0.2 to 2.0.3 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#106](https://github.com/10up/publisher-media-kit/pull/106)).
-- Bump minimatch from 3.0.4 to 3.1.2 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#107](https://github.com/10up/publisher-media-kit/pull/107)).
-- Bump loader-utils from 2.0.3 to 2.0.4 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#109](https://github.com/10up/publisher-media-kit/pull/109)).
-- Bump simple-git from 3.14.0 to 3.15.1 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#124](https://github.com/10up/publisher-media-kit/pull/124)).
-- Bump json5 from 1.0.1 to 1.0.2 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#127](https://github.com/10up/publisher-media-kit/pull/127)).
+- Bump `got` from 10.7.0 to 11.8.5 and `@wordpress/env` from 4.8.0 to 5.2.0 (props [@dependabot](https://github.com/dependabot) via [#100](https://github.com/10up/publisher-media-kit/pull/100)).
+- Bump `loader-utils` from 2.0.2 to 2.0.4 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#106](https://github.com/10up/publisher-media-kit/pull/106), [#109](https://github.com/10up/publisher-media-kit/pull/109)).
+- Bump `minimatch` from 3.0.4 to 3.1.2 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#107](https://github.com/10up/publisher-media-kit/pull/107)).
+- Bump `simple-git` from 3.14.0 to 3.15.1 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#124](https://github.com/10up/publisher-media-kit/pull/124)).
+- Bump `json5` from 1.0.1 to 1.0.2 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#127](https://github.com/10up/publisher-media-kit/pull/127)).
 
 ## [1.3.0] - 2022-09-14
 **Note that this release bumps the minimum required version of WordPress from 5.5 to 5.7 and PHP from 7.0 to 7.4.**
