@@ -6,6 +6,14 @@ module.exports = defineConfig({
 	videosFolder: `${__dirname}/videos`,
 	downloadsFolder: `${__dirname}/downloads`,
 	video: false,
+	reporter: 'mochawesome',
+	reporterOptions: {
+		reportFilename: 'mochawesome-[name]',
+		reportDir: 'tests/cypress/reports',
+		overwrite: false,
+		html: false,
+		json: true,
+	},
 	chromeWebSecurity: false,
 	e2e: {
 		// We've imported your old cypress plugins here.
