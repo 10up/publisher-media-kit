@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    uses: 10up/publisher-media-kit/.github/workflows/build-release-zip.yml@feat/release-e2e // @TODO: replace `@feat/release-e2e` with `develop` after #128 is merged into `develop`.
+    uses: 10up/publisher-media-kit/.github/workflows/build-release-zip.yml@feat/release-e2e // TODO replace @feat/release-e2e with develop after 128 is merged into develop.
   cypress:
     needs: build
     runs-on: ubuntu-latest
