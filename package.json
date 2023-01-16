@@ -26,6 +26,7 @@
     "10up-toolkit": "^4.0.0",
     "cypress": "^11.2.0",
     "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.0.1",
     "eslint": "^8.1.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
