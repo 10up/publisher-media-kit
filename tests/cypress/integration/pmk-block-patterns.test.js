@@ -12,7 +12,7 @@ describe('Check if Media Kit Block Pattern is available for use', () => {
                 cy.get('.components-select-control__input').select('publisher-media-kit', {
                     force: true,
                 });
-            } else if ( $body.find( '[aria-label="Publisher Media Kit"]' ).length > 0 ) {
+            } else if ($body.find( '[aria-label="Publisher Media Kit"]' ).length > 0) {
 				cy.get('[aria-label="Publisher Media Kit"]').click();
 			}
         });
