@@ -24,7 +24,7 @@ div.wp-block-group.pmk-stats {
 	}
 
 	& .wp-block-columns {
-		flex-wrap: wrap;
+		flex-wrap: wrap !important;
 
 		@media (--wp-medium-max) {
 			justify-content: center;
