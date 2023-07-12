@@ -24,7 +24,7 @@ div.wp-block-group.pmk-stats {
 	}
 
 	& .wp-block-columns {
-		flex-wrap: wrap;
+		flex-wrap: wrap !important; /* !important to override columns style WP 6.0+ */
 
 		@media (--wp-medium-max) {
 			justify-content: center;
