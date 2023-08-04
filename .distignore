@@ -10,10 +10,7 @@
 /assets/svg
 
 # Files
-.distignore
-.eslintignore
-.eslintrc
-.gitignore
+.*
 CHANGELOG.md
 CODE_OF_CONDUCT.md
 composer.json
