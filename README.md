@@ -51,9 +51,9 @@ Click the block inserter (`+` button) in the top left of the block editor, click
 
 Click the block inserter (`+` button) in the top left of the block editor, click the `Patterns` tab, select `Publisher Media Kit` in the dropdown, and select the specific Block Pattern that you want to add to your post/page.
 
-### If I were to rename the page title as 'Bob's Kit', and then proceed to deactivate and subsequently reactivate the plugin, would the plugin generate a new 'Media Kit' page?
+### If I rename the page title (e.g. to 'Advertising') and then deactivate and subsequently reactivate the plugin, would the plugin generate a new 'Media Kit' page?
 
-The plugin specifically checks for the page slug `media-kit`, meaning that even if you modify the page name, the plugin won't generate a new page unless the page slug is altered or the page is moved to the trash.
+The plugin specifically checks for the page slug `media-kit`, meaning that even if you modify the page name, the plugin will not generate a new page unless the page slug is altered or the page is moved to the trash.
 
 ## Support Level
 
