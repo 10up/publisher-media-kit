@@ -16,6 +16,8 @@
  * @package           PublisherMediaKit
  */
 
+namespace PublisherMediaKit;
+
 // Useful global constants.
 define( 'PUBLISHER_MEDIA_KIT_VERSION', '1.3.2' );
 define( 'PUBLISHER_MEDIA_KIT_URL', plugin_dir_url( __FILE__ ) );
@@ -29,21 +31,21 @@ define( 'PUBLISHER_MEDIA_KIT_BLOCK_PATTERS', PUBLISHER_MEDIA_KIT_PATH . 'include
  *
  * @return string Minimum version required.
  */
-function pmk_minimum_php_requirement() {
+function minimum_php_requirement() {
 	return '7.4';
 }
 
 /**
- * Checks whether PHP installation meets the minimum requirements
+ * Checks whether PHP installation meets the minimum requirements.
  *
- * @return bool True if meets minimum requirements, false otherwise.
+ * @return bool true if meets minimum requirements, false otherwise.
  */
-function pmk_site_meets_php_requirements() {
-
-	return version_compare( phpversion(), pmk_minimum_php_requirement(), '>=' );
+function site_meets_php_requirements() {
+	return version_compare( phpversion(), minimum_php_requirement(), '>=' );
 }
 
-if ( ! pmk_site_meets_php_requirements() ) {
+// Check minimum PHP version.
+if ( ! site_meets_php_requirements() ) {
 	add_action(
 		'admin_notices',
 		function() {
@@ -55,7 +57,7 @@ if ( ! pmk_site_meets_php_requirements() ) {
 						sprintf(
 							/* translators: %s: Minimum required PHP version */
 							__( 'Publisher Media Kit requires PHP version %s or later. Please upgrade PHP or disable the plugin.', 'publisher-media-kit' ),
-							esc_html( pmk_minimum_php_requirement() )
+							esc_html( minimum_php_requirement() )
 						)
 					);
 					?>
@@ -64,6 +66,7 @@ if ( ! pmk_site_meets_php_requirements() ) {
 			<?php
 		}
 	);
+
 	return;
 }
 
@@ -82,9 +85,9 @@ register_activation_hook( __FILE__, '\PublisherMediaKit\Core\activate' );
 register_deactivation_hook( __FILE__, '\PublisherMediaKit\Core\deactivate' );
 
 // Bootstrap.
-PublisherMediaKit\Core\setup();
+Core\setup();
 // Blocks
-PublisherMediaKit\Blocks\setup();
+Blocks\setup();
 
 /*
  * Please note the lowercase B in the blocks portion of the namespace.
@@ -98,4 +101,4 @@ PublisherMediaKit\Blocks\setup();
  *
  * @see https://github.com/10up/publisher-media-kit/issues/118
  */
-PublisherMediaKit\blocks\BlockContext\Tabs::get_instance()->setup();
+blocks\BlockContext\Tabs::get_instance()->setup();
