@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased] - TBD
 
+## [1.3.3] - 2023-10-18
+
+### Added
+- A new FAQ was added about the Media Kit page rename action (props [@kelvinballoo](https://github.com/kelvinballoo), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#162](https://github.com/10up/simple-local-avatars/pull/162)).
+
+### Changed
+- Updated repo automator workflow (props [@iamdharmesh](https://github.com/iamdharmesh), [@faisal-alvi](https://github.com/faisal-alvi) via [#163](https://github.com/10up/simple-local-avatars/pull/163)).
+- Bump WordPress "tested up to" version from 6.2 to 6.3. (props [@jeffpaul](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi) via [#158](https://github.com/10up/publisher-media-kit/pull/158)).
+
+### Security
+- Bump `tough-cookie` from 4.0.0 to 4.1.3 and `@cypress/request` from 2.88.10 to 2.88.12 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#156](https://github.com/10up/simple-local-avatars/pull/156)).
+
 ## [1.3.2] - 2023-05-15
 
 ### Added
@@ -101,6 +113,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Initial private plugin release 🎉
 
 [Unreleased]: https://github.com/10up/publisher-media-kit/compare/trunk...develop
+[1.3.3]: https://github.com/10up/publisher-media-kit/compare/1.3.2...1.3.3
 [1.3.2]: https://github.com/10up/publisher-media-kit/compare/1.3.1...1.3.2
 [1.3.1]: https://github.com/10up/publisher-media-kit/compare/1.3.0...1.3.1
 [1.3.0]: https://github.com/10up/publisher-media-kit/compare/1.2.1...1.3.0
