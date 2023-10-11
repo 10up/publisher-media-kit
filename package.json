@@ -22,7 +22,7 @@
   "devDependencies": {
     "10up-toolkit": "^4.0.0",
     "@10up/babel-preset-default": "^1.1.2",
-    "@10up/cypress-wp-utils": "github:10up/cypress-wp-utils#build",
+    "@10up/cypress-wp-utils": "^0.2.0",
     "@10up/eslint-config": "^2.4.6",
     "@babel/preset-react": "^7.17.12",
     "@wordpress/env": "^5.2.0",
