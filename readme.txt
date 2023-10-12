@@ -58,9 +58,9 @@ The plugin specifically checks for the page slug `media-kit`, meaning that even 
 == Changelog ==
 
 = 1.3.3 - 2023-10-18
-* **Added:** A new FAQ was added about the Media Kit page rename action (props [@kelvinballoo](https://github.com/kelvinballoo), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#162](https://github.com/10up/simple-local-avatars/pull/162)).
+* **Added:** FAQ on the Media Kit page rename action (props [@kelvinballoo](https://github.com/kelvinballoo), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#162](https://github.com/10up/simple-local-avatars/pull/162)).
+* **Changed:** Bump WordPress "tested up to" version to 6.3 (props [@jeffpaul](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi) via [#158](https://github.com/10up/publisher-media-kit/pull/158)).
 * **Changed:** Updated repo automator workflow (props [@iamdharmesh](https://github.com/iamdharmesh), [@faisal-alvi](https://github.com/faisal-alvi) via [#163](https://github.com/10up/simple-local-avatars/pull/163)).
-* **Changed:** Bump WordPress "tested up to" version from 6.2 to 6.3. (props [@jeffpaul](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi) via [#158](https://github.com/10up/publisher-media-kit/pull/158)).
 * **Security:** Bump `tough-cookie` from 4.0.0 to 4.1.3 and `@cypress/request` from 2.88.10 to 2.88.12 (props [@dependabot](https://github.com/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#156](https://github.com/10up/simple-local-avatars/pull/156)).
 
 = 1.3.2 = 2023-05-15
