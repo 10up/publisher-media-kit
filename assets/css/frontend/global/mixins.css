@@ -8,7 +8,7 @@
 
 @define-mixin has-full-width-background {
 	position: relative;
-	
+
 	& > * {
 		position: relative;
 		z-index: 1;
@@ -22,7 +22,7 @@
 		margin-left: -50vw;
 		position: absolute;
 		top: 0;
-		width: 99.6vw;
+		width: 100vw;
 		z-index: 0;
 	}
 }

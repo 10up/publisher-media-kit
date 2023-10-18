@@ -8,11 +8,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Build
+      uses: actions/checkout@v3
+    - name: Use nvm
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        check-latest: false
+    - name: Install and build NPM
       run: |
         npm install
         npm run build
+    - name: Install and build Composer
+      run: |
+        composer install --no-dev --optimize-autoloader
     - name: WordPress Plugin Deploy
       id: deploy
       uses: 10up/action-wordpress-plugin-deploy@stable

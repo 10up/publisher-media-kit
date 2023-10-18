@@ -28,8 +28,6 @@ function register() {
 /**
  * Render callback method for the block
  *
- * @todo Need to handle back compat for pre 5.5 and passing args to locate_template
- *
  * @param array  $attributes The blocks attributes
  * @param string $content    Data returned from InnerBlocks.Content
  * @param array  $block      Block information such as context.

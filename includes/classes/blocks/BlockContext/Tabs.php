@@ -5,7 +5,19 @@
  * @package PublisherMediaKit\Blocks
  */
 
-namespace PublisherMediaKit\Blocks\BlockContext;
+/*
+ * Please note the lowercase B in the blocks portion of the namespace.
+ *
+ * Due to an earlier typo in the blocks folder name (it uses a lower case b),
+ * that part of the namespace is lowercase. This is to avoid breaking existing
+ * code that may be referencing this file directly.
+ *
+ * Namespaces are case insensitive whereas file systems can be case sensitive so
+ * the namespace case was modified to match the folder name.
+ *
+ * @see https://github.com/10up/publisher-media-kit/issues/118
+ */
+namespace PublisherMediaKit\blocks\BlockContext;
 
 /**
  * Block registry
@@ -55,9 +67,10 @@ class Tabs {
 
 		if ( $block['innerBlocks'] ) {
 
+			$tabs_title = $block['attrs']['tabsTitle'] ?? '';
 			// Add tab navigation controls
 			$tabs = '<div class="tab-control"><div class="tabs-header">
-				<h2 class="tab-title">' . $block['attrs']['tabsTitle'] . '</h2>
+				<h2 class="tab-title">' . esc_html( $tabs_title ) . '</h2>
 				<ul class="tab-list" role="tablist">';
 
 			if ( is_array( $block['innerBlocks'] ) ) {

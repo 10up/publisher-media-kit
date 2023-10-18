@@ -8,6 +8,7 @@ div.wp-block-group.pmk-audience-profiles {
 		font-weight: var(--pmk-font-weight-normal);
 		line-height: var(--pmk-heading-2-line-height);
 		margin-bottom: var(--pmk-spacing-internal-xlarge);
+		max-width: initial !important; /* !important to override base styles */
 		padding-bottom: var(--pmk-spacing-internal-xsmall);
 	}
 

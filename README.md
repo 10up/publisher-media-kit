@@ -2,18 +2,38 @@
 
 > Pre-configured Media Kit Page using Gutenberg Block Patterns.
 
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level) [![Linting](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml) [![Release Version](https://img.shields.io/github/release/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/releases/latest) ![WordPress tested up to version](https://img.shields.io/badge/WordPress-v5.8%20tested-success.svg) [![GPLv2 License](https://img.shields.io/github/license/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/blob/develop/LICENSE.md)
+[![Support Level](https://img.shields.io/badge/support-stable-blue.svg)](#support-level) [![E2E Tests](https://github.com/10up/publisher-media-kit/actions/workflows/cypress.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/cypress.yml) [![Linting](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml) ![PHPCompatibility](https://github.com/10up/publisher-media-kit/actions/workflows/php-compatibility.yml/badge.svg) [![Release Version](https://img.shields.io/github/release/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/releases/latest) ![WordPress tested up to version](https://img.shields.io/wordpress/plugin/tested/publisher-media-kit?label=WordPress) [![GPLv2 License](https://img.shields.io/github/license/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/blob/develop/LICENSE.md)
 
 ## Overview
 
 Publisher Media Kit provides a quick and easy option for small to medium sized publishers to digitize their media kit.  If you are a publisher hoping for a page like the [NY Times' Advertising Standard Units](https://nytmediakit.com/standard-units), but do not have a designer or developer on staff?  Then this plugin is for you.  If you are still using a print or PDF version of your media kit to sell space on your website, but want show advertisers looking to buy digital real estate that you are a digital-forward partner?  Then this plugin is for you.
 
+Twenty Twenty One default theme | Newspack base theme
+------------- | -----------------
+[![Media Kit page on frontend of site running the Twenty Twenty One default theme.](.wordpress-org/screenshot-2.png)](.wordpress-org/screenshot-2.png) | [![Media Kit page on frontend of site running the Newspack base theme.](.wordpress-org/screenshot-4.png)](.wordpress-org/screenshot-4.png)
+
 The plugin adds a new "Media Kit" page, block patterns, and placeholder content that can then be customized to fit your need (e.g., text, links, colors, images, adding page link to site footer).
+
+Twenty Twenty One default theme | Newspack base theme
+------------- | -----------------
+[![View of block patterns and placeholder content within the block editor running the Twenty Twenty One default theme.](.wordpress-org/screenshot-1.png)](.wordpress-org/screenshot-1.png) | [![View of block patterns and placeholder content within the block editor running the Newspack base theme.](.wordpress-org/screenshot-3.png)](.wordpress-org/screenshot-3.png)
 
 ## Requirements
 
-* PHP 7.2+
-* WordPress 5.4+
+* PHP Requires: 7.4
+* WordPress Requires at least: 5.7
+
+## Theme Compatibility
+
+We have tested the plugin with the following WordPress themes and have validated that the resulting `Media Kit` page renders as expected on the front-end and within the block editor.  Please [open an issue](https://github.com/10up/publisher-media-kit/issues/new/choose) if you find an issue with any of these themes or have an alternate, public theme with a conflict that we can help resolve.
+
+1. [Twenty Twenty-One](https://wordpress.org/themes/twentytwentyone/)
+1. [Newspack base theme](https://github.com/Automattic/newspack-theme)
+1. [Newspack: Joseph](https://github.com/Automattic/newspack-theme)
+1. [Newspack: Katharine](https://github.com/Automattic/newspack-theme)
+1. [Newspack: Nelson](https://github.com/Automattic/newspack-theme)
+1. [Newspack: Sacha](https://github.com/Automattic/newspack-theme)
+1. [Newspack: Scott](https://github.com/Automattic/newspack-theme)
 
 ## Installation
 
@@ -21,9 +41,23 @@ The plugin adds a new "Media Kit" page, block patterns, and placeholder content 
 1. Activate the plugin.
 1. Open the "Media Kit" page, edit the content to your needs, and hit publish!
 
+## Frequently Asked Questions
+
+### I accidentally deleted a block from my `Media Kit` page, how do I add it back?
+
+Click the block inserter (`+` button) in the top left of the block editor, click the `Patterns` tab, select `Publisher Media Kit` in the dropdown, and select the specific Block Pattern that you want to add back to your page.
+
+### I want to add block from my `Media Kit` page on a different post/page, how do I add it outside the `Media Kit` page?
+
+Click the block inserter (`+` button) in the top left of the block editor, click the `Patterns` tab, select `Publisher Media Kit` in the dropdown, and select the specific Block Pattern that you want to add to your post/page.
+
+### If I rename the page title (e.g. to 'Advertising') and then deactivate and subsequently reactivate the plugin, would the plugin generate a new 'Media Kit' page?
+
+The plugin specifically checks for the page slug `media-kit`, meaning that even if you modify the page name, the plugin will not generate a new page unless the page slug is altered or the page is moved to the trash.
+
 ## Support Level
 
-**Active:** 10up is actively working on this, and we expect to continue work for the foreseeable future including keeping tested up to the most recent version of WordPress.  Bug reports, feature requests, questions, and pull requests are welcome.
+**Stable:** 10up is not planning to develop any new features for this, but will still respond to bug reports and security concerns. We welcome PRs, but any that include new features should be small and easy to integrate and should not include breaking changes. We otherwise intend to keep this tested up to the most recent version of WordPress.
 
 ## Changelog
 

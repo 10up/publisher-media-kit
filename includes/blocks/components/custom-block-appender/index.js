@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 /**
  * WordPress dependencies
  */
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Fragment } from '@wordpress/element';
 import { Inserter } from '@wordpress/block-editor';
 import { Button } from '@wordpress/components';
@@ -17,11 +16,11 @@ import { Button } from '@wordpress/components';
  * Provide a Button component to trigger the inserter.
  * Any undocumented props are spread onto the Button component.
  *
- * @param {object} props              All props sent to this component.
+ * @param {Object} props              All props sent to this component.
  * @param {string} props.rootClientId Client ID of the block where this is being used.
  * @param {string} [props.buttonText] Text to display in the Button.
  * @param {string} [props.icon]       The icon to use.
- * @returns {Function} The component.
+ * @return {Function} The component.
  */
 const CustomBlockAppender = ({ rootClientId, buttonText, icon, ...buttonProps }) => {
 	return (
