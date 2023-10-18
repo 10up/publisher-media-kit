@@ -16,8 +16,6 @@
  * @package           PublisherMediaKit
  */
 
-namespace PublisherMediaKit;
-
 // Useful global constants.
 define( 'PUBLISHER_MEDIA_KIT_VERSION', '1.3.2' );
 define( 'PUBLISHER_MEDIA_KIT_URL', plugin_dir_url( __FILE__ ) );
@@ -85,9 +83,9 @@ register_activation_hook( __FILE__, '\PublisherMediaKit\Core\activate' );
 register_deactivation_hook( __FILE__, '\PublisherMediaKit\Core\deactivate' );
 
 // Bootstrap.
-Core\setup();
+PublisherMediaKit\Core\setup();
 // Blocks
-Blocks\setup();
+PublisherMediaKit\Blocks\setup();
 
 /*
  * Please note the lowercase B in the blocks portion of the namespace.
@@ -101,4 +99,4 @@ Blocks\setup();
  *
  * @see https://github.com/10up/publisher-media-kit/issues/118
  */
-blocks\BlockContext\Tabs::get_instance()->setup();
+PublisherMediaKit\blocks\BlockContext\Tabs::get_instance()->setup();
