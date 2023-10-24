@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased] - TBD
 
-## [1.3.3] - 2023-10-18
+## [1.3.3] - 2023-10-24
 ### Added
 - FAQ on the Media Kit page rename action (props [@kelvinballoo](https://github.com/kelvinballoo), [@faisal-alvi](https://github.com/faisal-alvi), [@jeffpaul](https://github.com/jeffpaul) via [#162](https://github.com/10up/simple-local-avatars/pull/162)).
 
