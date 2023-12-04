@@ -19,6 +19,6 @@ describe('Check if Media Kit Block Pattern is available for use', () => {
 
         cy.get('[aria-label="Publisher Media Kit - Cover"]').click();
         cy.get('.edit-post-header-toolbar__inserter-toggle').click();
-        cy.get('.edit-post-visual-editor__post-title-wrapper .editor-post-title').should('contain.text', 'Media Kit');
+        cy.get('[data-type="core/heading"]').should('contain.text', 'Media Kit');
     });
 });
