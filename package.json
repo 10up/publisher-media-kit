@@ -26,6 +26,7 @@
     "@10up/eslint-config": "^2.4.6",
     "@babel/preset-react": "^7.17.12",
     "@wordpress/env": "^5.2.0",
+    "mochawesome-json-to-md": "^0.7.2",
     "cypress": "^13.3.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.0.1",
