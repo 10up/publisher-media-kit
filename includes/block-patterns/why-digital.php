@@ -8,8 +8,8 @@
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"className":"pmk-digital-column pmk-digital-column-source"} -->
-<div class="wp-block-column pmk-digital-column pmk-digital-column-source"><!-- wp:image {"align":"left","width":35,"height":35} -->
-<figure class="wp-block-image alignleft is-resized"><img src="<?php echo esc_url( PUBLISHER_MEDIA_KIT_URL ); ?>assets/images/icon-digital-1.png" alt="Female visitors" style="width:35px;height:35px"/></figure>
+<div class="wp-block-column pmk-digital-column pmk-digital-column-source"><!-- wp:image {"align":"left","className":"is-resized"} -->
+<figure class="wp-block-image alignleft is-resized"><img src="<?php echo esc_url( PUBLISHER_MEDIA_KIT_URL ); ?>assets/images/icon-digital-1.png" alt="Female visitors"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -22,8 +22,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"className":"pmk-digital-column pmk-digital-column-visibility"} -->
-<div class="wp-block-column pmk-digital-column pmk-digital-column-visibility"><!-- wp:image {"align":"left","width":35,"height":35} -->
-<figure class="wp-block-image alignleft is-resized"><img src="<?php echo esc_url( PUBLISHER_MEDIA_KIT_URL ); ?>assets/images/icon-digital-2.png" alt="Female visitors" style="width:35px;height:35px"/></figure>
+<div class="wp-block-column pmk-digital-column pmk-digital-column-visibility"><!-- wp:image {"align":"left","className":"is-resized"} -->
+<figure class="wp-block-image alignleft is-resized"><img src="<?php echo esc_url( PUBLISHER_MEDIA_KIT_URL ); ?>assets/images/icon-digital-2.png" alt="Female visitors"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -36,8 +36,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"className":"pmk-digital-column pmk-digital-column-measure"} -->
-<div class="wp-block-column pmk-digital-column pmk-digital-column-measure"><!-- wp:image {"align":"left","width":35,"height":35} -->
-<figure class="wp-block-image alignleft is-resized"><img src="<?php echo esc_url( PUBLISHER_MEDIA_KIT_URL ); ?>assets/images/icon-digital-3.png" alt="Female visitors" style="width:35px;height:35px"/></figure>
+<div class="wp-block-column pmk-digital-column pmk-digital-column-measure"><!-- wp:image {"align":"left","className":"is-resized"} -->
+<figure class="wp-block-image alignleft is-resized"><img src="<?php echo esc_url( PUBLISHER_MEDIA_KIT_URL ); ?>assets/images/icon-digital-3.png" alt="Female visitors"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
