@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "10up-toolkit": "^5.2.3",
+    "stylelint": "^14.0.0",
     "@10up/babel-preset-default": "^1.1.2",
     "@10up/cypress-wp-utils": "^0.2.0",
     "@10up/eslint-config": "^2.4.6",
