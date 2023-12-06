@@ -1,6 +1,5 @@
 {
 	"name": "tenup/tabs-item",
-	"category": "tenup-blocks",
 	"attributes":{
 		"header": {
 			"type": "string"
