@@ -9,7 +9,7 @@
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"width":"53px","height":"auto","align":"center","className":"is-resized"} -->
-<figure class="wp-block-image aligncenter is-resized" id="block-ad47cc21-f741-4805-a4d7-85e15762d9d9"><img src="http://wpne.local/wp-content/plugins/publisher-media-kit/assets/images/icon-woman.png" alt="Female visitors" style="width:53px;height:auto"/></figure>
+<figure class="wp-block-image aligncenter is-resized" id="block-ad47cc21-f741-4805-a4d7-85e15762d9d9"><img src="<?php echo esc_url( PUBLISHER_MEDIA_KIT_URL ); ?>assets/images/icon-woman.png" alt="Female visitors" style="width:53px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -19,7 +19,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"width":"57px","height":"auto","align":"center","className":"is-resized"} -->
-<figure class="wp-block-image aligncenter is-resized" id="block-7db2072f-dbec-47c8-afdb-8e3c78404377"><img src="http://wpne.local/wp-content/plugins/publisher-media-kit/assets/images/icon-man.png" alt="Male visitors" style="width:57px;height:auto"/></figure>
+<figure class="wp-block-image aligncenter is-resized" id="block-7db2072f-dbec-47c8-afdb-8e3c78404377"><img src="<?php echo esc_url( PUBLISHER_MEDIA_KIT_URL ); ?>assets/images/icon-man.png" alt="Male visitors" style="width:57px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center"} -->
