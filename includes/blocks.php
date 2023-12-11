@@ -59,11 +59,10 @@ function block_patterns_and_categories() {
 	);
 
 	global $wp_version;
-	$cover_patter_file = version_compare( $wp_version, '5.7', '<' ) ? 'cover' : 'cover-esperanza';
 
 	// Register block pattern for cover image.
 	ob_start();
-	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . $cover_patter_file . '.php';
+	include_once PUBLISHER_MEDIA_KIT_BLOCK_PATTERS . 'cover-esperanza.php';
 	$cover = ob_get_clean();
 	register_block_pattern(
 		'publisher-media-kit/cover-pattern',
