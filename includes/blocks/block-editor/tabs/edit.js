@@ -145,6 +145,10 @@ const TabsEdit = (props) => {
 					`.components-tab-panel__tabs-item[data-tab-block="${innerBlock.clientId}"]`,
 				);
 
+				if (!tabHeaderButton) {
+					return;
+				}
+
 				const positionInfo = tabHeaderButton.getBoundingClientRect();
 
 				if (tabHeader && tabHeaderButton) {

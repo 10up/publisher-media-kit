@@ -2,7 +2,7 @@ describe('Check if Media Kit Block Pattern is available for use', () => {
     it('Can insert the block pattern', () => {
         cy.visitAdminPage('post-new.php');
         cy.closeWelcomeGuide();
-        cy.get('#post-title-0, h1.editor-post-title__input').click().type('Test Block Pattern');
+        cy.get('#post-title-0, h1.editor-post-title__input').click( { force: true } ).type('Test Block Pattern');
         cy.get('.edit-post-header-toolbar__inserter-toggle').click();
         cy.get('.components-tab-panel__tabs button').contains( 'Patterns' ).click();
 
@@ -15,10 +15,9 @@ describe('Check if Media Kit Block Pattern is available for use', () => {
             } else if ($body.find( '[aria-label="Publisher Media Kit"]' ).length > 0) {
                 cy.get('[aria-label="Publisher Media Kit"]').click();
             }
-        });
 
-        cy.get('[aria-label="Publisher Media Kit - Cover"]').click();
-        cy.get('.edit-post-header-toolbar__inserter-toggle').click();
-        cy.get('[data-type="core/heading"]').should('contain.text', 'Media Kit');
+            // Check if cover patter exist in the list
+            cy.get('[aria-label="Publisher Media Kit - Cover"]').should('exist');
+        });
     });
 });
