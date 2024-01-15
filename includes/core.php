@@ -348,7 +348,7 @@ function mce_css( $stylesheets ) {
 	}
 
 	return $stylesheets . PUBLISHER_MEDIA_KIT_URL . ( ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ?
-			'assets/css/frontend/editor-style.css' :
+			'assets/css/admin/editor-style.css' :
 			'dist/css/editor-style.css' );
 }
 
