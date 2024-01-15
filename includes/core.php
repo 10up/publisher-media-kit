@@ -349,7 +349,7 @@ function mce_css( $stylesheets ) {
 
 	return $stylesheets . PUBLISHER_MEDIA_KIT_URL . ( ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ?
 			'assets/css/frontend/editor-style.css' :
-			'dist/css/editor-style.min.css' );
+			'dist/css/editor-style.css' );
 }
 
 /**

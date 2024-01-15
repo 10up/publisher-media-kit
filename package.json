@@ -66,7 +66,7 @@
       "style": "./assets/css/frontend/style.css",
       "tabs-block": "./includes/blocks/block-editor/tabs/register.js",
       "tabs-item-block": "./includes/blocks/block-editor/tabs-item/register.js",
-      "editor-style": "./assets/css/frontend/editor-style.css"
+      "editor-style": "./assets/css/admin/editor-style.css"
     }
   }
 }
