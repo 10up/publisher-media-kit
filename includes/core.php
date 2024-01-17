@@ -26,8 +26,6 @@ function setup() {
 	add_action( 'admin_enqueue_scripts', $n( 'admin_scripts' ) );
 	add_action( 'admin_enqueue_scripts', $n( 'admin_styles' ) );
 
-	// Editor styles. add_editor_style() doesn't work outside of a theme.
-	add_filter( 'mce_css', $n( 'mce_css' ) );
 	// Hook to allow async or defer on asset loading.
 	add_filter( 'script_loader_tag', $n( 'script_loader_tag' ), 10, 2 );
 
@@ -333,23 +331,6 @@ function admin_styles() {
 		PUBLISHER_MEDIA_KIT_VERSION
 	);
 
-}
-
-/**
- * Enqueue editor styles. Filters the comma-delimited list of stylesheets to load in TinyMCE.
- *
- * @param string $stylesheets Comma-delimited list of stylesheets.
- *
- * @return string
- */
-function mce_css( $stylesheets ) {
-	if ( ! empty( $stylesheets ) ) {
-		$stylesheets .= ',';
-	}
-
-	return $stylesheets . PUBLISHER_MEDIA_KIT_URL . ( ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ?
-			'assets/css/admin/editor-style.css' :
-			'dist/css/editor-style.css' );
 }
 
 /**
