@@ -20,7 +20,7 @@
     "node": ">=12.0.0"
   },
   "devDependencies": {
-    "10up-toolkit": "^4.0.0",
+    "10up-toolkit": "^6.0.0",
     "stylelint": "^14.0.0",
     "@10up/babel-preset-default": "^1.1.2",
     "@10up/cypress-wp-utils": "^0.2.0",
