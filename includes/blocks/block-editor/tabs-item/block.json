@@ -10,5 +10,5 @@
     "html": false
   },
 	"parent":[ "tenup/tabs" ],
-	"editorScript": "file:../../../../dist/blocks/tabs-item-block/editor.js"
+	"editorScript": "file:../../../../dist/blocks/tabs-item-block.js"
 }
