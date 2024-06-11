@@ -19,11 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: install node v12
-      uses: actions/setup-node@v1
+    - name: Setup node version and npm cache
+      uses: actions/setup-node@v3
       with:
-        node-version: 12
-    - name: npm install
+        node-version: 16
+        cache: 'npm'
+
+    - name: Install Node dependencies
+      if: steps.cache-node-modules.outputs.cache-hit != 'true'
       run: npm install
     - name: eslint
       uses: icrawl/action-eslint@v1
