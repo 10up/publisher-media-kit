@@ -9,5 +9,6 @@
     "reusable": false,
     "html": false
   },
-	"parent":[ "tenup/tabs" ]
+	"parent":[ "tenup/tabs" ],
+	"editorScript": "file:../../../../dist/blocks/tabs-item-block.js"
 }

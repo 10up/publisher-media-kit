@@ -23,24 +23,6 @@ function register() {
 			]
 		);
 	}
-
-	// Enqueue assets.
-	add_action( 'enqueue_block_assets', $n( 'enqueue_block_assets' ) );
-}
-
-/**
- * Enqueue block assets.
- */
-function enqueue_block_assets() {
-	$asset_file = include PUBLISHER_MEDIA_KIT_PATH . 'dist/blocks/tabs-item-block.asset.php';
-
-	wp_enqueue_script(
-		'publisher-media-kit-tabs-item-block',
-		PUBLISHER_MEDIA_KIT_URL . '/dist/blocks/tabs-item-block.js',
-		$asset_file['dependencies'],
-		$asset_file['version'],
-		true
-	);
 }
 
 /**
