@@ -1,34 +1,30 @@
-name: JS Linting
+name: Linting
 
 on:
   push:
     branches:
       - develop
       - trunk
-    paths:
-      - '**.js'
   pull_request:
     branches:
       - develop
-    paths:
-      - '**.js'
 
 jobs:
   eslint:
+    name: eslint
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-    - name: Setup node and npm cache
+    - name: Setup node v16 and npm cache
       uses: actions/setup-node@v4
       with:
         node-version-file: .nvmrc
         cache: npm
 
     - name: Install Node dependencies
-      run: npm ci --omit=optional
+      run: npm ci --no-optional
 
     - name: Get updated JS files
       id: changed-files
