@@ -27,6 +27,7 @@
     "@babel/preset-react": "^7.17.12",
     "@wordpress/env": "^5.2.0",
     "@wordpress/scripts": "^27.3.0",
+    "@wordpress/eslint-plugin": "^17.5.0",
     "cypress": "^13.3.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.0.1",
@@ -41,7 +42,8 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "mochawesome-json-to-md": "^0.7.2",
-    "stylelint": "^14.0.0"
+    "stylelint": "^14.0.0",
+    "prettier": "^3.3.2"
   },
   "dependencies": {
     "@10up/component-tabs": "^2.0.1",
