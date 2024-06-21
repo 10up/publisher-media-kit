@@ -1,14 +1,13 @@
 div.wp-block-group.pmk-why-digital {
 	background-color: var(--pmk-global-color-background-focus);
 	color: var(--pmk-global-color-text-on-background);
-	margin-bottom: var(--pmk-spacing-components);
-	margin-top: 0;
+	margin: var(--pmk-spacing-components) 0;
+	padding: var(--pmk-spacing-related);
 
 	& .wp-block-group__inner-container {
 
 		@mixin has-full-width-background;
 
-		padding: var(--pmk-spacing-components) 0 var(--pmk-spacing-internal-xlarge);
 	}
 
 	& h2 {

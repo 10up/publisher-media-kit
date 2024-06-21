@@ -176,6 +176,11 @@ div.wp-block-group.pmk-tabs-table {
 			text-align: left;
 		}
 
+		& tbody tr:nth-child(even) {
+			background-color: var(--wp--preset--color--base);
+			color: var(--wp--preset--color--contrast);
+		}
+
 		& tbody tr:nth-child(odd) {
 			background-color: var(--pmk-global-color-background-focus);
 			color: var(--pmk-global-color-text-on-background);
