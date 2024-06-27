@@ -2,7 +2,7 @@
 Contributors:      10up, jeffpaul, faisal03
 Tags:              media kit, audience profiles, digital ad specs, ad rates
 Tested up to:      6.5
-Stable tag:        1.3.3
+Stable tag:        1.3.4
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
