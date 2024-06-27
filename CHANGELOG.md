@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file, per [the Ke
 ## [Unreleased] - TBD
 
 ## [1.3.4] - 2024-07-01
+**Note that this release bumps the minimum required version of WordPress from 5.7 to 6.2.**
+
 ### Added
 - PHP version check to ensure >= 7.4 support (props [@bmarshall511](https://github.com/bmarshall511), [@faisal-alvi](https://github.com/faisal-alvi), [@ankitguptaindia](https://github.com/ankitguptaindia) via [#165](https://github.com/10up/publisher-media-kit/pull/165)).
 - Margin to the top of Why Digital Group, Padding to Why Digital Group, and Background and text color to even table rows (props [@claytoncollie](https://github.com/claytoncollie), [@faisal-alvi](https://github.com/faisal-alvi) via [#187](https://github.com/10up/publisher-media-kit/pull/187)).

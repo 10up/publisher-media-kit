@@ -107,5 +107,8 @@ Further changelog entries can be found in the [CHANGELOG.md](https://github.com/
 
 == Upgrade Notice ==
 
+= 1.3.4 =
+Note that this release bumps the minimum required version of WordPress from 5.7 to 6.2.
+
 = 1.3.0 =
 Note that this release bumps the minimum required version of WordPress from 5.5 to 5.7 and PHP from 7.0 to 7.4.
