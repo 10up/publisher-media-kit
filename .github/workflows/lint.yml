@@ -33,6 +33,10 @@ jobs:
         files: |
           **/*.js
 
+    - name: PHPCS check
+      id: phpcs
+      run: ./vendor/bin/phpcs . --runtime-set testVersion 7.4- --report-checkstyle=${RUNNER_TEMP}/phpcs-report.xml
+
     - name: Run JS linting
       if: ${{ steps.changed-files.outputs.any_changed == 'true' }}
       run: ./node_modules/.bin/10up-toolkit lint-js ${{ steps.changed-files.outputs.all_changed_files }}
