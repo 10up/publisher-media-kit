@@ -33,6 +33,11 @@ jobs:
         files: |
           **/*.js
 
+    - name: composer install
+      run: composer install --ignore-platform-reqs
+    - name: Check PHPCS standard
+      run: ./vendor/bin/phpcs -i
+
     - name: PHPCS check
       id: phpcs
       run: ./vendor/bin/phpcs . --runtime-set testVersion 7.4- --report-checkstyle=${RUNNER_TEMP}/phpcs-report.xml
