@@ -55,7 +55,7 @@ The plugin specifically checks for the page slug `media-kit`, meaning that even 
 
 == Changelog ==
 
-= 1.3.4 - 2024-07-01 =
+= 1.3.4 - 2024-07-08 =
 * **Added:** PHP version check to ensure >= 7.4 support (props [@bmarshall511](https://github.com/bmarshall511), [@faisal-alvi](https://github.com/faisal-alvi), [@ankitguptaindia](https://github.com/ankitguptaindia) via [#165](https://github.com/10up/publisher-media-kit/pull/165)).
 * **Added:** Margin to the top of Why Digital Group, Padding to Why Digital Group, and Background and text color to even table rows (props [@claytoncollie](https://github.com/claytoncollie), [@faisal-alvi](https://github.com/faisal-alvi) via [#187](https://github.com/10up/publisher-media-kit/pull/187)).
 * **Changed:** Bump WordPress minimum to version 6.2 and "tested up to" version 6.5 (props [@dependabot](https://github.com/apps/dependabot), [@faisal-alvi](https://github.com/faisal-alvi), [@dkotter](https://github.com/dkotter), [@jeffpaul](https://github.com/jeffpaul), [@qasumitbagthariya](https://github.com/qasumitbagthariya), [@sudip-md](https://github.com/sudip-md) via [#166](https://github.com/10up/publisher-media-kit/pull/166), [#188](https://github.com/10up/publisher-media-kit/pull/188)).
