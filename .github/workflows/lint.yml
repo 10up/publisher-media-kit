@@ -1,9 +1,5 @@
 name: Linting
 
-env:
-  COMPOSER_VERSION: "2"
-  COMPOSER_CACHE: "${{ github.workspace }}/.composer-cache"
-
 on:
   push:
     branches:
@@ -17,49 +13,35 @@ jobs:
   eslint:
     name: eslint
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v3
-    - name: install node v12
-      uses: actions/setup-node@v1
+    - uses: actions/checkout@v4
+
+    - name: Setup node and npm cache
+      uses: actions/setup-node@v4
       with:
-        node-version: 12
-    - name: npm install
-      run: npm install
-    - name: eslint
-      uses: icrawl/action-eslint@v1
+        node-version-file: .nvmrc
+        cache: npm
+
+    - name: Install Node dependencies
+      run: npm ci --no-optional
+
+    - name: Get updated JS files
+      id: changed-files
+      uses: tj-actions/changed-files@v42
       with:
-        custom-glob: assets
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  phpcs:
-    name: phpcs
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - name: Set standard 10up cache directories
-      run: |
-        composer config -g cache-dir "${{ env.COMPOSER_CACHE }}"
-    - name: Prepare composer cache
-      uses: actions/cache@v2
-      with:
-        path: ${{ env.COMPOSER_CACHE }}
-        key: composer-${{ env.COMPOSER_VERSION }}-${{ hashFiles('**/composer.lock') }}
-        restore-keys: |
-          composer-${{ env.COMPOSER_VERSION }}-
-    - name: Set PHP version
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '7.4'
-        coverage: none
-        tools: composer:v2, cs2pr
+        files: |
+          **/*.js
+
     - name: composer install
       run: composer install --ignore-platform-reqs
     - name: Check PHPCS standard
       run: ./vendor/bin/phpcs -i
+
     - name: PHPCS check
       id: phpcs
       run: ./vendor/bin/phpcs . --runtime-set testVersion 7.4- --report-checkstyle=${RUNNER_TEMP}/phpcs-report.xml
-    - name: Show PHPCS results in PR
-      if: ${{ always() && steps.phpcs.outcome == 'failure' }}
-      run: cs2pr --graceful-warnings ${RUNNER_TEMP}/phpcs-report.xml
+
+    - name: Run JS linting
+      if: ${{ steps.changed-files.outputs.any_changed == 'true' }}
+      run: ./node_modules/.bin/10up-toolkit lint-js ${{ steps.changed-files.outputs.all_changed_files }}
