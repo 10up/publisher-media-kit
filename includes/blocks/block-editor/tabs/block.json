@@ -49,8 +49,5 @@
   },
   "supports": {
     "html": false
-  },
-	"editorScript": "file:../../../../dist/blocks/tabs-block/editor.js",
-	"editorStyle": "file:../../../../dist/blocks/tabs-block/editor.css",
-	"style": "file:../../../../dist/blocks/tabs-block/editor.css"
+  }
 }

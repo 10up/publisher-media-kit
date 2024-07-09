@@ -23,6 +23,31 @@ function register() {
 			]
 		);
 	}
+
+	// Enqueue assets.
+	add_action( 'enqueue_block_assets', $n( 'enqueue_block_assets' ) );
+}
+
+/**
+ * Enqueue block assets.
+ */
+function enqueue_block_assets() {
+	$asset_file = include PUBLISHER_MEDIA_KIT_PATH . 'dist/blocks/tabs-block.asset.php';
+
+	wp_enqueue_script(
+		'publisher-media-kit-tabs-block',
+		PUBLISHER_MEDIA_KIT_URL . '/dist/blocks/tabs-block.js',
+		$asset_file['dependencies'],
+		$asset_file['version'],
+		true
+	);
+
+	wp_enqueue_style(
+		'publisher-media-kit-tabs-block',
+		PUBLISHER_MEDIA_KIT_URL . '/dist/blocks/tabs-block.css',
+		[],
+		$asset_file['version']
+	);
 }
 
 /**
