@@ -24,47 +24,18 @@ define( 'PUBLISHER_MEDIA_KIT_BLOCKS_PATH', plugin_dir_path( __FILE__ ) . 'includ
 define( 'PUBLISHER_MEDIA_KIT_INC', PUBLISHER_MEDIA_KIT_PATH . 'includes/' );
 define( 'PUBLISHER_MEDIA_KIT_BLOCK_PATTERS', PUBLISHER_MEDIA_KIT_PATH . 'includes/block-patterns/' );
 
-/**
- * Get the minimum version of PHP required by this plugin.
- *
- * @return string Minimum version required.
- */
-function minimum_php_requirement() {
-	return '7.4';
+if ( ! is_readable( __DIR__ . '/10up-lib/wp-compat-validation-tool/src/Validator.php' ) ) {
+	return;
 }
 
-/**
- * Checks whether PHP installation meets the minimum requirements.
- *
- * @return bool true if meets minimum requirements, false otherwise.
- */
-function site_meets_php_requirements() {
-	return version_compare( phpversion(), minimum_php_requirement(), '>=' );
-}
+require_once '10up-lib/wp-compat-validation-tool/src/Validator.php';
 
-// Check minimum PHP version.
-if ( ! site_meets_php_requirements() ) {
-	add_action(
-		'admin_notices',
-		function() {
-			?>
-			<div class="notice notice-error">
-				<p>
-					<?php
-					echo wp_kses_post(
-						sprintf(
-							/* translators: %s: Minimum required PHP version */
-							__( 'Publisher Media Kit requires PHP version %s or later. Please upgrade PHP or disable the plugin.', 'publisher-media-kit' ),
-							esc_html( minimum_php_requirement() )
-						)
-					);
-					?>
-				</p>
-			</div>
-			<?php
-		}
-	);
+$compat_checker = new \PublisherMediaKitValidator\Validator();
+$compat_checker
+	->set_plugin_name( 'Publisher Media Kit' )
+	->set_php_min_required_version( '7.4' );
 
+if ( ! $compat_checker->is_plugin_compatible() ) {
 	return;
 }
 
