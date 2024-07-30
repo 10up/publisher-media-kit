@@ -57,7 +57,8 @@ The plugin specifically checks for the page slug `media-kit`, meaning that even 
 
 = 1.3.5 - 2024-07-31 =
 
-
+* **Changed:** Bump WordPress minimum to version 6.4 and "tested up to" version 6.6 (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter), [@sudip-md](https://github.com/sudip-md) via [#195](https://github.com/10up/publisher-media-kit/pull/195)).
+* **Fixed:** Fatal error caused by redeclared functions (props [@claudiulodro](https://github.com/claudiulodro), [@Sidsector9](https://github.com/Sidsector9), [@shelb-elliott](https://github.com/shelb-elliott), [@iamdharmesh](https://github.com/iamdharmesh) via [#197](https://github.com/10up/publisher-media-kit/pull/197)).
 
 = 1.3.4 - 2024-07-08 =
 * **Added:** PHP version check to ensure >= 7.4 support (props [@bmarshall511](https://github.com/bmarshall511), [@faisal-alvi](https://github.com/faisal-alvi), [@ankitguptaindia](https://github.com/ankitguptaindia) via [#165](https://github.com/10up/publisher-media-kit/pull/165)).

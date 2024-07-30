@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased] - TBD
 
+## [1.3.5] - 2024-07-31
+**Note that this release bumps the minimum required version of WordPress from 6.2 to 6.4.**
+
+### Changed
+- Bump WordPress minimum to version 6.4 and "tested up to" version 6.6 (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter), [@sudip-md](https://github.com/sudip-md) via [#195](https://github.com/10up/publisher-media-kit/pull/195)).
+
+### Fixed
+- Fatal error caused by redeclared functions (props [@claudiulodro](https://github.com/claudiulodro), [@Sidsector9](https://github.com/Sidsector9), [@shelb-elliott](https://github.com/shelb-elliott), [@iamdharmesh](https://github.com/iamdharmesh) via [#197](https://github.com/10up/publisher-media-kit/pull/197)).
+
 ## [1.3.4] - 2024-07-08
 **Note that this release bumps the minimum required version of WordPress from 5.7 to 6.2.**
 
@@ -135,6 +144,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Initial private plugin release 🎉
 
 [Unreleased]: https://github.com/10up/publisher-media-kit/compare/trunk...develop
+[1.3.4]: https://github.com/10up/publisher-media-kit/compare/1.3.4...1.3.5
 [1.3.4]: https://github.com/10up/publisher-media-kit/compare/1.3.3...1.3.4
 [1.3.3]: https://github.com/10up/publisher-media-kit/compare/1.3.2...1.3.3
 [1.3.2]: https://github.com/10up/publisher-media-kit/compare/1.3.1...1.3.2
