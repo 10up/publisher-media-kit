@@ -5,5 +5,5 @@
 	<exclude-pattern>dist/</exclude-pattern>
 	<exclude-pattern>vendor/</exclude-pattern>
 	<exclude-pattern>tests/</exclude-pattern>
-	<exclude-pattern>10up-lib/</exclude-pattern>
+	<exclude-pattern>10up-lib1/</exclude-pattern>
 </ruleset>
