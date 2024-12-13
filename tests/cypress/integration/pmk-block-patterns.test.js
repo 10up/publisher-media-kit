@@ -4,7 +4,7 @@ describe('Check if Media Kit Block Pattern is available for use', () => {
         cy.closeWelcomeGuide();
         cy.get('#post-title-0, h1.editor-post-title__input').click( { force: true } ).type('Test Block Pattern');
         cy.get('.edit-post-header-toolbar__inserter-toggle, .editor-document-tools__inserter-toggle').click();
-        cy.get('.components-tab-panel__tabs button, .block-editor-inserter__tabs button').contains( 'Patterns' ).click();
+        cy.get('.components-tab-panel__tabs button, .block-editor-inserter__tabs button, .block-editor-tabbed-sidebar__tablist button').contains( 'Patterns' ).click();
 
         // (add version) If dropdown is available. (After WP 5.?)
         cy.get('body').then(($body) => {
