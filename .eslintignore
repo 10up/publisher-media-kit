@@ -5,3 +5,6 @@ assets/js/shared/vendor
 gulp-tasks/
 webpack.config.babel.js
 gulpfile.babel.js
+node_modules
+tests/*
+vendor/*
