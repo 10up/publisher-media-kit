@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased] - TBD
 
+## [1.3.6] - 2025-02-03
+**Note that this release bumps the minimum required version of WordPress from 6.4 to 6.5.**
+
+### Changed
+- Bump WordPress "tested up to" version 6.7 (props [@severine-pozzo](https://github.com/severine-pozzo), [@jeffpaul](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi) via [#212](https://github.com/10up/publisher-media-kit/pull/212)).
+- Bump WordPress minimum to version 6.5 (props [@severine-pozzo](https://github.com/severine-pozzo), [@jeffpaul](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi) via [#212](https://github.com/10up/publisher-media-kit/pull/212)).
+
+### Security
+- Bump `axios` from 1.7.2 to 1.7.4 (props [@dependabot](https://github.com/apps/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#205](https://github.com/10up/publisher-media-kit/pull/205)).
+- Bump `webpack` from 5.92.1 to 5.94.0 (props [@dependabot](https://github.com/apps/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#206](https://github.com/10up/publisher-media-kit/pull/206)).
+- Bump `serve-static` from 1.15.0 to 1.16.2 and `express` from 4.19.2 to 4.21.0 (props [@dependabot](https://github.com/apps/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#209](https://github.com/10up/publisher-media-kit/pull/209)).
+- Bump `cookie` from 0.4.2 to 0.7.1, `express` from 4.21.0 to 4.21.2 and `@wordpress/scripts` from 27.9.0 to 30.7.0 (props [@dependabot](https://github.com/apps/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#213](https://github.com/10up/publisher-media-kit/pull/213)).
+
+### Developer
+- Ensure that the PHPCS check in the GitHub Action works properly (props [@iamdharmesh](https://github.com/iamdharmesh), [@faisal-alvi](https://github.com/faisal-alvi) via [#207](https://github.com/10up/publisher-media-kit/pull/207)).
+- Handful of tweaks to the REAMDE: add banner image, update badges, add WordPress Playground badge (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter), [@faisal-alvi](https://github.com/faisal-alvi) via [#204](https://github.com/10up/publisher-media-kit/pull/204), [#208](https://github.com/10up/publisher-media-kit/pull/208), [#210](https://github.com/10up/publisher-media-kit/pull/210)).
+
 ## [1.3.5] - 2024-07-31
 **Note that this release bumps the minimum required version of WordPress from 6.2 to 6.4.**
 
@@ -145,6 +162,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Initial private plugin release 🎉
 
 [Unreleased]: https://github.com/10up/publisher-media-kit/compare/trunk...develop
+[1.3.6]: https://github.com/10up/publisher-media-kit/compare/1.3.5...1.3.6
 [1.3.5]: https://github.com/10up/publisher-media-kit/compare/1.3.4...1.3.5
 [1.3.4]: https://github.com/10up/publisher-media-kit/compare/1.3.3...1.3.4
 [1.3.3]: https://github.com/10up/publisher-media-kit/compare/1.3.2...1.3.3

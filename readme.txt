@@ -55,6 +55,17 @@ The plugin specifically checks for the page slug `media-kit`, meaning that even 
 
 == Changelog ==
 
+= 1.3.6 - 2025-02-03 =
+
+**Note that this release bumps the minimum required version of WordPress from 6.4 to 6.5.**
+
+* **Changed:** Bump WordPress "tested up to" version 6.7 (props [@severine-pozzo](https://github.com/severine-pozzo), [@jeffpaul](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi) via [#212](https://github.com/10up/publisher-media-kit/pull/212)).
+* **Changed:** Bump WordPress minimum to version 6.5 (props [@severine-pozzo](https://github.com/severine-pozzo), [@jeffpaul](https://github.com/jeffpaul), [@faisal-alvi](https://github.com/faisal-alvi) via [#212](https://github.com/10up/publisher-media-kit/pull/212)).
+* **Security:** Bump `axios` from 1.7.2 to 1.7.4 (props [@dependabot](https://github.com/apps/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#205](https://github.com/10up/publisher-media-kit/pull/205)).
+* **Security:** Bump `webpack` from 5.92.1 to 5.94.0 (props [@dependabot](https://github.com/apps/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#206](https://github.com/10up/publisher-media-kit/pull/206)).
+* **Security:** Bump `serve-static` from 1.15.0 to 1.16.2 and `express` from 4.19.2 to 4.21.0 (props [@dependabot](https://github.com/apps/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#209](https://github.com/10up/publisher-media-kit/pull/209)).
+* **Security:** Bump `cookie` from 0.4.2 to 0.7.1, `express` from 4.21.0 to 4.21.2 and `@wordpress/scripts` from 27.9.0 to 30.7.0 (props [@dependabot](https://github.com/apps/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#213](https://github.com/10up/publisher-media-kit/pull/213)).
+
 = 1.3.5 - 2024-07-31 =
 
 **Note that this release bumps the minimum required version of WordPress from 6.2 to 6.4.**
@@ -120,6 +131,9 @@ The plugin specifically checks for the page slug `media-kit`, meaning that even 
 Further changelog entries can be found in the [CHANGELOG.md](https://github.com/10up/publisher-media-kit/blob/trunk/CHANGELOG.md) file.
 
 == Upgrade Notice ==
+
+= 1.3.6 =
+Note that this release bumps the minimum required version of WordPress from 6.4 to 6.5.
 
 = 1.3.5 =
 Note that this release bumps the minimum required version of WordPress from 6.2 to 6.4.
