@@ -1,8 +1,10 @@
 # Publisher Media Kit
 
-> Pre-configured Media Kit Page using Gutenberg Block Patterns.
+![Publisher Media Kit](https://github.com/10up/publisher-media-kit/blob/develop/.wordpress-org/banner-1544x500.png)
 
-[![Support Level](https://img.shields.io/badge/support-stable-blue.svg)](#support-level) [![E2E Tests](https://github.com/10up/publisher-media-kit/actions/workflows/cypress.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/cypress.yml) [![Linting](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml) ![PHPCompatibility](https://github.com/10up/publisher-media-kit/actions/workflows/php-compatibility.yml/badge.svg) [![Release Version](https://img.shields.io/github/release/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/releases/latest) ![WordPress tested up to version](https://img.shields.io/wordpress/plugin/tested/publisher-media-kit?label=WordPress) [![GPLv2 License](https://img.shields.io/github/license/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/blob/develop/LICENSE.md)
+[![Support Level](https://img.shields.io/badge/support-stable-blue.svg)](#support-level) ![Required PHP Version](https://img.shields.io/wordpress/plugin/required-php/publisher-media-kit?label=Requires%20PHP) ![Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/publisher-media-kit?label=Requires%20WordPress) ![WordPress tested up to version](https://img.shields.io/wordpress/plugin/tested/publisher-media-kit?label=WordPress) [![GPLv2 License](https://img.shields.io/github/license/10up/publisher-media-kit.svg)](https://github.com/10up/publisher-media-kit/blob/develop/LICENSE.md) [![Dependency Review](https://github.com/10up/publisher-media-kit/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/dependency-review.yml) [![E2E Tests](https://github.com/10up/publisher-media-kit/actions/workflows/cypress.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/cypress.yml) [![Linting](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/lint.yml) ![PHPCompatibility](https://github.com/10up/publisher-media-kit/actions/workflows/php-compatibility.yml/badge.svg) [![CodeQL](https://github.com/10up/publisher-media-kit/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/10up/publisher-media-kit/actions/workflows/codeql-analysis.yml) [![WordPress Playground Demo](https://img.shields.io/wordpress/plugin/v/publisher-media-kit?logo=wordpress&logoColor=FFFFFF&label=Playground%20Demo&labelColor=3858E9&color=3858E9)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/10up/publisher-media-kit/add/playground/.wordpress-org/blueprints/blueprint.json)
+
+> Pre-configured Media Kit Page using Gutenberg Block Patterns.
 
 ## Overview
 
@@ -21,7 +23,7 @@ Twenty Twenty One default theme | Newspack base theme
 ## Requirements
 
 * PHP Requires: 7.4+
-* WordPress Requires at least: 6.4+
+* WordPress Requires at least: 6.5+
 
 ## Theme Compatibility
 
