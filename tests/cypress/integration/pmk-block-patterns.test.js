@@ -22,6 +22,8 @@ describe('Check if Media Kit Block Pattern is available for use', () => {
 				});
 			} else if ($body.find('[aria-label="Publisher Media Kit"]').length > 0) {
 				cy.get('[aria-label="Publisher Media Kit"]').click();
+			} else if ($body.find(':contains("Publisher Media Kit")').length > 0) {
+				cy.contains(/^Publisher Media Kit$/).click();
 			}
 
 			// Check if cover patter exist in the list
