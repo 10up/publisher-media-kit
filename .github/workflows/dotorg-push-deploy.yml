@@ -16,7 +16,7 @@ jobs:
     - name: Use nvm
       uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
       with:
-        node-version: 20
+        node-version-file: '.nvmrc'
         check-latest: false
 
     - name: Install and build NPM
