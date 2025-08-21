@@ -32,6 +32,11 @@ function register() {
  * Enqueue block assets.
  */
 function enqueue_block_assets() {
+	// Only enqueue the script on frontend when the block exists
+	if ( ! is_admin() && ! has_block( '10up/tabs' ) ) {
+		return;
+	}
+
 	$asset_file = include PUBLISHER_MEDIA_KIT_PATH . 'dist/blocks/tabs-block.asset.php';
 
 	wp_enqueue_script(
