@@ -33,7 +33,7 @@ function register() {
  */
 function enqueue_block_assets() {
 	// Only enqueue the script on frontend when the block exists
-	if ( ! is_admin() && ! has_block( '10up/tabs' ) ) {
+	if ( ! is_admin() && ! has_block( 'tenup/tabs' ) ) {
 		return;
 	}
 
