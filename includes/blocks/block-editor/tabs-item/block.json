@@ -1,5 +1,7 @@
 {
 	"name": "tenup/tabs-item",
+	"editorScript": "file:./register.js",
+	"viewScript": "file:../tabs/view.js",
 	"attributes":{
 		"header": {
 			"type": "string"
