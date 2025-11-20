@@ -11,4 +11,3 @@ import Tabs from '@10up/component-tabs';
 new Tabs('.tabs', {
 	orientation: 'horizontal',
 });
-
