@@ -21,14 +21,14 @@
     "node": ">=12.0.0"
   },
   "devDependencies": {
-    "10up-toolkit": "^6.5.0",
     "@10up/babel-preset-default": "^2.1.1",
-    "@10up/cypress-wp-utils": "^0.3.0",
+    "@10up/cypress-wp-utils": "^0.6.0",
     "@10up/eslint-config": "^4.1.2",
     "@babel/preset-react": "^7.17.12",
     "@wordpress/env": "^10.1.0",
     "@wordpress/eslint-plugin": "^17.5.0",
     "@wordpress/scripts": "^30.7.0",
+    "10up-toolkit": "^6.5.0",
     "cypress": "^13.3.1",
     "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.0.1",
@@ -48,6 +48,8 @@
   },
   "dependencies": {
     "@10up/component-tabs": "^2.0.1",
+    "@algolia/autocomplete-js": "^1.10.6",
+    "@dnd-kit/core": "^6.3.1",
     "@wordpress/blocks": "^14.12.0",
     "@wordpress/hooks": "^4.23.0",
     "@wordpress/i18n": "^5.23.0",
@@ -57,9 +59,7 @@
     "path": "^0.12.7",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "@algolia/autocomplete-js": "^1.10.6",
-    "@dnd-kit/core": "^6.3.1"
+    "react-dom": "^18.0.0"
   },
   "10up-toolkit": {
     "devURL": "https://publisher-media.test/",
