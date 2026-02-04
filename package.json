@@ -25,7 +25,7 @@
     "@10up/cypress-wp-utils": "^0.6.0",
     "@10up/eslint-config": "^4.1.2",
     "@babel/preset-react": "^7.17.12",
-    "@wordpress/env": "^10.1.0",
+    "@wordpress/env": "^10.39.0",
     "@wordpress/eslint-plugin": "^17.5.0",
     "@wordpress/scripts": "^30.7.0",
     "10up-toolkit": "^6.5.0",
