@@ -53,7 +53,7 @@
     "@wordpress/blocks": "^15.12.0",
     "@wordpress/hooks": "^4.39.0",
     "@wordpress/i18n": "^6.12.0",
-    "@wordpress/icons": "^10.23.0",
+    "@wordpress/icons": "^11.6.0",
     "classnames": "^2.3.1",
     "normalize.css": "^8.0.1",
     "path": "^0.12.7",
