@@ -244,14 +244,6 @@ function scripts() {
 		PUBLISHER_MEDIA_KIT_VERSION,
 		true
 	);
-
-	wp_enqueue_script(
-		'publisher_media_kit_frontend',
-		script_url( 'frontend', 'frontend' ),
-		[],
-		PUBLISHER_MEDIA_KIT_VERSION,
-		true
-	);
 }
 
 /**

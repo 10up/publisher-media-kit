@@ -65,7 +65,6 @@
     "devURL": "https://publisher-media.test/",
     "entry": {
       "admin": "./assets/js/admin/admin.js",
-      "frontend": "./assets/js/frontend/frontend.js",
       "shared": "./assets/js/shared/shared.js",
       "admin-style": "./assets/css/admin/admin-style.css",
       "shared-style": "./assets/css/shared/shared-style.css",
