@@ -57,6 +57,10 @@ Click the block inserter (`+` button) in the top left of the block editor, click
 
 The plugin specifically checks for the page slug `media-kit`, meaning that even if you modify the page name, the plugin will not generate a new page unless the page slug is altered or the page is moved to the trash.
 
+### Where do I report security bugs found in this plugin?
+
+Please report security bugs found in the source code of the Publisher Media Kit plugin through the [Patchstack Vulnerability Disclosure  Program](https://patchstack.com/database/vdp/cdbaff82-ae26-40df-af34-47bc8e47e9d3).  The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
+
 ## Support Level
 
 **Stable:** 10up is not planning to develop any new features for this, but will still respond to bug reports and security concerns. We welcome PRs, but any that include new features should be small and easy to integrate and should not include breaking changes. We otherwise intend to keep this tested up to the most recent version of WordPress.

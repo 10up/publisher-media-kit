@@ -1,7 +1,7 @@
 === Publisher Media Kit ===
 Contributors:      10up, jeffpaul, faisal03
 Tags:              media kit, audience profiles, digital ad specs, ad rates
-Tested up to:      6.8
+Tested up to:      7.0
 Stable tag:        1.3.6
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -26,7 +26,7 @@ We have tested the plugin with the following WordPress themes and have validated
 1. [Newspack: Sacha](https://github.com/Automattic/newspack-theme)
 1. [Newspack: Scott](https://github.com/Automattic/newspack-theme)
 
-## Installation
+== Installation ==
 
 1. Install the plugin via the plugin installer, either by searching for it or uploading a .ZIP file.
 1. Activate the plugin.
@@ -45,6 +45,10 @@ Click the block inserter (`+` button) in the top left of the block editor, click
 = If I rename the page title (e.g. to 'Advertising') and then deactivate and subsequently reactivate the plugin, would the plugin generate a new 'Media Kit' page? =
 
 The plugin specifically checks for the page slug `media-kit`, meaning that even if you modify the page name, the plugin will not generate a new page unless the page slug is altered or the page is moved to the trash.
+
+= Where do I report security bugs found in this plugin? =
+
+Please report security bugs found in the source code of the Publisher Media Kit plugin through the [Patchstack Vulnerability Disclosure  Program](https://patchstack.com/database/vdp/cdbaff82-ae26-40df-af34-47bc8e47e9d3).  The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
 
 == Screenshots ==
 

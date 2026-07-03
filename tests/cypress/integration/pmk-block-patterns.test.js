@@ -2,7 +2,9 @@ describe('Check if Media Kit Block Pattern is available for use', () => {
 	it('Can insert the block pattern', () => {
 		cy.visitAdminPage('post-new.php');
 		cy.closeWelcomeGuide();
-		cy.get('#post-title-0, h1.editor-post-title__input')
+		cy.getBlockEditor()
+			.find('#post-title-0, h1.editor-post-title__input')
+			.first()
 			.click({ force: true })
 			.type('Test Block Pattern');
 		cy.get(
