@@ -22,10 +22,10 @@ describe('Check if Media Kit Block Pattern is available for use', () => {
 				cy.get('.components-select-control__input').select('publisher-media-kit', {
 					force: true,
 				});
-			} else if ($body.find('[aria-label="Publisher Media Kit"]').length > 0) {
-				cy.get('[aria-label="Publisher Media Kit"]').click();
-			} else if ($body.find(':contains("Publisher Media Kit")').length > 0) {
-				cy.contains(/^Publisher Media Kit$/).click();
+			} else {
+				// Category tabs load asynchronously, so retry until the
+				// "Publisher Media Kit" tab actually renders before clicking it.
+				cy.contains('[role="tab"]', 'Publisher Media Kit', { timeout: 10000 }).click();
 			}
 		});
 
