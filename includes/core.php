@@ -133,6 +133,7 @@ function create_media_kit_page() {
 		'post_status'    => array( 'publish', 'pending', 'draft', 'auto-draft', 'future', 'private' ),
 		'posts_per_page' => 1,
 		'fields'         => 'ids',
+		// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- searching indexed key column.
 		'meta_query'     => array(
 			array(
 				'key' => 'pmk-page',
