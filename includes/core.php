@@ -182,7 +182,7 @@ function create_media_kit_page() {
 		$post_ID = wp_insert_post( $page );
 
 		if ( is_wp_error( $post_ID ) || 0 === $post_ID ) {
-			throw new \Exception( $post_ID->get_error_message() );
+			throw new \Exception( esc_html( $post_ID->get_error_message() ) );
 		}
 
 		// insert post meta for identity.
