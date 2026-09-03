@@ -89,7 +89,17 @@ function pmk_admin_notice_notice() {
 		$media_kit_link = $media_kit_id ? get_edit_post_link( $media_kit_id ) : admin_url( 'edit.php?post_type=page' );
 		?>
 		<div class="updated notice is-dismissible">
-			<p><?php echo wp_kses_post( sprintf( __( 'A "Media Kit" page has been created! Please <a href="%s">click here</a> to edit and publish the page.', 'publisher-media-kit' ), esc_url( $media_kit_link ) ) ); ?></p>
+			<p>
+				<?php
+				echo wp_kses_post(
+					sprintf(
+						/* translators: %s Edit link to auto-created media kit page. */
+						__( 'A "Media Kit" page has been created! Please <a href="%s">click here</a> to edit and publish the page.', 'publisher-media-kit' ),
+						esc_url( $media_kit_link )
+					)
+				);
+				?>
+				</p>
 		</div>
 		<?php
 		/* Delete transient, only display this notice once. */
