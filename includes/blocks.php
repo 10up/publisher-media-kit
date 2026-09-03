@@ -20,7 +20,6 @@ function setup() {
 	add_action( 'init', $n( 'register_blocks' ) );
 
 	add_action( 'init', $n( 'block_patterns_and_categories' ) );
-
 }
 
 /**

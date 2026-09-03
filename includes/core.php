@@ -7,7 +7,7 @@
 
 namespace PublisherMediaKit\Core;
 
-use \WP_Error;
+use WP_Error;
 
 /**
  * Default setup routine
@@ -141,7 +141,7 @@ function create_media_kit_page() {
 
 		global $wp_version;
 
-		$current_user      = wp_get_current_user();
+		$current_user = wp_get_current_user();
 
 		// Get block patterns to insert in a page.
 		ob_start();
@@ -209,7 +209,6 @@ function script_url( $script, $context ) {
 	}
 
 	return PUBLISHER_MEDIA_KIT_URL . "dist/js/${script}.js";
-
 }
 
 /**
@@ -227,7 +226,6 @@ function style_url( $stylesheet, $context ) {
 	}
 
 	return PUBLISHER_MEDIA_KIT_URL . "dist/css/${stylesheet}.css";
-
 }
 
 /**
@@ -276,7 +274,6 @@ function admin_scripts() {
 		PUBLISHER_MEDIA_KIT_VERSION,
 		true
 	);
-
 }
 
 /**
@@ -330,7 +327,6 @@ function admin_styles() {
 		[],
 		PUBLISHER_MEDIA_KIT_VERSION
 	);
-
 }
 
 /**

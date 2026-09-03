@@ -11,7 +11,7 @@ namespace PublisherMediaKit\Blocks\Tabs;
  * Register the block
  */
 function register() {
-	$n = function( $function ) {
+	$n = function ( $function ) {
 		return __NAMESPACE__ . "\\$function";
 	};
 
