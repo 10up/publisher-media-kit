@@ -35,7 +35,8 @@ describe('Check if Media Kit page is created on plugin activation', () => {
 
 		cy.get('#post-search-input').clear().type('Media Kit{Enter}');
 		cy.get('a.row-title').first().click();
-		cy.get(`.wp-block img[src^="${Cypress.config('baseUrl')}"]`)
+		cy.getBlockEditor()
+			.find(`.wp-block img[src^="${Cypress.config('baseUrl')}"]`)
 			.first()
 			.each(($img) => {
 				cy.request($img.attr('src')).its('status').should('eq', 200);
