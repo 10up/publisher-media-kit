@@ -13,14 +13,13 @@ namespace PublisherMediaKit\Blocks;
  * @return void
  */
 function setup() {
-	$n = function ( $function ) {
-		return __NAMESPACE__ . "\\$function";
+	$n = function ( $function_name ) {
+		return __NAMESPACE__ . "\\$function_name";
 	};
 
 	add_action( 'init', $n( 'register_blocks' ) );
 
 	add_action( 'init', $n( 'block_patterns_and_categories' ) );
-
 }
 
 /**
