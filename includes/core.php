@@ -7,7 +7,7 @@
 
 namespace PublisherMediaKit\Core;
 
-use \WP_Error;
+use WP_Error;
 
 /**
  * Default setup routine
@@ -15,8 +15,8 @@ use \WP_Error;
  * @return void
  */
 function setup() {
-	$n = function ( $function ) {
-		return __NAMESPACE__ . "\\$function";
+	$n = function ( $function_name ) {
+		return __NAMESPACE__ . "\\$function_name";
 	};
 
 	add_action( 'init', $n( 'i18n' ) );
@@ -66,8 +66,8 @@ function activate() {
 		return;
 	}
 
-	$n = function ( $function ) {
-		return __NAMESPACE__ . "\\$function";
+	$n = function ( $function_name ) {
+		return __NAMESPACE__ . "\\$function_name";
 	};
 
 	// Create a media kit page.
@@ -89,7 +89,17 @@ function pmk_admin_notice_notice() {
 		$media_kit_link = $media_kit_id ? get_edit_post_link( $media_kit_id ) : admin_url( 'edit.php?post_type=page' );
 		?>
 		<div class="updated notice is-dismissible">
-			<p><?php echo wp_kses_post( sprintf( __( 'A "Media Kit" page has been created! Please <a href="%s">click here</a> to edit and publish the page.', 'publisher-media-kit' ), esc_url( $media_kit_link ) ) ); ?></p>
+			<p>
+				<?php
+				echo wp_kses_post(
+					sprintf(
+						/* translators: %s Edit link to auto-created media kit page. */
+						__( 'A "Media Kit" page has been created! Please <a href="%s">click here</a> to edit and publish the page.', 'publisher-media-kit' ),
+						esc_url( $media_kit_link )
+					)
+				);
+				?>
+				</p>
 		</div>
 		<?php
 		/* Delete transient, only display this notice once. */
@@ -123,6 +133,7 @@ function create_media_kit_page() {
 		'post_status'    => array( 'publish', 'pending', 'draft', 'auto-draft', 'future', 'private' ),
 		'posts_per_page' => 1,
 		'fields'         => 'ids',
+		// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- searching indexed key column.
 		'meta_query'     => array(
 			array(
 				'key' => 'pmk-page',
@@ -141,7 +152,7 @@ function create_media_kit_page() {
 
 		global $wp_version;
 
-		$current_user      = wp_get_current_user();
+		$current_user = wp_get_current_user();
 
 		// Get block patterns to insert in a page.
 		ob_start();
@@ -171,7 +182,7 @@ function create_media_kit_page() {
 		$post_ID = wp_insert_post( $page );
 
 		if ( is_wp_error( $post_ID ) || 0 === $post_ID ) {
-			throw new \Exception( $post_ID->get_error_message() );
+			throw new \Exception( esc_html( $post_ID->get_error_message() ) );
 		}
 
 		// insert post meta for identity.
@@ -209,7 +220,6 @@ function script_url( $script, $context ) {
 	}
 
 	return PUBLISHER_MEDIA_KIT_URL . "dist/js/${script}.js";
-
 }
 
 /**
@@ -227,7 +237,6 @@ function style_url( $stylesheet, $context ) {
 	}
 
 	return PUBLISHER_MEDIA_KIT_URL . "dist/css/${stylesheet}.css";
-
 }
 
 /**
@@ -276,7 +285,6 @@ function admin_scripts() {
 		PUBLISHER_MEDIA_KIT_VERSION,
 		true
 	);
-
 }
 
 /**
@@ -330,7 +338,6 @@ function admin_styles() {
 		[],
 		PUBLISHER_MEDIA_KIT_VERSION
 	);
-
 }
 
 /**
@@ -351,7 +358,7 @@ function script_loader_tag( $tag, $handle ) {
 	}
 
 	if ( 'async' !== $script_execution && 'defer' !== $script_execution ) {
-		return $tag; // _doing_it_wrong()?
+		return $tag; // Doing it wrong?
 	}
 
 	// Abort adding async/defer for scripts that have this script as a dependency. _doing_it_wrong()?
