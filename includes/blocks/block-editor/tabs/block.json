@@ -4,6 +4,10 @@
 	"description": "Display sections of content with brief headings in a compact tab layout that shows one section at a time.",
 	"text-domain": "publisher-media-kit",
 	"category": "common",
+	"editorScript": "file:./register.js",
+	"editorStyle": "file:./editor.css",
+	"style": "file:./editor.css",
+	"viewScript": "file:./view.js",
 	"example": {
 		"innerBlocks": [
 			{
