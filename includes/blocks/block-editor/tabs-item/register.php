@@ -11,8 +11,8 @@ namespace PublisherMediaKit\Blocks\TabsItem;
  * Register the block
  */
 function register() {
-	$n = function( $function ) {
-		return __NAMESPACE__ . "\\$function";
+	$n = function ( $function_name ) {
+		return __NAMESPACE__ . "\\$function_name";
 	};
 
 	if ( function_exists( 'register_block_type_from_metadata' ) ) {
