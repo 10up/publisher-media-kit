@@ -50,7 +50,7 @@
     "@10up/component-tabs": "^2.0.1",
     "@algolia/autocomplete-js": "^1.10.6",
     "@dnd-kit/core": "^6.3.1",
-    "@wordpress/blocks": "^15.12.0",
+    "@wordpress/blocks": "^15.25.0",
     "@wordpress/hooks": "^4.39.0",
     "@wordpress/i18n": "^6.12.0",
     "@wordpress/icons": "^11.6.0",
