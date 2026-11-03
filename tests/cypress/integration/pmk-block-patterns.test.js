@@ -27,9 +27,9 @@ describe('Check if Media Kit Block Pattern is available for use', () => {
 			} else if ($body.find(':contains("Publisher Media Kit")').length > 0) {
 				cy.contains(/^Publisher Media Kit$/).click();
 			}
-
-			// Check if cover patter exist in the list
-			cy.get('[aria-label="Publisher Media Kit - Cover"]').should('exist');
 		});
+
+		// Wait for patterns to load, then verify cover pattern exists
+		cy.get('[aria-label="Publisher Media Kit - Cover"]', { timeout: 10000 }).should('exist');
 	});
 });
