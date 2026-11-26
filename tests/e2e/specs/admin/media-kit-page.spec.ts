@@ -1,6 +1,6 @@
 /**
  * Admin: activating the plugin creates the Media Kit page, links to it from
- * the activation notice, and the page's pattern images load.
+ * the activation notice, and the page's blocks and images work.
  */
 
 /**
@@ -13,35 +13,10 @@ type Page = { id: number };
 
 type Block = {
 	name: string;
+	isValid?: boolean;
 	attributes: Record< string, unknown >;
 	innerBlocks: Block[];
 };
-
-/**
- * Finds the first image URL on this site in a block tree, in document order.
- *
- * @param blocks  Blocks to search.
- * @param siteUrl Site URL the image must start with.
- * @return The image URL, if any.
- */
-function findFirstImageUrl(
-	blocks: Block[],
-	siteUrl: string
-): string | undefined {
-	for ( const block of blocks ) {
-		const { url } = block.attributes;
-		if ( typeof url === 'string' && url.startsWith( siteUrl ) ) {
-			return url;
-		}
-
-		const nested = findFirstImageUrl( block.innerBlocks, siteUrl );
-		if ( nested ) {
-			return nested;
-		}
-	}
-
-	return undefined;
-}
 
 /**
  * Finds pages titled "Media Kit" in any status except trash.
@@ -60,6 +35,36 @@ function findMediaKitPages( requestUtils: RequestUtils ): Promise< Page[] > {
 	} );
 }
 
+/**
+ * Collects the image URLs on this site from a block tree, in document order.
+ *
+ * @param blocks  Blocks to search.
+ * @param siteUrl Site URL an image must start with.
+ * @return Image URLs.
+ */
+function collectImageUrls( blocks: Block[], siteUrl: string ): string[] {
+	return blocks.flatMap( ( block ) => {
+		const { url } = block.attributes;
+		const own =
+			typeof url === 'string' && url.startsWith( siteUrl ) ? [ url ] : [];
+
+		return [ ...own, ...collectImageUrls( block.innerBlocks, siteUrl ) ];
+	} );
+}
+
+/**
+ * Collects the names of invalid blocks in a block tree.
+ *
+ * @param blocks Blocks to check.
+ * @return Names of blocks whose saved markup doesn't validate.
+ */
+function collectInvalidBlocks( blocks: Block[] ): string[] {
+	return blocks.flatMap( ( block ) => [
+		...( block.isValid ? [] : [ block.name ] ),
+		...collectInvalidBlocks( block.innerBlocks ),
+	] );
+}
+
 test.describe( 'Media Kit page created on activation', () => {
 	test.describe.configure( { mode: 'serial' } );
 
@@ -76,6 +81,7 @@ test.describe( 'Media Kit page created on activation', () => {
 	test( 'activation notice links to the new Media Kit page', async ( {
 		admin,
 		page,
+		requestUtils,
 	} ) => {
 		await admin.visitAdminPage( 'plugins.php' );
 
@@ -93,10 +99,37 @@ test.describe( 'Media Kit page created on activation', () => {
 			.locator( '.updated.notice' )
 			.getByRole( 'link', { name: 'click here' } )
 			.getAttribute( 'href' );
-		expect( href ).toBeTruthy();
+
+		const pages = await findMediaKitPages( requestUtils );
+		expect( pages ).toHaveLength( 1 );
+
+		const link = new URL( href as string );
+		expect( link.pathname ).toMatch( /\/wp-admin\/post\.php$/ );
+		expect( link.searchParams.get( 'post' ) ).toBe( String( pages[ 0 ].id ) );
+		expect( link.searchParams.get( 'action' ) ).toBe( 'edit' );
 
 		const response = await page.request.get( href as string );
 		expect( response.status() ).toBe( 200 );
+	} );
+
+	test( 'Media Kit page sections are valid blocks', async ( {
+		admin,
+		editor,
+		requestUtils,
+	} ) => {
+		const [ mediaKitPage ] = await findMediaKitPages( requestUtils );
+		expect( mediaKitPage ).toBeDefined();
+
+		await admin.editPost( mediaKitPage.id );
+
+		// Read the store rather than the canvas: the editor isn't iframed on
+		// every supported WordPress version.
+		await expect.poll( () => editor.getBlocks() ).not.toHaveLength( 0 );
+		const blocks = ( await editor.getBlocks( { full: true } ) ) as Block[];
+
+		// One top-level section per bundled pattern.
+		expect( blocks ).toHaveLength( 8 );
+		expect( collectInvalidBlocks( blocks ) ).toEqual( [] );
 	} );
 
 	test( 'Media Kit page images load', async ( {
@@ -111,13 +144,16 @@ test.describe( 'Media Kit page created on activation', () => {
 
 		await admin.editPost( mediaKitPage.id );
 
-		// Read the URL from the block attributes rather than the canvas: the
-		// editor isn't iframed on every supported WordPress version.
 		await expect.poll( () => editor.getBlocks() ).not.toHaveLength( 0 );
-		const src = findFirstImageUrl( await editor.getBlocks(), baseURL as string );
-		expect( src ).toBeDefined();
+		const urls = collectImageUrls(
+			( await editor.getBlocks() ) as Block[],
+			baseURL as string
+		);
+		expect( urls.length ).toBeGreaterThan( 0 );
 
-		const response = await page.request.get( src as string );
-		expect( response.status() ).toBe( 200 );
+		for ( const url of urls ) {
+			const response = await page.request.get( url );
+			expect( response.status(), url ).toBe( 200 );
+		}
 	} );
 } );
