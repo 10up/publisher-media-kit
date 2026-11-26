@@ -29,8 +29,7 @@ Session.vim
 Thumbs.db
 Desktop.ini
 
-# Cypress
-tests/cypress/screenshots
-tests/cypress/videos
-tests/cypress/downloads
-tests/cypress/reports
+# Tests
+/artifacts
+tests/.phpunit.result.cache
+.wp-env.test.override.json
