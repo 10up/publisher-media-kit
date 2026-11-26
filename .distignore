@@ -2,8 +2,10 @@
 /.git
 /.github
 /.wordpress-org
+/artifacts
 /bin
 /node_modules
+/release
 /tests
 /assets/css
 /assets/js
@@ -21,4 +23,5 @@ LICENSE.md
 package-lock.json
 package.json
 phpcs.xml
+phpunit.xml.dist
 README.md
